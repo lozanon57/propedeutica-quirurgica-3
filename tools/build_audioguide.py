@@ -2,7 +2,7 @@
 
 Para cada clase: lee las notas del ponente de cada diapositiva del .pptx, sintetiza la pista con la voz
 neural es-ES-AlvaroNeural (edge-tts), guarda la imagen de la diapositiva desde el PDF exportado y escribe
-data/audioguia.json. La diapositiva final del QR (formas «QR-APP») no entra en la audioguía.
+data/audioguia.json. La diapositiva final del QR («Repasa esta clase en la app») no entra en la audioguía.
 
 Uso: python3 build_audioguide.py <carpeta_pptx> <carpeta_pdf> <python_con_edge_tts>
 """
@@ -37,7 +37,7 @@ def slide_title(slide, first):
     texts = [s for s in slide.shapes if s.has_text_frame and s.text_frame.text.strip()]
     if first:
         return texts[0].text_frame.paragraphs[0].text.strip()
-    body = [s for s in texts if s.top > 600000]                   # bajo la cabecera de la diapositiva
+    body = [s for s in texts if s.top > 457200]                   # bajo la etiqueta de bloque (0,5 in)
     return body[0].text_frame.paragraphs[0].text.strip() if body else ""
 
 
@@ -45,7 +45,8 @@ def read_deck(pptx):
     prs = Presentation(pptx)
     out = []
     for i, s in enumerate(prs.slides):
-        if any(sh.name.startswith("QR-APP") for sh in s.shapes) and i > 0:
+        titulo = slide_title(s, i == 0)
+        if i > 0 and titulo == "Repasa esta clase en la app":   # cierre con QR: no se narra en la app
             continue
         notes = s.notes_slide.notes_text_frame.text if s.has_notes_slide else ""
         out.append({"page": i + 1, "titulo": slide_title(s, i == 0), "notas": clean_notes(notes)})
@@ -72,6 +73,9 @@ def duration(mp3):
 async def main(pptx_dir, pdf_dir, py):
     sem = asyncio.Semaphore(PARALLEL)
     (APP / "audio").mkdir(exist_ok=True)
+    previo_path = APP / "data" / "audioguia.json"
+    previo = json.loads(previo_path.read_text(encoding="utf-8")) if previo_path.exists() else {}
+    notas_previas = {(cid, t["n"]): t["notas"] for cid, ts in previo.items() for t in ts}
     manifest, jobs = {}, []
     for cid, name in DECKS.items():
         slides = read_deck(Path(pptx_dir) / f"{name}.pptx")
@@ -80,6 +84,10 @@ async def main(pptx_dir, pdf_dir, py):
             jpg = APP / "slides" / f"{cid}-{n:02d}.jpg"
             subprocess.run(["pdftoppm", "-jpeg", "-jpegopt", "quality=80", "-scale-to-x", "1280", "-scale-to-y", "-1",
                             "-f", str(s["page"]), "-l", str(s["page"]), "-singlefile", str(Path(pdf_dir) / f"{name}.pdf"), str(jpg.with_suffix(""))], check=True)
+            mp3 = APP / "audio" / f"{cid}_{n:02d}.mp3"
+            if notas_previas.get((cid, n)) != s["notas"] and mp3.exists():
+                mp3.unlink()                                   # notas cambiadas: se vuelve a narrar
+                print("re-narrar", mp3.name)
             jobs.append(synth(sem, py, s["notas"], APP / "audio" / f"{cid}_{n:02d}.mp3"))
         manifest[cid] = slides
     await asyncio.gather(*jobs)
