@@ -1,5 +1,5 @@
 // Caché sencilla: la app funciona sin conexión una vez abierta; los audios se guardan al escucharlos.
-const VERSION = "pq3-v1";
+const VERSION = "pq3-v2";
 const SHELL = ["./", "index.html", "css/app.css", "js/app.js", "js/data.js", "js/store.js", "js/util.js", "js/player.js",
   "js/views/lesson.js", "js/views/quiz.js", "data/t25.json", "data/t27.json", "data/t32.json", "data/t39.json",
   "data/audioguia.json", "icon.svg", "manifest.webmanifest"];
