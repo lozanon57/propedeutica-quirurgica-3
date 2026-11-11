@@ -376,8 +376,8 @@
   {
    "q": "Un compañero afirma: «la cirugía robótica ya ha demostrado que es superior a la laparoscopia en el cáncer de recto». ¿Cuál es la respuesta más correcta?",
    "o": [
-    "Sí: ROLARR lo demostró con una reducción significativa de la conversión (8,1 % frente a 12,2 %).",
-    "No exactamente: ROLARR fue negativo en su objetivo principal y el resultado positivo de REAL procede de centros de altísimo volumen.",
+    "Sí: ROLARR lo demostró con una reducción de la conversión a laparotomía del 12,2 % al 8,1 %, la principal ventaja que se esperaba del robot.",
+    "No exactamente: ROLARR fue negativo en su objetivo principal y REAL, positivo, procede de centros chinos de altísimo volumen.",
     "No: ningún ensayo aleatorizado ha comparado nunca robótica y laparoscopia en cáncer de recto.",
     "Sí: está demostrado un aumento de la supervivencia a cinco años con la robótica."
    ],
@@ -394,8 +394,8 @@
    "o": [
     "La plataforma ha demostrado ser al menos tan eficaz como la laparoscopia.",
     "La autorización implica que la plataforma ha sido comparada con el da Vinci.",
-    "El estudio demuestra superioridad, porque la FDA exige evidencia comparativa para aprobar.",
-    "Se ha superado el mínimo regulatorio, pero el estudio no puede demostrar que sea mejor que ninguna alternativa."
+    "El estudio demuestra superioridad, porque la FDA exige un ensayo aleatorizado frente a la técnica de referencia antes de autorizar una plataforma nueva.",
+    "Supera el mínimo regulatorio, pero sin grupo control no puede demostrar que sea mejor que ninguna alternativa."
    ],
    "c": 3,
    "e": [
@@ -410,7 +410,7 @@
    "o": [
     "El resultado primario negativo pudo reflejar, en parte, la curva de aprendizaje robótica de los cirujanos y no solo la tecnología.",
     "El ajuste demuestra definitivamente que la robótica reduce la conversión y anula el resultado primario.",
-    "El ajuste carece de interés porque la experiencia del cirujano no influye en los resultados de un ensayo aleatorizado.",
+    "El ajuste carece de interés porque, en un ensayo aleatorizado, la experiencia del cirujano queda equilibrada entre los brazos y no influye en los resultados.",
     "El análisis demuestra que la laparoscopia es inferior incluso en manos expertas en laparoscopia."
    ],
    "c": 0,
@@ -440,9 +440,9 @@
   {
    "q": "El metaanálisis de 44 ECA sobre IA en colonoscopia muestra ADR 44,7 % frente a 36,7 % (RR 1,21) y neoplasia avanzada por colonoscopia 0,16 frente a 0,15. ¿Qué se deduce?",
    "o": [
-    "La IA reduce la incidencia de cáncer colorrectal porque detecta más adenomas.",
+    "La IA reduce la incidencia de cáncer colorrectal, porque cada adenoma adicional detectado y resecado es un cáncer que se evita a largo plazo.",
     "La IA detecta más lesiones avanzadas, pero no más adenomas pequeños.",
-    "La IA mejora un endpoint intermedio, sin demostrar más detección de la lesión que acaba en cáncer.",
+    "Mejora un endpoint intermedio, sin demostrar más detección de la lesión que acaba en cáncer.",
     "El aumento de ADR no tiene coste para el paciente, por lo que su adopción es neutra."
    ],
    "c": 2,
@@ -473,7 +473,7 @@
    "q": "Un modelo de IA identifica zonas peligrosas de disección en la colecistectomía con sensibilidad 0,80 y especificidad 0,98, validado frente a anotaciones de cirujanos expertos. ¿Qué falta para afirmar beneficio clínico?",
    "o": [
     "Nada, porque una especificidad de 0,98 garantiza que no habrá lesiones de vía biliar.",
-    "Aumentar la sensibilidad por encima de 0,90 en el mismo conjunto de imágenes.",
+    "Aumentar la sensibilidad por encima de 0,90 en el mismo conjunto de imágenes, para reducir las zonas peligrosas que el modelo no marca.",
     "Que lo apruebe un comité de cirujanos expertos que confirme la concordancia.",
     "Un ensayo que demuestre que los pacientes operados con el modelo tienen mejores resultados."
    ],
@@ -488,8 +488,8 @@
   {
    "q": "¿Por qué los niveles 3 y 4 de autonomía existen comercialmente en sistemas como el CyberKnife o los robots de ortopedia y no en cirugía abdominal?",
    "o": [
-    "Porque en ortopedia la regulación permite robots autónomos y en cirugía digestiva no.",
-    "Porque el hueso es rígido y registrable con una imagen previa, mientras que el tejido blando se mueve, sangra y se deforma.",
+    "Porque la regulación europea y la FDA permiten robots autónomos en ortopedia y radiocirugía, pero los prohíben expresamente en cirugía digestiva.",
+    "Porque el hueso es rígido y registrable con una imagen previa; el tejido blando se mueve y se deforma.",
     "Porque los robots de tejido duro usan aprendizaje por refuerzo entrenado en pacientes.",
     "Porque la cirugía abdominal ya no necesita autonomía tras la llegada del da Vinci 5."
    ],
@@ -504,9 +504,9 @@
   {
    "q": "Un titular dice: «un robot extirpa una vesícula de forma autónoma con 100 % de éxito». Se refiere a SRT-H (2025). ¿Qué matiz es imprescindible?",
    "o": [
-    "Se hizo en ocho vesículas de cerdo ex vivo, y los autores lo describen como autonomía a nivel de paso.",
-    "Se hizo en pacientes, pero bajo supervisión de un cirujano.",
-    "Se hizo en cerdos vivos con supervivencia de una semana.",
+    "Fueron ocho vesículas de cerdo ex vivo; los autores hablan de autonomía a nivel de paso.",
+    "Se hizo en pacientes de un ensayo de fase I, con un cirujano supervisando y preparado para tomar el control.",
+    "Se hizo en cerdos vivos, con supervivencia de una semana y sin complicaciones biliares.",
     "Se hizo en cadáver humano, último paso previo al ensayo clínico."
    ],
    "c": 0,
@@ -520,10 +520,10 @@
   {
    "q": "Un hospital adquiere un software de IA que es producto sanitario de clase IIa. Según el Reglamento europeo de IA (UE) 2024/1689, ¿cómo se clasifica?",
    "o": [
-    "Como riesgo limitado, salvo que tome decisiones sin supervisión humana.",
+    "Como riesgo limitado, con solo obligaciones de transparencia, salvo que tome decisiones clínicas sin supervisión humana.",
     "Debe demostrarse caso a caso si su uso supone un riesgo alto para los pacientes.",
-    "Como alto riesgo por definición, porque el Anexo I incluye el Reglamento de Productos Sanitarios y requiere organismo notificado.",
-    "Queda fuera del Reglamento de IA porque ya está regulado por el MDR."
+    "Como alto riesgo por definición: el Anexo I incluye el MDR y el producto necesita organismo notificado.",
+    "Queda fuera del Reglamento de IA porque, como producto sanitario, ya está regulado íntegramente por el MDR."
    ],
    "c": 2,
    "e": [
@@ -608,7 +608,10 @@
      "empresa",
      "intuitive",
      "comercial",
-     "industria"
+     "industria",
+     "corporativ",
+     "no revisad",
+     "sin revis"
     ]
    ],
    "e": "Proceden de los resultados que Intuitive Surgical comunica a la SEC: son creíbles por las consecuencias legales de mentir, pero no están revisados por pares."
@@ -666,7 +669,9 @@
      "descualific",
      "desentren",
      "perdida de competencia",
-     "perdida de habilidad"
+     "perdida de habilidad",
+     "perdida de destreza",
+     "desaprend"
     ]
    ],
    "e": "La señal observacional procede de endoscopistas cuya ADR sin IA cayó del 28,4 % al 22,4 % tras tres meses de uso."
@@ -694,7 +699,10 @@
      "ex vivo",
      "exvivo",
      "fuera del animal",
-     "extraid"
+     "extraid",
+     "explant",
+     "aislad",
+     "sobre una mesa"
     ]
    ],
    "e": "Ocho vesículas de cerdo fuera del animal, sobre una mesa; los autores lo llaman autonomía a nivel de paso."
@@ -706,7 +714,10 @@
     [
      "mdr",
      "productos sanitarios",
-     "2017/745"
+     "2017/745",
+     "745",
+     "dispositivos medicos",
+     "productos medicos"
     ]
    ],
    "e": "Las obligaciones del Reglamento de IA para productos sanitarios se aplazaron a agosto de 2028; hoy se certifica por el MDR."

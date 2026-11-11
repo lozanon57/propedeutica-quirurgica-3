@@ -38,7 +38,7 @@ export function resetClass(cid) {
 }
 
 export function resetAll() {
-  state = {};
+  state = state._prefs ? { _prefs: state._prefs } : {};
   persist();
 }
 
@@ -64,8 +64,8 @@ export function summary(cls, audio) {
   const largasDone = Object.values(largas).filter((v) => v.score != null).length;
   const audioDone = Object.keys(heard).length;
   const parts = [
-    testDone / cls.test.length,
-    cortasDone / cls.cortas.length,
+    testOk / cls.test.length,
+    cortasOk / cls.cortas.length,
     largasDone / cls.largas.length,
     audioDone / Math.max(1, audio.length),
   ];

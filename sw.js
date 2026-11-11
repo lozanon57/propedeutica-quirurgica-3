@@ -1,5 +1,5 @@
-// Caché sencilla: la app funciona sin conexión una vez abierta; los audios se guardan al escucharlos.
-const VERSION = "pq3-v2";
+// Caché sencilla: la app (textos, figuras y diapositivas) funciona sin conexión una vez abierta; el audio necesita conexión.
+const VERSION = "pq3-v3";
 const SHELL = ["./", "index.html", "css/app.css", "js/app.js", "js/data.js", "js/store.js", "js/util.js", "js/player.js",
   "js/views/lesson.js", "js/views/quiz.js", "data/t25.json", "data/t27.json", "data/t32.json", "data/t39.json",
   "data/audioguia.json", "icon.svg", "manifest.webmanifest"];
@@ -19,7 +19,7 @@ self.addEventListener("fetch", (e) => {
   if (url.origin !== location.origin) return;
   // Red primero (contenidos siempre al día) y caché como respaldo.
   e.respondWith(
-    fetch(req)
+    fetch(req, { cache: "no-cache" })
       .then((res) => {
         if (res.ok && res.status === 200) {
           const copy = res.clone();
@@ -27,6 +27,6 @@ self.addEventListener("fetch", (e) => {
         }
         return res;
       })
-      .catch(() => caches.match(req, { ignoreSearch: true }))
+      .catch(async () => (await caches.match(req, { ignoreSearch: true })) ?? Response.error())
   );
 });

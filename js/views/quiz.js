@@ -64,7 +64,12 @@ export function renderTest(items, { persist = true, color = "var(--accent)", onR
         })
       );
       box.querySelector("[data-prev]").addEventListener("click", () => ((pos -= 1), draw()));
-      box.querySelector("[data-next]").addEventListener("click", () => ((pos += 1), draw(), window.scrollTo({ top: 0 })));
+      box.querySelector("[data-next]").addEventListener("click", () => {
+        const nextOpen = items.findIndex((_, k) => k > pos && answers.get(k) == null);
+        pos = nextOpen === -1 ? items.length : nextOpen;
+        draw();
+        window.scrollTo({ top: 0 });
+      });
     }
 
     function drawResult() {
@@ -82,7 +87,10 @@ export function renderTest(items, { persist = true, color = "var(--accent)", onR
           </div>
         </div>`;
       box.querySelector("[data-wrong]")?.addEventListener("click", () => {
-        wrong.forEach((k) => answers.set(k, undefined));
+        wrong.forEach((k) => {
+          answers.set(k, undefined);
+          if (persist) store.set(items[k].cid, "test", items[k].i, undefined);
+        });
         pos = wrong[0];
         draw();
       });
@@ -107,7 +115,12 @@ export function checkShort(answer, groups) {
   const a = norm(answer);
   const n = words(answer);
   if (!a || n > 12) return false;
-  return groups.every((g) => g.some((kw) => a.includes(norm(kw))));
+  const padded = ` ${a} `;
+  const hit = (kw) => {
+    const k = norm(kw);
+    return k.length <= 3 ? padded.includes(` ${k} `) : a.includes(k);
+  };
+  return groups.every((g) => g.some(hit));
 }
 
 export function renderShort(cls) {

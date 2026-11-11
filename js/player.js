@@ -12,7 +12,7 @@ let index = -1;
 let classInfo = null;
 
 const SPEEDS = [1, 1.25, 1.5, 1.75, 0.85];
-audio.playbackRate = store.getPref("speed", 1);
+audio.defaultPlaybackRate = audio.playbackRate = store.getPref("speed", 1);
 
 const ICON_PLAY = '<svg viewBox="0 0 24 24"><path d="M7 4.5v15l13-7.5z"/></svg>';
 const ICON_PAUSE = '<svg viewBox="0 0 24 24"><rect x="6" y="4.5" width="4" height="15" rx="1"/><rect x="14" y="4.5" width="4" height="15" rx="1"/></svg>';
@@ -21,7 +21,14 @@ const ICON_NEXT = '<svg viewBox="0 0 24 24"><path d="M16 5h2v14h-2zM4 5v14l11-7z
 
 export const current = () => (index >= 0 ? { cls: classInfo, track: queue[index], index, playing: !audio.paused } : null);
 export const onChange = (fn) => (listeners.add(fn), () => listeners.delete(fn));
-const emit = () => listeners.forEach((fn) => fn(current()));
+const emit = () =>
+  listeners.forEach((fn) => {
+    try {
+      fn(current());
+    } catch (err) {
+      console.error("audioguía:", err);
+    }
+  });
 
 export function play(cls, tracks, i) {
   if (classInfo?.id === cls.id && index === i) return toggle();
@@ -29,6 +36,7 @@ export function play(cls, tracks, i) {
   queue = tracks;
   index = i;
   audio.src = tracks[i].audio;
+  audio.playbackRate = audio.defaultPlaybackRate;
   audio.play().catch(() => {});
   render();
   emit();
@@ -48,7 +56,7 @@ function step(delta) {
 
 function cycleSpeed() {
   const i = SPEEDS.indexOf(audio.playbackRate);
-  audio.playbackRate = SPEEDS[(i + 1) % SPEEDS.length];
+  audio.defaultPlaybackRate = audio.playbackRate = SPEEDS[(i + 1) % SPEEDS.length];
   store.setPref("speed", audio.playbackRate);
   render();
 }

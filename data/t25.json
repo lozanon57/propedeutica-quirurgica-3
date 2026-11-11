@@ -358,9 +358,9 @@
     {
       "q": "Una placa reduce el radio de la arteria femoral superficial a la mitad de su valor normal. Si el gradiente de presión, la longitud y la viscosidad no cambiaran, ¿qué fracción del flujo basal quedaría según la ley de Poiseuille?",
       "o": [
-        "Un 50 %",
-        "Un 25 %",
-        "Un 12,5 %",
+        "Un 50 %, proporcional a la caída del radio",
+        "Un 25 %, igual que la caída del área de la luz",
+        "Un 12,5 %, por dependencia cúbica del radio",
         "Alrededor de un 6 %"
       ],
       "c": 3,
@@ -390,10 +390,10 @@
     {
       "q": "Un estudiante afirma que, como la velocidad de la sangre es mínima en los capilares, allí es donde se concentra la mayor resistencia vascular. ¿Dónde está realmente la resistencia máxima del árbol arterial?",
       "o": [
-        "En los capilares",
-        "En la aorta",
+        "En los capilares, donde la velocidad es mínima",
+        "En la aorta, que recibe todo el gasto cardiaco",
         "En las arteriolas",
-        "En las vénulas"
+        "En las vénulas poscapilares"
       ],
       "c": 2,
       "e": [
@@ -406,7 +406,7 @@
     {
       "q": "Un aneurisma de aorta pasa de 4 a 6 cm de diámetro en varios años. ¿Por qué su riesgo de rotura aumenta más deprisa que su diámetro?",
       "o": [
-        "Porque, según Laplace, la tensión parietal sube con el radio y además la pared se adelgaza al dilatarse, de modo que ambos efectos se suman.",
+        "Por Laplace: la tensión parietal sube con el radio y además la pared se adelgaza al dilatarse",
         "Porque, según Poiseuille, el flujo dentro del aneurisma aumenta con la cuarta potencia del radio.",
         "Porque la velocidad de la sangre aumenta dentro del saco al crecer su área.",
         "Porque la presión arterial sistémica aumenta proporcionalmente al diámetro del aneurisma."
@@ -422,7 +422,7 @@
     {
       "q": "Tras ocluirse la femoral superficial, en las semanas siguientes se desarrollan colaterales. ¿Cuál es el estímulo principal de esa arteriogénesis?",
       "o": [
-        "La hipoxia tisular distal, que induce la formación de nuevos capilares.",
+        "La hipoxia tisular distal, que induce vía VEGF la formación de nuevos capilares en el músculo isquémico.",
         "El aumento de la cizalla sobre el endotelio de arteriolas colaterales que ya existían.",
         "La liberación de mioglobina por el músculo isquémico.",
         "La formación de trombo en el segmento ocluido, que recluta células progenitoras."
@@ -439,7 +439,7 @@
       "q": "Mujer de 81 años con fibrilación auricular no anticoagulada que presenta, desde hace una hora, dolor súbito y frialdad en la pierna izquierda. Nunca había claudicado. Los pulsos de la pierna derecha son amplios y normales. ¿Cuál es el diagnóstico más probable y su implicación terapéutica?",
       "o": [
         "Embolia sobre arteria sana; es candidata a extracción del émbolo con catéter de Fogarty.",
-        "Trombosis sobre placa; requiere arteriografía y revascularización del segmento enfermo.",
+        "Trombosis sobre placa ateromatosa; requiere arteriografía y revascularización del segmento enfermo.",
         "Trombosis de un aneurisma poplíteo, la causa más frecuente de isquemia aguda.",
         "Embolia, pero lo indicado es esperar a que se desarrollen colaterales."
       ],
@@ -470,10 +470,10 @@
     {
       "q": "Paciente con isquemia aguda de 30 horas de evolución: la pierna está anestésica y rígida, no hay movilidad y no se oye ni el Doppler arterial ni el venoso. El residente propone revascularizar «para intentar salvarla». ¿Qué es lo correcto?",
       "o": [
-        "Trombólisis por catéter, que es Clase I en isquemia aguda.",
-        "Revascularización urgente, porque todavía no se han cumplido 48 horas.",
+        "Trombólisis dirigida por catéter, que es Clase I, Nivel A, en la isquemia aguda de la extremidad.",
+        "Revascularización urgente, porque todavía no se han cumplido 48 horas y el músculo puede recuperarse.",
         "Fasciotomía y después decidir.",
-        "Amputación primaria, porque revascularizar expondría a un síndrome de reperfusión potencialmente mortal."
+        "Amputación primaria, para evitar un síndrome de reperfusión potencialmente mortal."
       ],
       "c": 3,
       "e": [
@@ -487,7 +487,7 @@
       "q": "Tras una embolectomía en un Rutherford IIb con isquemia prolongada, ¿qué afirmación sobre el síndrome compartimental es correcta?",
       "o": [
         "Debe hacerse fasciotomía profiláctica a todo paciente revascularizado.",
-        "Su mecanismo es una obliteración funcional y la fasciotomía selectiva es razonable en isquemia profunda o prolongada; el diagnóstico es clínico.",
+        "Es una obliteración funcional: fasciotomía selectiva si la isquemia fue profunda o prolongada; diagnóstico clínico.",
         "Solo ocurre tras traumatismos, no tras revascularizar una isquemia aguda.",
         "Se debe confirmar siempre con medición de presión compartimental antes de operar, aunque eso retrase la fasciotomía."
       ],
@@ -537,7 +537,7 @@
         "La prueba está mal hecha, porque si mejora la marcha debe mejorar el ITB.",
         "Hay que añadir cilostazol para conseguir que mejore el ITB.",
         "Es lo esperado: el ejercicio mejora la extracción de oxígeno y el metabolismo muscular sin abrir arterias.",
-        "La mejoría se debe a que el ejercicio ha recanalizado la oclusión y el ITB tardará meses en reflejarlo."
+        "La mejoría se debe a que el ejercicio ha recanalizado la oclusión, y el ITB tardará varios meses en reflejarlo."
       ],
       "c": 2,
       "e": [
@@ -551,9 +551,9 @@
       "q": "BEST-CLI favoreció la cirugía abierta y BASIL-2 la estrategia endovascular en la CLTI. ¿Qué explicación es la más sólida?",
       "o": [
         "BASIL-2 es más fiable porque es más reciente, y debe sustituir a BEST-CLI.",
-        "Los ensayos estudiaban poblaciones, conductos y desenlaces distintos: BASIL-2 exigía enfermedad infrapoplítea y permitía cualquier vena, y BEST-CLI exigía safena de un segmento.",
-        "BEST-CLI es más fiable porque incluyó más pacientes, y BASIL-2 debe ignorarse.",
-        "Ambos ensayos están sesgados y la elección debe basarse solo en la preferencia del cirujano."
+        "Estudiaban preguntas distintas: BASIL-2 exigía enfermedad infrapoplítea y aceptaba cualquier vena; BEST-CLI, safena de un segmento.",
+        "BEST-CLI es más fiable porque incluyó 1.830 pacientes frente a 345, y BASIL-2 debe ignorarse por falta de potencia.",
+        "Ambos ensayos están sesgados por la falta de cegamiento, y la elección debe basarse solo en la preferencia y experiencia del cirujano."
       ],
       "c": 1,
       "e": [
@@ -588,7 +588,7 @@
         [
           "cuart",
           "4",
-          "r4"
+          "cuatro"
         ]
       ],
       "e": "Q = ΔP · π · r⁴ / (8 · η · L); por eso la mitad de radio deja solo un 6 % del flujo."
@@ -675,7 +675,10 @@
           "dedo",
           "digital",
           "tcpo",
-          "transcutan"
+          "transcutan",
+          "idb",
+          "tbi",
+          "po2"
         ]
       ],
       "e": "Las arterias digitales casi nunca se calcifican; el índice dedo-brazo es anormal por debajo de 0,70."

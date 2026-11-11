@@ -172,9 +172,11 @@ export function renderAudio(cls, tracks) {
       if (c?.cls.id === cls.id) return player.toggle();
       player.play(cls, tracks, shown);
     });
-    const off = player.onChange((c) => {
-      if (!root.isConnected) return off();
-      if (c?.cls.id === cls.id && c.index !== shown) show(c.index);
+    return player.onChange((c) => {
+      if (c?.cls.id !== cls.id) return;
+      if (c.index !== shown) show(c.index);
+      const heardNow = store.get(cls.id, "audio");
+      root.querySelectorAll(".track-list li").forEach((li, i) => li.classList.toggle("done", Boolean(heardNow[tracks[i].n])));
     });
   };
   return { html, bind };

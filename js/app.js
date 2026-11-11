@@ -17,12 +17,17 @@ const TABS = [
   ["desarrollo", "Desarrollo"],
 ];
 
+let cleanup = null;
+
 function mount({ html, bind }, navKey) {
+  cleanup?.();
+  cleanup = null;
   view.innerHTML = html;
   view.classList.remove("view-enter");
   void view.offsetWidth;
   view.classList.add("view-enter");
-  bind?.(view);
+  const dispose = bind?.(view);
+  if (typeof dispose === "function") cleanup = dispose;
   document.querySelectorAll("[data-nav]").forEach((a) => a.classList.toggle("active", a.dataset.nav === navKey));
 }
 
@@ -211,8 +216,9 @@ async function route() {
   // Al cambiar de pestaña dentro de la misma clase, mantener la cabecera a la vista.
   const sameClass = lastPath && section === "clase" && lastPath.split("/")[2] === cid;
   if (sameClass) {
-    const seg = view.querySelector(".seg");
-    if (seg && window.scrollY > seg.offsetTop) window.scrollTo({ top: seg.offsetTop - 60 });
+    const header = view.querySelector(".class-head");
+    const top = header ? header.offsetTop + header.offsetHeight - 50 : 0;
+    window.scrollTo({ top: Math.min(window.scrollY, top) });
   } else window.scrollTo({ top: 0 });
   lastPath = path;
 }
