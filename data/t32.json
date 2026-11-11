@@ -1,0 +1,810 @@
+{
+ "id": "t32",
+ "tema": "Tema 32",
+ "titulo": "Tecnología avanzada en cirugía",
+ "subtitulo": "Qué está demostrado, qué es promesa y cómo distinguir una cosa de la otra",
+ "minutos": 40,
+ "bloquesTemario": [
+  "Evolución",
+  "Robótica",
+  "Inteligencia artificial",
+  "Autonomía",
+  "Límites y regulación"
+ ],
+ "objetivos": [
+  "Al terminar serás capaz de distinguir entre autorización regulatoria y evidencia comparativa, y explicar por qué un estudio de un solo brazo no demuestra superioridad.",
+  "Al terminar serás capaz de resumir qué han demostrado ROLARR, REAL y LAP-01 y de explicar por qué ninguno permite afirmar un beneficio en supervivencia.",
+  "Al terminar serás capaz de explicar cómo la curva de aprendizaje puede invertir el resultado de un ensayo quirúrgico y por qué la cirugía no se evalúa como un fármaco.",
+  "Al terminar serás capaz de diferenciar un endpoint intermedio de un beneficio clínico usando la IA en colonoscopia, y de describir el riesgo de deskilling.",
+  "Al terminar serás capaz de situar cualquier sistema quirúrgico en la escala de autonomía de Yang y de interpretar con espíritu crítico los experimentos STAR y SRT-H.",
+  "Al terminar serás capaz de explicar por qué casi todo software clínico de IA es de alto riesgo según el Reglamento europeo de IA, de dónde nace el sesgo algorítmico y en qué orden se aplican IDEAL-D, DECIDE-AI y CONSORT-AI."
+ ],
+ "caso": {
+  "titulo": "Una comisión, tres propuestas y un paciente que pide el robot",
+  "narrativa": [
+   "Eres el residente que se sienta, con voz pero sin voto, en la comisión de evaluación de tecnologías de un hospital público español. Esta tarde la comisión estudia tres propuestas y solo hay presupuesto para una a corto plazo. La primera la presenta la unidad colorrectal: incorporar una plataforma Hugo RAS para el programa de cáncer de recto. El comercial ha dejado una diapositiva que dice «aprobado por la FDA» y «superior a la laparoscopia». El equipo es muy experto en laparoscopia, pero su experiencia en robótica es todavía escasa.",
+   "La segunda propuesta llega de endoscopia digestiva: un sistema de detección de pólipos asistido por inteligencia artificial para todas las salas de colonoscopia. El folleto cita un metaanálisis de 44 ensayos aleatorizados con una tasa de detección de adenomas que pasa del 36,7 % al 44,7 %. La jefa de servicio quiere saber si eso significa que habrá menos cánceres de colon en la población que atienden.",
+   "La tercera es la más llamativa. Una empresa emergente ofrece, a coste reducido a cambio de los vídeos del hospital, un software que colorea en tiempo real las zonas seguras y peligrosas de disección durante la colecistectomía laparoscópica. Su modelo se ha entrenado con vídeos de dos hospitales europeos y lo validan comparando su salida con la anotación de cirujanos expertos. No aportan ningún ensayo clínico. En el turno de preguntas, alguien comenta que en el quirófano ya se usa desde hace años el verde de indocianina «porque reduce las fugas».",
+   "Al salir de la reunión, la cirujana colorrectal te presenta a su paciente de mañana: un hombre de 64 años con un adenocarcinoma de recto medio, operable, que ha leído en prensa que «el robot cura más» y pide expresamente que lo operen con él. Te pide que la ayudes a preparar tanto el informe para la comisión como la conversación con el paciente."
+  ],
+  "datos": [
+   {
+    "k": "Contexto",
+    "v": "Comisión de tecnologías de un hospital público"
+   },
+   {
+    "k": "Propuesta 1",
+    "v": "Robot Hugo RAS para cáncer de recto"
+   },
+   {
+    "k": "Evidencia aportada (1)",
+    "v": "Aprobación FDA y folleto comercial"
+   },
+   {
+    "k": "Propuesta 2",
+    "v": "Detección de pólipos asistida por IA"
+   },
+   {
+    "k": "Evidencia aportada (2)",
+    "v": "Metaanálisis de 44 ECA: ADR 36,7 % → 44,7 %"
+   },
+   {
+    "k": "Propuesta 3",
+    "v": "Software de zonas seguras en colecistectomía"
+   },
+   {
+    "k": "Evidencia aportada (3)",
+    "v": "Concordancia con expertos; vídeos de 2 centros; sin ensayos"
+   },
+   {
+    "k": "Paciente",
+    "v": "64 años, cáncer de recto medio, pide el robot"
+   }
+  ],
+  "decision": "¿Qué propuesta recomendarías a la comisión, con qué condiciones de implantación y de seguimiento, y qué le dirías con honestidad al paciente que pide el robot porque «cura más»?",
+  "discusion": [
+   "¿Qué demuestra exactamente que un dispositivo esté aprobado por la FDA o tenga marcado CE, y qué no demuestra?",
+   "Si un sistema detecta más adenomas, ¿basta eso para afirmar que reducirá el cáncer de colon? ¿Qué desenlace necesitarías ver?",
+   "¿Es lo mismo que un modelo de IA coincida con lo que anotarían cirujanos expertos que demostrar que los pacientes salen mejor operados?",
+   "Si el equipo apenas tiene experiencia robótica, ¿qué efecto puede tener eso sobre los resultados de los primeros pacientes y sobre cualquier comparación que hagáis?"
+  ]
+ },
+ "bloques": [
+  {
+   "titulo": "Evolución",
+   "idea": "Cada etapa de la cirugía resolvió el problema que dejó abierto la anterior, y el problema que queda hoy no es la técnica sino la variabilidad.",
+   "secciones": [
+    {
+     "titulo": "Cuatro revoluciones en poco más de un siglo",
+     "texto": [
+      "La historia reciente de la cirugía se entiende mejor como una sucesión de preguntas que como una lista de inventos. En Surgery 1.0, a partir de la asepsia y la anestesia, la pregunta era si se podía resecar: por primera vez se podía abrir a un paciente y que sobreviviera, y el reto fue **dominar la anatomía**. Hacia los años cincuenta, Surgery 2.0 parte de que ya sabemos resecar pero dejamos un defecto, y aparecen la cirugía reconstructiva, el trasplante y las prótesis: ¿puedo reconstruir lo que quito?",
+      "Surgery 3.0, desde los noventa, responde a otro problema: sabemos resecar y reconstruir, pero para llegar al órgano causamos un gran destrozo. Nace la cirugía mínimamente invasiva. Conviene fijarse en un matiz que muchos olvidan: la laparoscopia no mejoró la resección, mejoró el **acceso** a la resección. Es la misma cirugía con menos peaje para el paciente.",
+      "Surgery 4.0 es donde estamos. El problema ya no es técnico, es la **variabilidad**: dos cirujanos hacen la misma operación y obtienen resultados distintos, e incluso un mismo cirujano rinde distinto de un día a otro. Ahí es donde entran los datos, la navegación y la inteligencia artificial."
+     ],
+     "figura": "g_tec_evolucion",
+     "pie": "Surgery 1.0 a 4.0: cada etapa responde a una pregunta distinta, desde poder resecar hasta poder hacerlo igual siempre.",
+     "perla": "La promesa de Surgery 4.0 no es operar mejor que el mejor cirujano, sino que el peor día del mejor cirujano se parezca más a su mejor día."
+    },
+    {
+     "titulo": "El trato de esta clase: lo que se ha demostrado, no lo que se promete",
+     "texto": [
+      "La tecnología quirúrgica es el tema más fácil de contar mal, porque es el que más vídeos espectaculares tiene y el que menos ensayos clínicos acumula. Por eso el criterio de esta clase no es qué hace un aparato, sino qué ha demostrado y con qué tipo de estudio. Los robots que hoy parecen modernos estarán obsoletos cuando terminéis la residencia; la forma de juzgarlos no.",
+      "Ese criterio empieza por saber de dónde sale cada dato. Una cifra de fabricante comunicada a un regulador financiero, una noticia de prensa, un estudio de un solo brazo y un ensayo aleatorizado no pesan lo mismo, aunque todos se presenten con la misma tipografía en un folleto. La frase que resume el tema es sencilla y conviene escribirla: **aprobado no es demostrado**.",
+      "El hilo que une este tema con el resto de la asignatura es que en cirugía muchas ideas impecables desde la lógica han fracasado al medirse. La tecnología no es una excepción, y el verde de indocianina, que veremos más adelante, es el ejemplo de manual."
+     ],
+     "perla": "Ante cualquier dato sobre una tecnología, la primera pregunta no es cuánto, sino quién lo ha medido, cómo y frente a qué."
+    }
+   ]
+  },
+  {
+   "titulo": "Robótica",
+   "idea": "La robótica aporta ventajas concretas, en procedimientos concretos y en desenlaces precoces, pero ningún ensayo ha demostrado que el paciente viva más.",
+   "secciones": [
+    {
+     "titulo": "La robótica ya no es el futuro: volumen, plataformas y el valor de un dato",
+     "texto": [
+      "En 2025 se realizaron en el mundo unos 3.153.000 procedimientos con da Vinci, un 18 % más que el año anterior, con 11.106 sistemas instalados. En España hay en torno a 150 robots quirúrgicos, aproximadamente el 60 % en la sanidad pública, y no existe una cifra oficial de procedimientos. Estos números son **datos de fabricante** comunicados a la comisión de valores estadounidense o recogidos por la prensa: son creíbles, porque mentir ante un regulador tiene consecuencias legales, pero no están revisados por pares.",
+      "Durante veinte años la robótica fue un monopolio; hoy conviven en Europa cinco plataformas: da Vinci 5, Hugo RAS, Versius, hinotori y Dexter. Senhance está discontinuado: Karl Storz adquirió Asensus en 2024 y lo retiró, de modo que cualquier apunte que lo presente como plataforma emergente está desactualizado. Y ningún ensayo aleatorizado ha comparado estas plataformas entre sí.",
+      "El Hugo obtuvo la autorización de la FDA con un estudio de 137 pacientes, de un solo brazo y sin grupo control. Un estudio sin comparador no puede demostrar que algo sea mejor que nada, porque no hay nada con qué comparar: es el **mínimo regulatorio**, no evidencia comparativa."
+     ],
+     "figura": "g_tec_robotica",
+     "pie": "Volumen mundial y español de la robótica y las cinco plataformas disponibles en Europa, que ningún ensayo ha comparado entre sí.",
+     "perla": "Aprobado no significa demostrado: la autorización regulatoria es un mínimo de seguridad y funcionamiento, no una prueba de superioridad."
+    },
+    {
+     "titulo": "Lo que el robot aporta y lo que no ha demostrado",
+     "texto": [
+      "Las ventajas técnicas del robot son reales y fáciles de entender: visión tridimensional y aumentada, instrumentos articulados que giran como la muñeca, filtrado del temblor y mejor acceso a espacios estrechos como la pelvis. El da Vinci 5, aprobado por la FDA en marzo de 2024, incorpora además retroalimentación de fuerza, de modo que la afirmación clásica de que el robot no transmite sensación de fuerza está técnicamente superada.",
+      "Pero una ventaja técnica no es un beneficio clínico. Con la retroalimentación de fuerza, la fuerza aplicada sobre el tejido baja de 1,79 a 1,32 N, y sin embargo no hay ningún ensayo que demuestre que eso se traduzca en menos complicaciones. Del mismo modo, no se ha demostrado que la robótica haga vivir más al paciente, que reduzca la recidiva del cáncer, que disminuya de forma general las complicaciones ni que compense siempre su coste.",
+      "La forma correcta de enunciarlo, por tanto, no es que la robótica sea superior a la laparoscopia, sino que tiene **ventajas dependientes del procedimiento** y sin impacto demostrado en supervivencia."
+     ],
+     "figura": "g_tec_robot_aporta",
+     "pie": "Ventajas técnicas del robot frente a los desenlaces clínicos que ningún ensayo ha demostrado todavía.",
+     "perla": "Distingue siempre entre lo que el aparato hace mejor (ver, articular, filtrar) y lo que el paciente obtiene (vivir más, complicarse menos)."
+    },
+    {
+     "titulo": "Tres ensayos aleatorizados que hay que conocer",
+     "texto": [
+      "ROLARR (2017) aleatorizó 471 pacientes con cáncer de recto en 29 centros de 10 países. La conversión a laparotomía fue del 8,1 % con robot y del 12,2 % con laparoscopia, una diferencia que parece favorable, pero la odds ratio fue 0,61 con un intervalo de 0,31 a 1,21 y p = 0,16. El ensayo fue **formalmente negativo** en su objetivo principal, y también en sus ocho objetivos secundarios.",
+      "REAL (2022) incluyó 1.240 pacientes en 11 hospitales chinos. Aquí sí hubo resultado positivo: margen circunferencial positivo del 4,0 % frente al 7,2 % (p = 0,023) y complicaciones del 16,2 % frente al 23,1 % (p = 0,003). La cautela está en el contexto: centros de altísimo volumen y cirujanos robóticos ya consolidados, algo difícil de trasladar a un hospital europeo medio.",
+      "LAP-01, en prostatectomía, aleatorizó 782 pacientes y es el único ensayo de este campo con el **paciente ciego**, algo dificilísimo en cirugía. La continencia a los tres meses fue del 54 % frente al 46 % (p = 0,027). El patrón de los tres ensayos es coherente: beneficios reales, concretos y precoces, y ninguno en supervivencia."
+     ],
+     "figura": "g_tec_ensayos",
+     "pie": "ROLARR, REAL y LAP-01: un ensayo negativo y dos positivos en desenlaces precoces, ninguno en supervivencia.",
+     "perla": "Una diferencia numérica (8,1 % frente a 12,2 %) sin significación estadística no demuestra nada: mira siempre el intervalo de confianza."
+    },
+    {
+     "titulo": "Por qué un ensayo quirúrgico negativo puede no significar lo que parece",
+     "texto": [
+      "Los autores de ROLARR publicaron después un análisis que casi nadie cita. Sus cirujanos eran expertos en laparoscopia, con una media de 152 procedimientos, pero en robótica solo llevaban 68: todavía estaban aprendiendo. Por cada unidad de logaritmo de experiencia robótica previa, la odds de conversión se multiplicaba por 0,341 (p = 0,042). Para un cirujano con la experiencia media del ensayo, la odds ratio era 0,40 (0,168 a 0,953), p = 0,039: significativa y a favor de la robótica.",
+      "El mismo ensayo, con los mismos pacientes y los mismos datos, es negativo sin ajustar y positivo al ajustar por aprendizaje. La explicación es que en un ensayo de fármacos la pastilla del primer paciente es idéntica a la del último, mientras que en un ensayo quirúrgico la **intervención cambia mientras el ensayo ocurre**, porque el cirujano aprende.",
+      "Por eso un ensayo quirúrgico puede estar midiendo la curva de aprendizaje del cirujano y no la tecnología. Esta idea es la que justifica que la cirugía necesite marcos de evaluación propios y no los del medicamento."
+     ],
+     "figura": "g_tec_aprendizaje",
+     "pie": "ROLARR pasa de negativo a significativo a favor de la robótica cuando se ajusta por la experiencia robótica de los cirujanos.",
+     "perla": "Antes de aceptar o descartar una técnica por un ensayo, pregunta cuánta experiencia tenían los cirujanos con ella cuando se aleatorizó al primer paciente."
+    }
+   ]
+  },
+  {
+   "titulo": "Inteligencia artificial",
+   "idea": "La IA reproduce el criterio de quien etiquetó sus datos; su mejor evidencia mejora un endpoint intermedio, y además puede deteriorar al clínico que la usa.",
+   "secciones": [
+    {
+     "titulo": "Qué es exactamente la inteligencia artificial",
+     "texto": [
+      "Hay tres formas principales de aprendizaje automático. En el **aprendizaje supervisado** se le dan al modelo ejemplos etiquetados por un humano, por ejemplo miles de imágenes marcadas como pólipo o no pólipo; es aproximadamente el 95 % de toda la IA médica que existe. En el no supervisado se le dan datos sin etiquetar para que encuentre la estructura por sí mismo, y sirve para generar hipótesis más que para decidir. En el aprendizaje por refuerzo el sistema aprende por ensayo y error con una recompensa; es el de los robots que aprenden a moverse y, como necesita millones de intentos, se entrena en simulador y no en pacientes.",
+      "La consecuencia importante es que un modelo supervisado no sabe medicina: reproduce el criterio de las personas que etiquetaron sus datos, con sus aciertos y con sus sesgos. Si quien etiquetó era mediocre, la IA será mediocre; si todas las etiquetas vienen de un único hospital europeo, la IA funcionará en ese hospital. Eso anticipa sus dos problemas principales: que falla fuera del centro donde nació y que el sesgo está en los datos.",
+      "Dos afirmaciones antiguas merecen corrección. Lo que falta no es big data en general, sino datos **anotados, diversos y con etiqueta clínica**; ya existen conjuntos públicos como Endoscapes2023 y modelos entrenados con millones de fotogramas. Y la idea de que la IA solo hace una tarea está técnicamente superada por los modelos multitarea, aunque clínicamente sigue siendo cierta, porque lo aprobado y desplegado sigue siendo monotarea."
+     ],
+     "figura": "g_tec_ia",
+     "pie": "Aprendizaje supervisado, no supervisado y por refuerzo; el supervisado no sabe medicina, reproduce a quien etiquetó.",
+     "perla": "Para juzgar un modelo supervisado, pregunta quién etiquetó los datos, con qué criterio y de cuántos centros procedían."
+    },
+    {
+     "titulo": "El mejor ejemplo de evidencia: la IA en colonoscopia",
+     "texto": [
+      "La detección de pólipos asistida por ordenador es el campo con más evidencia de nivel uno de toda la IA médica: un metaanálisis de 44 ensayos aleatorizados y 36.201 colonoscopias. La tasa de detección de adenomas (ADR) sube del 36,7 % al 44,7 %, con un riesgo relativo de 1,21 (1,15 a 1,28). Es un resultado sólido y reproducido.",
+      "La lección está en el otro desenlace. La neoplasia colorrectal **avanzada** por colonoscopia fue de 0,15 sin IA y 0,16 con IA, una diferencia que no es significativa. La IA encuentra más adenomas, pero sobre todo pequeños, que en su mayoría nunca habrían progresado, y no encuentra más la lesión que de verdad acaba en cáncer. A cambio, se resecan casi dos pólipos no neoplásicos de más por cada diez colonoscopias, con su riesgo de hemorragia y perforación.",
+      "Esto es lo que se llama un **endpoint intermedio**: la IA mejora algo que medimos porque es fácil de medir, pero no está demostrado que mejore lo que le importa al paciente."
+     ],
+     "figura": "g_tec_cade",
+     "pie": "Con IA sube la tasa de detección de adenomas, pero la neoplasia avanzada por colonoscopia es prácticamente la misma.",
+     "perla": "Más adenomas detectados no equivale a menos cánceres: pregunta siempre si el endpoint es el que importa al paciente o el que es fácil de medir."
+    },
+    {
+     "titulo": "Un dato incómodo: el deskilling",
+     "texto": [
+      "En cuatro centros de endoscopia de Polonia se implantó un sistema de detección de pólipos por IA, y alguien midió algo que nadie había medido: cómo exploraban esos mismos endoscopistas cuando la IA estaba apagada. Antes de disponer de ella, su ADR sin ayuda era del 28,4 %. Tres meses después de tenerla disponible, explorando sin ella, era del 22,4 %: 6,0 puntos menos (intervalo de 10,5 a 1,6 puntos), p = 0,0089.",
+      "El estudio es **observacional y retrospectivo**, de modo que no demuestra causalidad, y contarlo sin ese matiz sería repetir el error que esta clase intenta evitar. Pero es la primera señal empírica de un fenómeno con nombre propio: el **deskilling**, la pérdida de competencia por delegación.",
+      "Corrige otra afirmación antigua, la de que la IA solo puede ayudar al clínico. También puede degradarlo, y eso plantea la pregunta que atraviesa todo el tema: cuando una tecnología nos ayuda, ¿qué nos está quitando a cambio?"
+     ],
+     "figura": "g_tec_deskilling",
+     "pie": "La ADR de los mismos endoscopistas explorando sin IA cayó del 28,4 % al 22,4 % tras tres meses de uso: señal observacional de deskilling.",
+     "perla": "Si se implanta una IA de apoyo, conviene seguir midiendo el rendimiento del profesional sin ella."
+    },
+    {
+     "titulo": "IA dentro del quirófano: dónde está realmente",
+     "texto": [
+      "Las aplicaciones intraoperatorias más estudiadas son cuatro. Las **zonas Go y No-Go** colorean en el vídeo de la colecistectomía dónde es seguro disecar, con sensibilidad de 0,80 y especificidad de 0,98 para las zonas peligrosas, sobre 2.627 imágenes de 37 países. La valoración automática de la visión crítica de seguridad alcanza una exactitud del 71,4 %, y solo sobre imágenes fijas. El reconocimiento de fases identifica en qué paso de la operación estamos, con un error medio de 63 segundos, y sirve para indexar vídeo y para docencia. Los modelos fundacionales, entrenados con millones de fotogramas, pretenden resolver muchas tareas con un único modelo.",
+      "Las cuatro están en fase de **prueba de concepto**. No existe ni un solo ensayo clínico aleatorizado que haya demostrado que un modelo de IA quirúrgica mejore un resultado en pacientes operados.",
+      "Hay que fijarse además en cómo se validan: comparando lo que dice el modelo con lo que habrían anotado cirujanos expertos. Eso mide si el modelo se parece a nosotros, no si el paciente sale mejor, y son dos preguntas distintas de las que solo la primera tiene respuesta."
+     ],
+     "figura": "g_tec_quirofano",
+     "pie": "Las cuatro aplicaciones de IA intraoperatoria más estudiadas, todas en fase de prueba de concepto.",
+     "perla": "Concordar con un experto es una medida de imitación, no de beneficio clínico."
+    }
+   ]
+  },
+  {
+   "titulo": "Autonomía",
+   "idea": "Todo robot que opera pacientes hoy es un teleoperador de nivel 0-1; el número de pacientes operados de forma autónoma en el mundo es cero.",
+   "secciones": [
+    {
+     "titulo": "La escala de autonomía de Yang",
+     "texto": [
+      "La escala de referencia, propuesta por Yang en Science Robotics en 2017, tiene seis niveles; conviene saber que se publicó como **editorial**, no como artículo original. Nivel 0: sin autonomía, teleoperación pura, el robot reproduce lo que hacen las manos del cirujano. Nivel 1: asistencia robótica, como el filtrado de temblor o la retroalimentación háptica, pero el cirujano dirige cada movimiento. Nivel 2: autonomía de tarea, el robot ejecuta una tarea concreta que el cirujano inicia y supervisa. Nivel 3: autonomía condicional, el sistema propone estrategias y el cirujano aprueba. Nivel 4: autonomía alta, decide el sistema bajo supervisión. Nivel 5: autonomía completa.",
+      "Todo lo que opera pacientes hoy, da Vinci, Hugo, Versius o hinotori, está en los niveles 0 y 1: son teleoperadores que no deciden nada. Los niveles 3 y 4 existen comercialmente, pero solo en **tejido duro**, como el CyberKnife o los robots de ortopedia. La razón es física: el hueso es rígido, se registra con una imagen previa y sigue donde estaba, mientras que el tejido blando se mueve con la respiración, sangra y se deforma al tocarlo.",
+      "La conclusión es contundente: el número de personas operadas de forma autónoma por un robot en el mundo es cero."
+     ],
+     "figura": "g_tec_autonomia",
+     "pie": "Escala de autonomía quirúrgica de Yang: todo lo que opera pacientes hoy está en los niveles 0 y 1.",
+     "perla": "Que un robot sea sofisticado no lo hace autónomo: si cada movimiento lo dirige el cirujano, es nivel 0 o 1."
+    },
+    {
+     "titulo": "Los dos experimentos que sí impresionan, y su letra pequeña",
+     "texto": [
+      "STAR (2022) realizó una anastomosis intestinal laparoscópica de forma autónoma en **cerdos vivos**, con supervivencia de una semana. Lo notable no es que lo lograra, sino que, comparado con cirujanos expertos, fue más consistente en el espaciado de los puntos, su profundidad y la presión de fuga. Apunta a la promesa real de la que hablábamos: la máquina no es más brillante que el buen cirujano, es más constante.",
+      "SRT-H (2025, Johns Hopkins) dio un salto de otro tipo: aprendió por imitación viendo vídeos, con instrucciones en lenguaje natural y una arquitectura de dos niveles en la que el superior corrige los errores del inferior. Completó el clipado y la sección del conducto y la arteria císticos con un 100 % de éxito en ocho vesículas. La letra pequeña: vesículas de cerdo y **ex vivo**, fuera del animal, sobre una mesa. Los propios autores lo llaman autonomía a nivel de paso, no cirugía autónoma.",
+      "Para llegar a un paciente faltan escalones que no se pueden saltar: ex vivo, animal vivo, cadáver humano, primero en humanos supervisado y ensayo clínico. En SRT-H solo está hecho el primero. El salto que falta no es de algoritmo, es de validación, y ningún paso en humanos se ha publicado en tejido blando."
+     ],
+     "figura": "g_tec_star",
+     "pie": "STAR en cerdo vivo y SRT-H en vesícula de cerdo ex vivo, y la escalera de validación que falta hasta un paciente.",
+     "perla": "Ante un titular de «un robot opera solo», pregunta dos cosas: en qué especie y si estaba vivo."
+    }
+   ]
+  },
+  {
+   "titulo": "Límites y regulación",
+   "idea": "Un sistema que se adopta antes de evaluarse, se regula sin entenderse o se entrena con datos sesgados puede hacer daño aunque funcione exactamente como fue diseñado.",
+   "secciones": [
+    {
+     "titulo": "Verde de indocianina: adopción antes que evidencia",
+     "texto": [
+      "El verde de indocianina es un colorante que, con una cámara de infrarrojos, ilumina lo que está perfundido. Se usa para comprobar si el intestino que se va a anastomosar recibe sangre, y la hipótesis es intuitiva: si veo que llega sangre, la anastomosis fugará menos.",
+      "IntAct (2025) aleatorizó 766 pacientes en 28 centros europeos: fuga clínica del 10 % con indocianina y del 15 % sin ella, odds ratio ajustada de 0,667 (0,419 a 1,060), p = 0,087, **no significativa**. PILLAR III, con 347 pacientes y cerrado antes de tiempo, obtuvo un 9,0 % frente a un 9,6 %, odds ratio de 0,845, p = 0,34: claramente negativo.",
+      "No es un alegato contra la indocianina: es segura, sin efectos adversos graves, barata, está en todas las torres y es extraordinariamente útil para ver la vía biliar, los uréteres o el ganglio centinela. Lo que no está demostrado es la afirmación más repetida, que reduzca la fuga anastomótica. La secuencia fue idea intuitiva, adopción masiva y ensayos después, cuando ya nadie iba a dejar de usarla, y es exactamente lo que está ocurriendo con la IA."
+     ],
+     "figura": "g_tec_icg",
+     "pie": "IntAct y PILLAR III: la fuga anastomótica no se reduce de forma significativa con verde de indocianina.",
+     "perla": "Una tecnología puede ser útil para ver y, a la vez, no haber demostrado el beneficio clínico concreto por el que se adoptó."
+    },
+    {
+     "titulo": "Quién autoriza esto, y quién responde si falla",
+     "texto": [
+      "Dos reglamentos europeos ordenan el terreno. El Reglamento de Productos Sanitarios (UE) 2017/745, el **MDR**, es el que gobierna hoy cualquier robot o software de IA en Europa: clasificación por riesgo, marcado CE por organismo notificado, evaluación clínica y vigilancia poscomercialización.",
+      "El Reglamento de Inteligencia Artificial (UE) 2024/1689 clasifica según su artículo 6.1: un sistema de IA es de alto riesgo si es un producto incluido en su Anexo I y además necesita la intervención de un organismo notificado. Como el Anexo I incluye el MDR, cualquier software de IA que sea producto sanitario de clase IIa o superior es de **alto riesgo por definición**. Eso obliga a gobernanza de los datos de entrenamiento, trazabilidad, registro de eventos, transparencia y supervisión humana efectiva. El Reglamento (UE) 2026/1744, el llamado Digital Omnibus, aplazó estas obligaciones para los productos sanitarios hasta agosto de 2028, porque las normas técnicas no estaban listas; hoy, en la práctica, se certifican solo por el MDR.",
+      "Si el sistema falla, con robots de nivel 0 y 1 responde el cirujano, íntegramente: un robot teleoperado no diluye la responsabilidad de nadie. A partir del nivel 3, el marco jurídico actual no tiene una respuesta."
+     ],
+     "figura": "g_tec_regulacion",
+     "pie": "El MDR gobierna hoy los productos sanitarios; el Reglamento de IA convierte casi todo software clínico de IA en alto riesgo; la responsabilidad sigue siendo del cirujano.",
+     "perla": "Usar un robot o un software de apoyo no transfiere la responsabilidad: con sistemas de nivel 0-1, quien responde es el cirujano."
+    },
+    {
+     "titulo": "El sesgo no está en el algoritmo: está en los datos",
+     "texto": [
+      "El estudio de Obermeyer en Science analizó un algoritmo aplicado a millones de pacientes en Estados Unidos para decidir a quién se ofrecían programas de cuidados intensivos ambulatorios. Asignaba sistemáticamente menos riesgo a los pacientes negros que a los blancos con el mismo grado de enfermedad.",
+      "Nadie había programado nada discriminatorio. El algoritmo usaba el **gasto sanitario** como medida indirecta de necesidad de salud, y en Estados Unidos, por razones de acceso, se gasta menos en los pacientes negros. El algoritmo aprendió perfectamente: aprendió la desigualdad que había en los datos.",
+      "La lección se traslada tal cual a la cirugía: el sesgo está en la **etiqueta** que le pedimos predecir y en quién está representado en los datos. El conjunto de datos de las zonas Go y No-Go, con 37 países, 136 instituciones y 153 cirujanos, es un buen contraejemplo; la mayoría de los modelos del campo, en cambio, se entrenan con vídeos de uno o dos centros europeos, y luego sorprende que no funcionen en otro sitio."
+     ],
+     "figura": "g_tec_sesgo",
+     "pie": "El algoritmo estudiado por Obermeyer usó el gasto sanitario como medida de necesidad y aprendió la desigualdad de los datos.",
+     "perla": "Antes de confiar en un modelo, pregunta qué variable aprendió a predecir y si tus pacientes estaban representados en sus datos."
+    },
+    {
+     "titulo": "Cómo se evalúa bien una tecnología quirúrgica",
+     "texto": [
+      "La cirugía tiene herramientas de evaluación propias, y conviene conocerlas en orden. **IDEAL-D** acompaña al dispositivo desde la primera idea: Idea, Desarrollo, Exploración, Evaluación y Seguimiento a largo plazo. DECIDE-AI guía la primera evaluación clínica en vivo de un sistema de IA, con foco en los factores humanos, es decir, en cómo interactúa el clínico con la máquina. SPIRIT-AI y CONSORT-AI orientan el diseño del protocolo y la publicación del ensayo aleatorizado, con ítems específicos sobre la intervención de IA, como las competencias necesarias para usarla, el entorno en que se integra, el manejo de los datos de entrada y salida y el análisis de los casos de error.",
+      "Todo esto existe porque un dispositivo quirúrgico no se puede evaluar como un fármaco, por tres razones. Hay curva de aprendizaje, y ya hemos visto lo que le hizo a ROLARR. El dispositivo **evoluciona durante el ensayo**, cosa que una pastilla no hace. Y no se puede enmascarar, porque el cirujano sabe qué está usando.",
+      "Con esta secuencia, IDEAL-D, DECIDE-AI y CONSORT-AI, se puede saber en qué escalón está cualquier tecnología que nos pongan delante, que es más útil que cualquier lista de máquinas."
+     ],
+     "figura": "g_tec_metodo",
+     "pie": "IDEAL-D para el dispositivo, DECIDE-AI para la IA en vivo y SPIRIT-AI/CONSORT-AI para el ensayo.",
+     "perla": "Ubicar una tecnología en IDEAL-D, DECIDE-AI o CONSORT-AI dice más de ella que cualquier folleto."
+    }
+   ]
+  }
+ ],
+ "resolucion": [
+  "Empecemos por el robot. «Aprobado por la FDA» solo significa que se superó el mínimo regulatorio: el Hugo se autorizó con 137 pacientes, un solo brazo y sin grupo control, y ningún ensayo ha comparado las plataformas entre sí. «Superior a la laparoscopia» tampoco se sostiene: ROLARR fue negativo en su objetivo principal (OR 0,61; 0,31 a 1,21; p = 0,16), REAL fue positivo en margen circunferencial y complicaciones, pero en centros chinos de altísimo volumen, y ninguno ha demostrado beneficio en supervivencia. Hay además un dato que afecta directamente a este hospital: el análisis de aprendizaje de ROLARR sugiere que con poca experiencia robótica los resultados se diluyen. Si la comisión apuesta por el robot, debe hacerlo con un programa de formación y volumen, registrando los resultados desde el primer paciente, y sin venderlo como una mejora de la supervivencia; los argumentos de ergonomía, captación o prestigio pueden existir, pero no son argumentos clínicos.",
+  "La IA en colonoscopia es la propuesta con mejor evidencia de las tres, 44 ensayos aleatorizados, pero lo que demuestra es un endpoint intermedio: más adenomas detectados (RR 1,21) y no más neoplasia avanzada, a cambio de casi dos pólipos benignos resecados de más por cada diez exploraciones. A la jefa de servicio hay que contestarle que no está demostrado que vaya a haber menos cánceres. Si se implanta, debe hacerse sabiendo que existe una señal observacional de deskilling (de 28,4 % a 22,4 % de ADR sin la IA), así que conviene seguir midiendo el rendimiento de los endoscopistas sin ella.",
+  "El software de zonas seguras es una prueba de concepto: se valida por concordancia con expertos, lo que mide si se parece a nosotros y no si el paciente sale mejor, y no hay ningún ensayo que demuestre mejores resultados con IA quirúrgica. Entrenado con vídeos de dos centros, es exactamente el tipo de modelo que falla fuera de donde nació; el sesgo está en los datos y en la etiqueta. Como producto sanitario estará sujeto al MDR y, por el Anexo I, será de alto riesgo según el Reglamento de IA, y mientras opere como apoyo de nivel 0-1 la responsabilidad será íntegramente del cirujano. Lo razonable es ofrecerlo solo dentro de un proyecto de evaluación estructurado (IDEAL-D, DECIDE-AI y, si progresa, un ensayo con CONSORT-AI), cuidando además qué se cede a cambio de los vídeos. El comentario sobre la indocianina sirve de advertencia: es útil para ver, pero IntAct y PILLAR III no demostraron que reduzca la fuga, y se adoptó antes de evaluarse.",
+  "Al paciente hay que decirle la verdad sin quitarle la esperanza: el robot no ha demostrado que cure más ni que haga vivir más; en recto tiene ventajas técnicas y algún beneficio precoz en centros muy expertos, y lo que más pesa en su resultado es la calidad de la cirugía y la experiencia del equipo que la hace, con la técnica que ese equipo domine. Esa es la respuesta de alguien que ha leído los ensayos y no los titulares."
+ ],
+ "claves": [
+  "Aprobado no es demostrado: el Hugo RAS se autorizó con 137 pacientes, un solo brazo y sin grupo control.",
+  "Las cifras de volumen robótico (≈3,15 millones de procedimientos da Vinci en 2025) son datos de fabricante, no revisados por pares.",
+  "ROLARR fue negativo (OR 0,61; p = 0,16); REAL y LAP-01 mostraron beneficios precoces y concretos; ningún ensayo ha demostrado mejor supervivencia con robótica.",
+  "Un ensayo quirúrgico puede medir la curva de aprendizaje y no la tecnología: ROLARR pasa a OR 0,40 (p = 0,039) al ajustar por experiencia.",
+  "La IA en colonoscopia aumenta la detección de adenomas (RR 1,21) pero no la de neoplasia avanzada: es un endpoint intermedio.",
+  "Existe una señal observacional de deskilling: la ADR sin IA cayó 6 puntos tras tres meses de uso.",
+  "Ningún ensayo aleatorizado ha demostrado que un modelo de IA quirúrgica mejore resultados en pacientes operados; validar por concordancia con expertos no es demostrar beneficio.",
+  "Todo robot que opera pacientes está en nivel 0-1 de autonomía; los niveles 3-4 solo existen en tejido duro y los pacientes operados de forma autónoma son cero.",
+  "Por el Anexo I del Reglamento de IA, casi todo software clínico de IA es de alto riesgo por definición; hoy se certifica por el MDR y responde el cirujano.",
+  "El sesgo algorítmico nace de la etiqueta y de los datos, y la evaluación correcta sigue el orden IDEAL-D, DECIDE-AI y SPIRIT-AI/CONSORT-AI."
+ ],
+ "glosario": [
+  {
+   "t": "Surgery 4.0",
+   "d": "Etapa actual de la cirugía cuyo objetivo es reducir la variabilidad mediante datos, navegación e inteligencia artificial."
+  },
+  {
+   "t": "Estudio de un solo brazo",
+   "d": "Estudio sin grupo control; puede describir resultados, pero no demostrar que una intervención sea mejor que otra."
+  },
+  {
+   "t": "Conversión",
+   "d": "Paso de una cirugía mínimamente invasiva (laparoscópica o robótica) a cirugía abierta durante la intervención."
+  },
+  {
+   "t": "Margen circunferencial positivo",
+   "d": "Tumor a menos de la distancia de seguridad del borde radial de la pieza de resección rectal; indicador de calidad oncológica."
+  },
+  {
+   "t": "Curva de aprendizaje",
+   "d": "Mejora progresiva de los resultados de un cirujano con la experiencia acumulada en una técnica."
+  },
+  {
+   "t": "ADR",
+   "d": "Tasa de detección de adenomas: proporción de colonoscopias en las que se detecta al menos un adenoma."
+  },
+  {
+   "t": "Endpoint intermedio",
+   "d": "Desenlace fácil de medir que se usa en lugar del que importa al paciente, sin garantía de que mejore este último."
+  },
+  {
+   "t": "Deskilling",
+   "d": "Pérdida de competencia de un profesional al delegar una tarea en una tecnología."
+  },
+  {
+   "t": "Aprendizaje supervisado",
+   "d": "Tipo de IA que aprende de ejemplos etiquetados por humanos y reproduce su criterio, con sus aciertos y sesgos."
+  },
+  {
+   "t": "Prueba de concepto (PoC)",
+   "d": "Demostración de que algo es técnicamente factible, sin evidencia de beneficio clínico."
+  },
+  {
+   "t": "Zonas Go/No-Go",
+   "d": "Modelo de IA que señala en el vídeo de la colecistectomía las zonas seguras y peligrosas de disección."
+  },
+  {
+   "t": "Escala de Yang",
+   "d": "Escala de autonomía quirúrgica de seis niveles (0 a 5), publicada como editorial en 2017."
+  },
+  {
+   "t": "Ex vivo",
+   "d": "Experimento sobre tejido u órgano extraído del organismo, fuera del animal vivo."
+  },
+  {
+   "t": "MDR",
+   "d": "Reglamento (UE) 2017/745 de Productos Sanitarios, que gobierna hoy robots y software clínico en Europa."
+  },
+  {
+   "t": "IDEAL-D",
+   "d": "Marco de evaluación de dispositivos quirúrgicos por etapas: Idea, Desarrollo, Exploración, Evaluación y Seguimiento."
+  }
+ ],
+ "referencias": [
+  "Jayne D, et al. JAMA. 2017. PMID 29067426 (ROLARR)",
+  "Corrigan N, et al. Trials. 2018. PMID 29945673 (ROLARR, análisis de aprendizaje)",
+  "Feng Q, et al. Lancet Gastroenterol Hepatol. 2022. PMID 36087608 (REAL)",
+  "Stolzenburg JU, et al. Eur Urol. 2021. PMID 33573861 (LAP-01)",
+  "Soleymanjahi S, et al. Ann Intern Med. 2024. PMID 39531400 (IA en colonoscopia, metaanálisis)",
+  "Budzyń K, et al. Lancet Gastroenterol Hepatol. 2025. PMID 40816301 (deskilling)",
+  "Jayne D, et al. Lancet Gastroenterol Hepatol. 2025. PMID 40690925 (IntAct)",
+  "Jafari MD, et al. Dis Colon Rectum. 2021. PMID 33872284 (PILLAR III)",
+  "Madani A, et al. Ann Surg. 2022. PMID 33196488 (zonas Go/No-Go)",
+  "Saeidi H, et al. Sci Robot. 2022. PMID 35080901 (STAR)",
+  "Kim JWB, et al. Sci Robot. 2025. PMID 40632876 (SRT-H)",
+  "Yang GZ, et al. Sci Robot. 2017. PMID 33157870 (escala de autonomía, editorial)",
+  "Obermeyer Z, et al. Science. 2019. PMID 31649194 (sesgo algorítmico)",
+  "Reglamento (UE) 2017/745 (MDR) · Reglamento (UE) 2024/1689 (IA) · Reglamento (UE) 2026/1744",
+  "Intuitive Surgical. Resultados FY2025 (SEC). Dato de fabricante, no revisado por pares"
+ ],
+ "test": [
+  {
+   "q": "Un compañero afirma: «la cirugía robótica ya ha demostrado que es superior a la laparoscopia en el cáncer de recto». ¿Cuál es la respuesta más correcta?",
+   "o": [
+    "Sí: ROLARR lo demostró con una reducción significativa de la conversión (8,1 % frente a 12,2 %).",
+    "No exactamente: ROLARR fue negativo en su objetivo principal y el resultado positivo de REAL procede de centros de altísimo volumen.",
+    "No: ningún ensayo aleatorizado ha comparado nunca robótica y laparoscopia en cáncer de recto.",
+    "Sí: está demostrado un aumento de la supervivencia a cinco años con la robótica."
+   ],
+   "c": 1,
+   "e": [
+    "Es la trampa: la cifra es verdadera pero la conclusión es falsa. La OR fue 0,61 con IC 0,31 a 1,21 y p = 0,16; una diferencia numérica sin significación no demuestra nada.",
+    "Correcta. Matiza las dos cosas importantes: el gran ensayo occidental fue negativo en su objetivo principal y el positivo (REAL) viene de 11 hospitales chinos con cirujanos robóticos consolidados.",
+    "Falsa: existen varios ensayos aleatorizados en recto, como ROLARR (471 pacientes) y REAL (1.240 pacientes).",
+    "Falsa y peligrosa, porque es lo que más se repite: ningún ensayo ha demostrado beneficio en supervivencia con la robótica."
+   ]
+  },
+  {
+   "q": "Una plataforma robótica obtiene autorización de la FDA tras un estudio de 137 pacientes, de un solo brazo y sin grupo control. ¿Qué conclusión es válida?",
+   "o": [
+    "La plataforma ha demostrado ser al menos tan eficaz como la laparoscopia.",
+    "La autorización implica que la plataforma ha sido comparada con el da Vinci.",
+    "El estudio demuestra superioridad, porque la FDA exige evidencia comparativa para aprobar.",
+    "Se ha superado el mínimo regulatorio, pero el estudio no puede demostrar que sea mejor que ninguna alternativa."
+   ],
+   "c": 3,
+   "e": [
+    "Falsa: sin grupo control no se puede establecer no inferioridad ni equivalencia frente a la laparoscopia.",
+    "Falsa: ningún ensayo aleatorizado ha comparado entre sí las plataformas robóticas disponibles.",
+    "Falsa: precisamente el Hugo RAS se autorizó sin comparador; la aprobación no exige demostrar superioridad.",
+    "Correcta. Un estudio de un solo brazo no tiene nada con qué comparar; aprobado no es demostrado."
+   ]
+  },
+  {
+   "q": "En ROLARR, los cirujanos tenían de media 152 laparoscopias previas y 68 procedimientos robóticos. Al ajustar por la experiencia robótica, para un cirujano con la experiencia media la OR de conversión fue 0,40 (p = 0,039). ¿Qué interpretación es la más adecuada?",
+   "o": [
+    "El resultado primario negativo pudo reflejar, en parte, la curva de aprendizaje robótica de los cirujanos y no solo la tecnología.",
+    "El ajuste demuestra definitivamente que la robótica reduce la conversión y anula el resultado primario.",
+    "El ajuste carece de interés porque la experiencia del cirujano no influye en los resultados de un ensayo aleatorizado.",
+    "El análisis demuestra que la laparoscopia es inferior incluso en manos expertas en laparoscopia."
+   ],
+   "c": 0,
+   "e": [
+    "Correcta. En un ensayo quirúrgico la intervención cambia mientras el ensayo ocurre porque el cirujano aprende; el ajuste sugiere que ROLARR medía en parte la curva.",
+    "Falsa: es un análisis secundario que sugiere una explicación; no sustituye ni anula el resultado primario formalmente negativo.",
+    "Falsa: la aleatorización equilibra pacientes, pero no congela la habilidad del cirujano, que evoluciona durante el ensayo.",
+    "Falsa: el análisis habla de la experiencia robótica de los cirujanos, no de una inferioridad intrínseca de la laparoscopia."
+   ]
+  },
+  {
+   "q": "¿Qué rasgo hace de LAP-01 un ensayo metodológicamente singular dentro de la comparación entre robótica y laparoscopia?",
+   "o": [
+    "Fue el primero que demostró beneficio en supervivencia global.",
+    "Se realizó exclusivamente en centros chinos de alto volumen.",
+    "Tuvo al paciente ciego a la técnica, algo muy difícil en cirugía.",
+    "Su objetivo principal fue la tasa de conversión a cirugía abierta."
+   ],
+   "c": 2,
+   "e": [
+    "Falsa: ningún ensayo de robótica ha demostrado beneficio en supervivencia; LAP-01 midió continencia a los tres meses.",
+    "Falsa: eso describe a REAL, con 11 hospitales chinos; LAP-01 es un ensayo de prostatectomía.",
+    "Correcta. Es el único ensayo de este campo con el paciente enmascarado, y mostró continencia del 54 % frente al 46 % a los tres meses (p = 0,027).",
+    "Falsa: la conversión fue el objetivo principal de ROLARR, no de LAP-01."
+   ]
+  },
+  {
+   "q": "El metaanálisis de 44 ECA sobre IA en colonoscopia muestra ADR 44,7 % frente a 36,7 % (RR 1,21) y neoplasia avanzada por colonoscopia 0,16 frente a 0,15. ¿Qué se deduce?",
+   "o": [
+    "La IA reduce la incidencia de cáncer colorrectal porque detecta más adenomas.",
+    "La IA detecta más lesiones avanzadas, pero no más adenomas pequeños.",
+    "La IA mejora un endpoint intermedio, sin demostrar más detección de la lesión que acaba en cáncer.",
+    "El aumento de ADR no tiene coste para el paciente, por lo que su adopción es neutra."
+   ],
+   "c": 2,
+   "e": [
+    "Falsa: no se ha demostrado; detectar más adenomas, sobre todo pequeños, no equivale a menos cáncer.",
+    "Falsa: es al revés; aumenta la detección de adenomas, sobre todo pequeños, y no la de neoplasia avanzada.",
+    "Correcta. La ADR es fácil de medir y mejora; la neoplasia avanzada, que es la que importa, no cambia de forma significativa.",
+    "Falsa: se resecan casi dos pólipos no neoplásicos de más por cada diez colonoscopias, con riesgo de hemorragia y perforación."
+   ]
+  },
+  {
+   "q": "En cuatro centros polacos, la ADR de los endoscopistas explorando sin IA pasó del 28,4 % al 22,4 % tras tres meses con IA disponible (p = 0,0089). ¿Cuál es la lectura correcta?",
+   "o": [
+    "Es una señal observacional de deskilling que no demuestra causalidad.",
+    "Demuestra que la IA causa pérdida de competencia en los endoscopistas.",
+    "Demuestra que la IA empeora la ADR cuando está encendida.",
+    "Carece de valor porque la diferencia no es estadísticamente significativa."
+   ],
+   "c": 0,
+   "e": [
+    "Correcta. Es un estudio observacional y retrospectivo: primera señal empírica de pérdida de competencia por delegación, sin prueba causal.",
+    "Falsa: el diseño observacional y retrospectivo no permite establecer causalidad; afirmarlo es exactamente el error que hay que evitar.",
+    "Falsa: lo medido es el rendimiento de los endoscopistas sin la IA, no con ella encendida.",
+    "Falsa: la diferencia de 6,0 puntos (IC 1,6 a 10,5) tiene p = 0,0089, es significativa; su limitación es el diseño, no la significación."
+   ]
+  },
+  {
+   "q": "Un modelo de IA identifica zonas peligrosas de disección en la colecistectomía con sensibilidad 0,80 y especificidad 0,98, validado frente a anotaciones de cirujanos expertos. ¿Qué falta para afirmar beneficio clínico?",
+   "o": [
+    "Nada, porque una especificidad de 0,98 garantiza que no habrá lesiones de vía biliar.",
+    "Aumentar la sensibilidad por encima de 0,90 en el mismo conjunto de imágenes.",
+    "Que lo apruebe un comité de cirujanos expertos que confirme la concordancia.",
+    "Un ensayo que demuestre que los pacientes operados con el modelo tienen mejores resultados."
+   ],
+   "c": 3,
+   "e": [
+    "Falsa: la exactitud diagnóstica sobre imágenes no dice nada de lo que ocurre a los pacientes; no hay ensayo que lo demuestre.",
+    "Falsa: mejorar la concordancia sigue midiendo si el modelo se parece a nosotros, no si el paciente sale mejor.",
+    "Falsa: más concordancia con expertos es más de la misma pregunta; no responde a la de beneficio clínico.",
+    "Correcta. Todas estas aplicaciones son pruebas de concepto: no existe ningún ECA que muestre mejores resultados en pacientes operados con IA quirúrgica."
+   ]
+  },
+  {
+   "q": "¿Por qué los niveles 3 y 4 de autonomía existen comercialmente en sistemas como el CyberKnife o los robots de ortopedia y no en cirugía abdominal?",
+   "o": [
+    "Porque en ortopedia la regulación permite robots autónomos y en cirugía digestiva no.",
+    "Porque el hueso es rígido y registrable con una imagen previa, mientras que el tejido blando se mueve, sangra y se deforma.",
+    "Porque los robots de tejido duro usan aprendizaje por refuerzo entrenado en pacientes.",
+    "Porque la cirugía abdominal ya no necesita autonomía tras la llegada del da Vinci 5."
+   ],
+   "c": 1,
+   "e": [
+    "Falsa: la diferencia es física, no regulatoria; ambos se rigen por el mismo marco de productos sanitarios.",
+    "Correcta. Se hace un TAC previo, se registra y el hueso sigue donde estaba; el tejido blando cambia con la respiración y al manipularlo.",
+    "Falsa: el aprendizaje por refuerzo necesita millones de intentos y se entrena en simulador, no en pacientes.",
+    "Falsa: el da Vinci 5 sigue siendo un teleoperador de nivel 0-1."
+   ]
+  },
+  {
+   "q": "Un titular dice: «un robot extirpa una vesícula de forma autónoma con 100 % de éxito». Se refiere a SRT-H (2025). ¿Qué matiz es imprescindible?",
+   "o": [
+    "Se hizo en ocho vesículas de cerdo ex vivo, y los autores lo describen como autonomía a nivel de paso.",
+    "Se hizo en pacientes, pero bajo supervisión de un cirujano.",
+    "Se hizo en cerdos vivos con supervivencia de una semana.",
+    "Se hizo en cadáver humano, último paso previo al ensayo clínico."
+   ],
+   "c": 0,
+   "e": [
+    "Correcta. Clipado y sección del conducto y la arteria císticos en ocho vesículas de cerdo, fuera del animal y sobre una mesa.",
+    "Falsa: el número de pacientes operados de forma autónoma por un robot en el mundo es cero.",
+    "Falsa: eso describe a STAR (2022), anastomosis intestinal en cerdos vivos.",
+    "Falsa: en SRT-H solo está hecho el primer escalón (ex vivo); no hay publicación en animal vivo, cadáver ni humanos."
+   ]
+  },
+  {
+   "q": "Un hospital adquiere un software de IA que es producto sanitario de clase IIa. Según el Reglamento europeo de IA (UE) 2024/1689, ¿cómo se clasifica?",
+   "o": [
+    "Como riesgo limitado, salvo que tome decisiones sin supervisión humana.",
+    "Debe demostrarse caso a caso si su uso supone un riesgo alto para los pacientes.",
+    "Como alto riesgo por definición, porque el Anexo I incluye el Reglamento de Productos Sanitarios y requiere organismo notificado.",
+    "Queda fuera del Reglamento de IA porque ya está regulado por el MDR."
+   ],
+   "c": 2,
+   "e": [
+    "Falsa: la clasificación no depende del grado de autonomía, sino de ser producto del Anexo I con organismo notificado.",
+    "Falsa: no hay que demostrarlo; el artículo 6.1 lo clasifica automáticamente.",
+    "Correcta. El artículo 6.1 considera de alto riesgo los productos del Anexo I que necesitan organismo notificado, y el Anexo I incluye el MDR.",
+    "Falsa: ambos se aplican; otra cosa es que el Reglamento (UE) 2026/1744 haya aplazado estas obligaciones para productos sanitarios a agosto de 2028."
+   ]
+  },
+  {
+   "q": "Durante una resección con un robot teleoperado de nivel 0, se produce una lesión. ¿Quién responde, según el marco actual?",
+   "o": [
+    "El fabricante, porque el instrumento era el robot.",
+    "Responsabilidad compartida a partes iguales entre fabricante y cirujano.",
+    "El organismo notificado que concedió el marcado CE.",
+    "El cirujano, íntegramente, porque un teleoperador no decide nada."
+   ],
+   "c": 3,
+   "e": [
+    "Falsa: con un sistema de nivel 0-1 cada movimiento lo dirige el cirujano; el robot no diluye su responsabilidad.",
+    "Falsa: el marco actual no reparte la responsabilidad de un acto que dirige íntegramente el cirujano.",
+    "Falsa: el organismo notificado evalúa la conformidad del producto, no responde de su uso en un paciente concreto.",
+    "Correcta. Con robots de nivel 0 y 1 responde el cirujano; a partir del nivel 3 el marco jurídico actual no tiene respuesta."
+   ]
+  },
+  {
+   "q": "En el estudio de Obermeyer, un algoritmo asignaba menos riesgo a pacientes negros con la misma enfermedad que a pacientes blancos. ¿Cuál fue el origen del sesgo?",
+   "o": [
+    "Un error de programación que introducía la raza como variable negativa.",
+    "La etiqueta elegida: usar el gasto sanitario como medida indirecta de necesidad de salud.",
+    "Un tamaño muestral insuficiente para pacientes negros.",
+    "El uso de aprendizaje no supervisado en lugar de supervisado."
+   ],
+   "c": 1,
+   "e": [
+    "Falsa: nadie programó nada discriminatorio; el algoritmo aprendió correctamente a partir de los datos.",
+    "Correcta. Como en Estados Unidos se gasta menos en pacientes negros por razones de acceso, el algoritmo aprendió la desigualdad que había en los datos.",
+    "Falsa: el algoritmo se aplicaba a millones de pacientes; el problema estaba en qué se le pidió predecir.",
+    "Falsa: el problema es la etiqueta que se predice, algo propio precisamente del aprendizaje supervisado."
+   ]
+  },
+  {
+   "q": "IntAct (766 pacientes) obtuvo fuga clínica del 10 % con verde de indocianina frente al 15 % sin él (OR 0,667; IC 0,419-1,060; p = 0,087). ¿Qué afirmación es correcta?",
+   "o": [
+    "La indocianina reduce la fuga un tercio, como demuestra IntAct.",
+    "La indocianina debe abandonarse porque IntAct demostró que es inútil.",
+    "No se ha demostrado que reduzca la fuga, aunque sigue siendo segura, barata y útil para visualizar estructuras.",
+    "PILLAR III confirmó el beneficio que IntAct no alcanzó a demostrar."
+   ],
+   "c": 2,
+   "e": [
+    "Falsa: el intervalo de confianza cruza el 1 y p = 0,087; la reducción no es significativa.",
+    "Falsa: un ensayo negativo para fuga no la hace inútil; es muy útil para ver la vía biliar, los uréteres o el ganglio centinela.",
+    "Correcta. La afirmación concreta de que reduce la fuga anastomótica no está demostrada; es un ejemplo de adopción antes que evidencia.",
+    "Falsa: PILLAR III fue claramente negativo (9,0 % frente a 9,6 %; p = 0,34)."
+   ]
+  },
+  {
+   "q": "Un grupo quiere hacer la primera evaluación clínica en vivo de un sistema de IA intraoperatoria, centrándose en cómo interactúan los cirujanos con él. ¿Qué guía debe seguir?",
+   "o": [
+    "DECIDE-AI.",
+    "CONSORT-AI.",
+    "IDEAL-D, en su fase de seguimiento a largo plazo.",
+    "SPIRIT-AI."
+   ],
+   "c": 0,
+   "e": [
+    "Correcta. DECIDE-AI está pensada para la primera evaluación clínica en vivo de la IA, con foco en los factores humanos.",
+    "Falsa: CONSORT-AI sirve para publicar un ensayo aleatorizado con una intervención de IA, un escalón posterior.",
+    "Falsa: IDEAL-D acompaña al dispositivo desde la idea; su seguimiento a largo plazo es la última etapa, no la primera evaluación en vivo.",
+    "Falsa: SPIRIT-AI guía el diseño del protocolo de un ensayo aleatorizado, también posterior."
+   ]
+  }
+ ],
+ "cortas": [
+  {
+   "q": "¿Qué tipo de fuente son las cifras mundiales de procedimientos con da Vinci?",
+   "r": "Datos del fabricante, no revisados",
+   "k": [
+    [
+     "fabricante",
+     "empresa",
+     "intuitive",
+     "comercial",
+     "industria"
+    ]
+   ],
+   "e": "Proceden de los resultados que Intuitive Surgical comunica a la SEC: son creíbles por las consecuencias legales de mentir, pero no están revisados por pares."
+  },
+  {
+   "q": "¿Qué plataforma robótica está discontinuada desde 2024?",
+   "r": "Senhance, retirada por Karl Storz",
+   "k": [
+    [
+     "senhance"
+    ]
+   ],
+   "e": "Karl Storz adquirió Asensus en 2024 y retiró Senhance; los apuntes que la presentan como emergente están desactualizados."
+  },
+  {
+   "q": "¿Qué factor convierte ROLARR de negativo en positivo al ajustarlo?",
+   "r": "La curva de aprendizaje robótica",
+   "k": [
+    [
+     "aprendizaje",
+     "experiencia",
+     "curva"
+    ]
+   ],
+   "e": "Ajustando por la experiencia robótica previa, para un cirujano con la experiencia media la OR fue 0,40 (p = 0,039)."
+  },
+  {
+   "q": "¿Qué ensayo de robótica tuvo al paciente ciego?",
+   "r": "LAP-01, en prostatectomía radical",
+   "k": [
+    [
+     "lap-01",
+     "lap 01",
+     "lap01"
+    ]
+   ],
+   "e": "LAP-01 aleatorizó 782 pacientes y mostró mejor continencia a los tres meses (54 % frente a 46 %)."
+  },
+  {
+   "q": "¿Qué desenlace relevante no mejora la IA en colonoscopia?",
+   "r": "La detección de neoplasia avanzada",
+   "k": [
+    [
+     "avanzad"
+    ]
+   ],
+   "e": "La neoplasia avanzada por colonoscopia fue 0,16 con IA frente a 0,15 sin ella; mejora la ADR, que es un endpoint intermedio."
+  },
+  {
+   "q": "¿Cómo se llama la pérdida de competencia por delegar en la IA?",
+   "r": "Deskilling, pérdida de competencia",
+   "k": [
+    [
+     "deskill",
+     "descualific",
+     "desentren",
+     "perdida de competencia",
+     "perdida de habilidad"
+    ]
+   ],
+   "e": "La señal observacional procede de endoscopistas cuya ADR sin IA cayó del 28,4 % al 22,4 % tras tres meses de uso."
+  },
+  {
+   "q": "¿En qué niveles de autonomía están los robots que operan pacientes hoy?",
+   "r": "En los niveles cero y uno",
+   "k": [
+    [
+     "0",
+     "cero"
+    ],
+    [
+     "1",
+     "uno"
+    ]
+   ],
+   "e": "Da Vinci, Hugo, Versius o hinotori son teleoperadores: el cirujano dirige cada movimiento."
+  },
+  {
+   "q": "¿Sobre qué material completó SRT-H el clipado del cístico?",
+   "r": "Vesículas de cerdo ex vivo",
+   "k": [
+    [
+     "ex vivo",
+     "exvivo",
+     "fuera del animal",
+     "extraid"
+    ]
+   ],
+   "e": "Ocho vesículas de cerdo fuera del animal, sobre una mesa; los autores lo llaman autonomía a nivel de paso."
+  },
+  {
+   "q": "¿Qué reglamento certifica hoy en la práctica un software quirúrgico de IA en Europa?",
+   "r": "El Reglamento de Productos Sanitarios (MDR)",
+   "k": [
+    [
+     "mdr",
+     "productos sanitarios",
+     "2017/745"
+    ]
+   ],
+   "e": "Las obligaciones del Reglamento de IA para productos sanitarios se aplazaron a agosto de 2028; hoy se certifica por el MDR."
+  },
+  {
+   "q": "¿Qué variable usó el algoritmo de Obermeyer como medida de necesidad de salud?",
+   "r": "El gasto sanitario del paciente",
+   "k": [
+    [
+     "gasto",
+     "coste",
+     "costo"
+    ]
+   ],
+   "e": "Como se gastaba menos en los pacientes negros por problemas de acceso, el algoritmo aprendió la desigualdad presente en los datos."
+  }
+ ],
+ "largas": [
+  {
+   "q": "Tu hospital se plantea comprar un robot para el programa de cáncer de recto y el comercial afirma que la plataforma «está aprobada por la FDA y es superior a la laparoscopia». Analiza críticamente esta afirmación a la luz de la evidencia disponible y explica qué condiciones pondrías a la compra.",
+   "guia": "Se espera que distingas autorización de evidencia, que interpretes ROLARR, REAL y LAP-01 con sus cifras y limitaciones, que expliques el efecto de la curva de aprendizaje y que propongas condiciones razonables.",
+   "modelo": "La frase del comercial mezcla dos cosas distintas. Que una plataforma esté aprobada solo significa que ha superado el mínimo regulatorio: el Hugo RAS se autorizó con un estudio de 137 pacientes, de un solo brazo y sin grupo control, y un estudio sin comparador no puede demostrar que algo sea mejor que nada. Además, ningún ensayo aleatorizado ha comparado entre sí las plataformas disponibles. Aprobado no es demostrado.\n\nLa afirmación de superioridad tampoco resiste la lectura de los ensayos. ROLARR aleatorizó 471 pacientes con cáncer de recto y obtuvo una conversión del 8,1 % frente al 12,2 %, pero con una OR de 0,61 (0,31 a 1,21) y p = 0,16: fue negativo en su objetivo principal y en sus ocho secundarios. REAL, con 1.240 pacientes, sí mostró menos margen circunferencial positivo (4,0 % frente a 7,2 %) y menos complicaciones, pero en once hospitales chinos de altísimo volumen con cirujanos robóticos consolidados. LAP-01, en próstata y con el paciente ciego, mejoró la continencia a los tres meses. Son beneficios reales, concretos y precoces, y ninguno en supervivencia.\n\nHay un matiz que afecta directamente a nuestro hospital. El análisis de aprendizaje de ROLARR mostró que sus cirujanos, expertos en laparoscopia, llevaban solo 68 procedimientos robóticos, y que ajustando por experiencia la OR pasaba a 0,40 con p = 0,039. En cirugía la intervención cambia mientras el ensayo ocurre porque el cirujano aprende, algo que no sucede con un fármaco. Un equipo sin experiencia robótica puede no obtener, al principio, ni siquiera los beneficios descritos.\n\nPor eso condicionaría la compra a un programa estructurado de formación, a un volumen suficiente de casos, a un registro prospectivo de resultados desde el primer paciente y a una indicación por procedimiento, no general. Y pediría que nadie la presentara a los pacientes como una mejora de la supervivencia. La ergonomía o el prestigio pueden pesar en la decisión, pero no son argumentos clínicos.",
+   "rubrica": [
+    {
+     "c": "Distingue autorización regulatoria de evidencia comparativa (estudio de un solo brazo de 137 pacientes)",
+     "p": 2
+    },
+    {
+     "c": "Interpreta correctamente ROLARR como negativo, con su intervalo y valor de p",
+     "p": 2
+    },
+    {
+     "c": "Sitúa REAL y LAP-01 como positivos en desenlaces precoces, con el matiz de contexto, y señala la ausencia de beneficio en supervivencia",
+     "p": 2
+    },
+    {
+     "c": "Explica el efecto de la curva de aprendizaje y por qué la cirugía no se evalúa como un fármaco",
+     "p": 2
+    },
+    {
+     "c": "Propone condiciones de compra coherentes (formación, volumen, registro de resultados, comunicación honesta)",
+     "p": 2
+    }
+   ]
+  },
+  {
+   "q": "La IA en colonoscopia se presenta como el mejor ejemplo de inteligencia artificial con evidencia en medicina. Explica qué demuestra y qué no demuestra esa evidencia, qué riesgos plantea su uso rutinario y cómo la implantarías en un servicio de endoscopia.",
+   "guia": "Se espera que manejes el metaanálisis de 44 ECA, la diferencia entre endpoint intermedio y beneficio clínico, el coste en pólipos benignos y la señal de deskilling, y que propongas una implantación con seguimiento.",
+   "modelo": "La detección de pólipos asistida por IA es el campo con más evidencia de nivel uno de toda la inteligencia artificial médica: un metaanálisis de 44 ensayos aleatorizados y 36.201 colonoscopias. La tasa de detección de adenomas sube del 36,7 % al 44,7 %, con un riesgo relativo de 1,21 (1,15 a 1,28). Es un resultado sólido y reproducido, y explica por qué se presenta como el mejor ejemplo disponible.\n\nLo que no demuestra es igual de importante. La neoplasia colorrectal avanzada por colonoscopia fue de 0,15 sin IA y 0,16 con IA, sin diferencia significativa. La IA encuentra más adenomas, sobre todo pequeños, que en su mayoría nunca habrían progresado, pero no más lesiones de las que acaban en cáncer. La ADR es un endpoint intermedio: mejora porque es fácil de medir, mientras que lo que importa al paciente, tener menos cáncer, no está demostrado.\n\nSu uso rutinario tiene además dos costes. El primero es inmediato: se resecan casi dos pólipos no neoplásicos de más por cada diez colonoscopias, con su riesgo de hemorragia y perforación. El segundo es más sutil. En cuatro centros polacos, la ADR de los endoscopistas explorando sin IA cayó del 28,4 % al 22,4 % tras tres meses de tenerla disponible, 6,0 puntos menos con p = 0,0089. El estudio es observacional y retrospectivo y no demuestra causalidad, pero es la primera señal de deskilling, la pérdida de competencia por delegación.\n\nSi tuviera que implantarla, lo haría sin vender un beneficio que no está probado, explicando a los profesionales qué mejora y qué no. Mantendría una medición periódica del rendimiento de cada endoscopista sin la IA, para detectar pronto cualquier deterioro, y registraría también los pólipos resecados innecesariamente y sus complicaciones. Y procuraría que el servicio participara en estudios que midan desenlaces relevantes, como la neoplasia avanzada o el cáncer de intervalo, en lugar de conformarse con la ADR.",
+   "rubrica": [
+    {
+     "c": "Describe la evidencia: 44 ECA, 36.201 colonoscopias, ADR 36,7 % a 44,7 %, RR 1,21",
+     "p": 2
+    },
+    {
+     "c": "Explica que no mejora la neoplasia avanzada y el concepto de endpoint intermedio",
+     "p": 2
+    },
+    {
+     "c": "Menciona el coste: casi dos pólipos no neoplásicos más por cada diez colonoscopias",
+     "p": 2
+    },
+    {
+     "c": "Describe la señal de deskilling con sus cifras y su limitación observacional",
+     "p": 2
+    },
+    {
+     "c": "Propone una implantación con seguimiento del rendimiento sin IA y de desenlaces relevantes",
+     "p": 2
+    }
+   ]
+  },
+  {
+   "q": "Una empresa ofrece a tu servicio un software de IA que marca en tiempo real las zonas seguras y peligrosas de disección en la colecistectomía, entrenado con vídeos de dos centros europeos y validado por concordancia con expertos. Razona qué nivel de evidencia tiene, qué riesgos de sesgo plantea, cómo se regula y quién respondería ante un error, y cómo debería evaluarse antes de su uso clínico.",
+   "guia": "Se espera que integres la situación de la IA intraoperatoria (prueba de concepto), el origen del sesgo, el marco MDR y Reglamento de IA, la responsabilidad según el nivel de autonomía y la secuencia IDEAL-D, DECIDE-AI y CONSORT-AI.",
+   "modelo": "Lo primero es situar el producto en la evidencia. Las aplicaciones de IA intraoperatoria, como las zonas Go y No-Go, la visión crítica de seguridad automatizada o el reconocimiento de fases, están en fase de prueba de concepto. No existe ningún ensayo aleatorizado que haya demostrado que un modelo de IA quirúrgica mejore resultados en pacientes operados. Validar por concordancia con expertos mide si el modelo se parece a nosotros, no si el paciente sale mejor.\n\nEl segundo problema es el sesgo. Un modelo supervisado no sabe medicina: reproduce el criterio de quien etiquetó sus datos. Entrenado con vídeos de dos centros europeos, es probable que falle fuera de ellos. El modelo Go/No-Go publicado, con 2.627 imágenes de 37 países, es el contraejemplo deseable. Y el estudio de Obermeyer recuerda que el sesgo también nace de la etiqueta: un algoritmo que usaba el gasto sanitario como medida de necesidad aprendió la desigualdad.\n\nEn cuanto a la regulación, el software sería un producto sanitario sujeto hoy al MDR, con marcado CE, evaluación clínica y vigilancia poscomercialización. Según el artículo 6.1 del Reglamento de IA, al ser producto del Anexo I con organismo notificado, sería de alto riesgo por definición, con exigencias de gobernanza de datos, trazabilidad y supervisión humana, aunque esas obligaciones están aplazadas a agosto de 2028. Como herramienta de apoyo de nivel 0-1, si el cirujano disecara en una zona marcada como segura y lesionara la vía biliar, la responsabilidad seguiría siendo íntegramente suya.\n\nPor tanto, no lo usaría en la práctica clínica habitual, sino dentro de una evaluación estructurada. IDEAL-D ordena el desarrollo del dispositivo; DECIDE-AI guía la primera evaluación clínica en vivo, con atención a cómo interactúan los cirujanos con el sistema; y SPIRIT-AI y CONSORT-AI permiten diseñar y publicar un ensayo que mida desenlaces de pacientes y analice los casos de error. Sin ese recorrido repetiríamos la historia de la indocianina: adopción primero, evidencia después.",
+   "rubrica": [
+    {
+     "c": "Lo sitúa como prueba de concepto y explica que la concordancia con expertos no demuestra beneficio clínico",
+     "p": 2
+    },
+    {
+     "c": "Explica el riesgo de sesgo por datos de pocos centros y por la etiqueta, con el ejemplo de Obermeyer o el contraejemplo Go/No-Go",
+     "p": 2
+    },
+    {
+     "c": "Describe el marco regulatorio: MDR hoy, alto riesgo por el Anexo I del Reglamento de IA y aplazamiento a 2028",
+     "p": 2
+    },
+    {
+     "c": "Atribuye correctamente la responsabilidad al cirujano en sistemas de nivel 0-1",
+     "p": 2
+    },
+    {
+     "c": "Propone la secuencia de evaluación IDEAL-D, DECIDE-AI y SPIRIT-AI/CONSORT-AI",
+     "p": 2
+    }
+   ]
+  }
+ ]
+}

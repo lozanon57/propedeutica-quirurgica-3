@@ -1,0 +1,823 @@
+{
+  "id": "t39",
+  "tema": "Tema 39",
+  "titulo": "El periodo intraoperatorio",
+  "subtitulo": "Parece el tema más aburrido del temario y es el que más vidas salva: casi todo lo que hacemos «por lógica» hay que medirlo antes de creérselo.",
+  "minutos": 40,
+  "bloquesTemario": [
+    "Equipo y anestesia",
+    "Monitorización",
+    "Preparación y asepsia",
+    "Abordaje y cierre",
+    "Seguridad quirúrgica"
+  ],
+  "objetivos": [
+    "Al terminar serás capaz de explicar qué reflejos se pierden en la anestesia local, regional y general, y por qué la general obliga a controlar la vía aérea.",
+    "Al terminar serás capaz de justificar la monitorización básica obligatoria, en especial la capnografía, y de explicar por qué el relajante muscular multiplica el riesgo de despertar intraoperatorio.",
+    "Al terminar serás capaz de pautar el ayuno con la regla 2-6-8, mantener la normotermia según NICE y decidir cómo retirar el vello y cuándo administrar y suspender la profilaxis antibiótica.",
+    "Al terminar serás capaz de clasificar las medidas de asepsia en las que reducen, no modifican o aumentan la infección de sitio quirúrgico, con su riesgo relativo aproximado.",
+    "Al terminar serás capaz de distinguir una variable subrogada de un desenlace clínico y de razonar el papel de la curva de aprendizaje con los ejemplos de la laparoscopia rectal y el TaTME.",
+    "Al terminar serás capaz de describir los tres momentos de la lista de verificación de la OMS e interpretar críticamente por qué funcionó en unos estudios y no en otros."
+  ],
+  "caso": {
+    "titulo": "Una hernia inguinal a las nueve de la mañana",
+    "narrativa": [
+      "Son las 8:40 de un martes. Eres el residente de primer año y el adjunto te ha pedido que «dejes preparado» al primer paciente del día: un varón de 74 años, diabético tipo 2 en tratamiento con semaglutida semanal, con obesidad (IMC 33) y una hernia inguinal derecha sintomática. La intervención, una hernioplastia programada, está prevista para las 9:00. El paciente acaba de llegar al antequirófano desde la planta.",
+      "Lees la hoja de enfermería. Lleva en ayunas absolutas, sin comida ni agua, desde las 22:00 del día anterior, porque la orden decía «nada por boca desde la cena». Está sediento y algo inquieto. La última dosis de semaglutida fue hace cinco días y en planta alguien ha anotado «valorar suspender la cirugía por el GLP-1». La temperatura registrada con termómetro timpánico es de 35,8 °C; la sala está fría.",
+      "En la hoja de órdenes figura: «rasurado de la zona inguinal con cuchilla en el antequirófano», «cefazolina 2 g IV al finalizar la intervención y mantener 24 horas» y «dejar drenaje aspirativo para vigilar la herida». El anestesiólogo comenta que duda entre una anestesia regional y una general, y la enfermera circulante te pregunta, mientras prepara el quirófano, si hoy «se va a hacer la lista o la firmamos al final como siempre».",
+      "El adjunto llegará en diez minutos. Tienes ese tiempo para revisar lo que está pautado y decidir qué mantienes, qué cambias y por qué."
+    ],
+    "datos": [
+      {
+        "k": "Edad y sexo",
+        "v": "74 años, varón"
+      },
+      {
+        "k": "Intervención",
+        "v": "Hernioplastia inguinal derecha programada a las 9:00"
+      },
+      {
+        "k": "Antecedentes",
+        "v": "Diabetes tipo 2 con semaglutida semanal; IMC 33"
+      },
+      {
+        "k": "Ayuno",
+        "v": "Sin comida ni agua desde las 22:00 (casi 11 horas)"
+      },
+      {
+        "k": "Temperatura",
+        "v": "35,8 °C con termómetro timpánico; quirófano frío"
+      },
+      {
+        "k": "Preparación de la piel",
+        "v": "Pautado rasurado con cuchilla en el antequirófano"
+      },
+      {
+        "k": "Profilaxis antibiótica",
+        "v": "Cefazolina 2 g al terminar y durante 24 horas"
+      },
+      {
+        "k": "Otros",
+        "v": "Drenaje aspirativo previsto «para vigilar»"
+      }
+    ],
+    "decision": "Son las 8:40 y la incisión será a las 9:00. ¿Qué órdenes cambias antes de que el paciente entre en quirófano, cuáles mantienes, y cómo justificarías cada decisión ante el adjunto?",
+    "discusion": [
+      "¿Tiene sentido que este paciente lleve once horas sin beber agua? ¿Y suspender la cirugía porque toma semaglutida?",
+      "¿Qué te dice, y qué no te dice, una temperatura timpánica de 35,8 °C? ¿Iniciarías la inducción así?",
+      "Rasurar el campo y prolongar el antibiótico «por si acaso» parecen prudentes. ¿Qué tendría que pasar para que una medida prudente aumentara el riesgo de infección?",
+      "La circulante propone firmar la lista al final. ¿Qué se pierde exactamente si se hace así?"
+    ]
+  },
+  "bloques": [
+    {
+      "titulo": "Equipo y anestesia",
+      "idea": "El quirófano es un sistema: el riesgo depende del equipo entero, y cada tipo de anestesia se define por lo que apaga.",
+      "secciones": [
+        {
+          "titulo": "El quirófano es un sistema, no una persona",
+          "texto": [
+            "En un quirófano trabajan al menos cinco funciones distintas. El cirujano principal dirige y responde del acto operatorio. Los ayudantes exponen el campo, una tarea que parece menor y es determinante, porque no se puede operar lo que no se ve. El anestesiólogo se ocupa de la vía aérea, la analgesia y la monitorización: su trabajo es que el paciente tolere lo que el cirujano le está haciendo. La instrumentista controla el instrumental y el **recuento** de gasas y agujas, y la enfermera circulante es el enlace con el exterior.",
+            "Los llamados **nunca-eventos** son raros: operar el lado equivocado ocurre aproximadamente una vez por cada cien mil procedimientos y dejar material dentro, una vez por cada diez mil. Lo interesante es lo que aparece cuando se analiza su causa raíz. No suele ser la torpeza del cirujano, sino un fallo de comunicación: alguien sabía algo y no lo dijo, o lo dijo y nadie le oyó. Esta idea es la que da sentido, al final del tema, a la lista de verificación de la OMS."
+          ],
+          "figura": "g_int_equipo",
+          "pie": "Las cinco funciones del equipo quirúrgico y la causa raíz que se repite en los nunca-eventos: la comunicación.",
+          "perla": "Cuando un error grave llega al paciente, la pregunta útil no es quién se equivocó, sino quién lo sabía y por qué no lo dijo."
+        },
+        {
+          "titulo": "Tipos de anestesia: qué se apaga en cada caso",
+          "texto": [
+            "La anestesia **local** actúa sobre una zona pequeña; el paciente está despierto y conserva todos sus reflejos, por lo que sirve para suturas o biopsias. La **regional** bloquea un territorio entero mediante una epidural, una intradural o un bloqueo de plexo; el paciente puede estar despierto o sedado, pero conserva la respiración espontánea y los reflejos de la vía aérea. Es la anestesia de la cesárea, de la cirugía de una extremidad o del abdomen inferior.",
+            "La anestesia **general** produce inconsciencia y, sobre todo, pérdida de los reflejos protectores. Ese es el punto crítico: sin tos ni cierre glótico, el paciente puede broncoaspirar, y por eso la general obliga a controlar la vía aérea. Tiene tres componentes que se dosifican por separado: hipnosis para que no se entere, analgesia para que no le duela y relajación muscular para que el cirujano pueda operar."
+          ],
+          "figura": "g_int_anestesia",
+          "pie": "Local, regional y general se diferencian por lo que conserva el paciente; la general tiene tres componentes independientes.",
+          "perla": "Lo que obliga a manejar la vía aérea no es la inconsciencia en sí, sino la pérdida de los reflejos que la protegen."
+        },
+        {
+          "titulo": "Una intuición que no resistió el ensayo",
+          "texto": [
+            "Parece evidente que a un anciano de noventa años con una fractura de cadera le conviene más una anestesia regional que una general: menos fármaco, menos delirio. La hipótesis se puso a prueba en dos ensayos grandes, REGAIN, con unos 1.600 pacientes, y RAGA, con unos 950. Ninguno encontró diferencias en mortalidad, en la recuperación de la marcha ni en el delirio, que apareció en el 20,5 % con regional y en el 19,7 % con general.",
+            "La lección no es que la regional sea mala, sino que la elección debe hacerse por otros motivos y no por una supuesta protección frente al delirio que no se ha demostrado. Es el primer ejemplo de una idea que recorre todo el tema: muchas cosas que tienen toda la lógica no funcionan, y la única forma de saberlo es medirlas."
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "Monitorización",
+      "idea": "Se vigila lo que puede matar en minutos, y la capnografía es el monitor que más vidas salva por lo poco que cuesta.",
+      "secciones": [
+        {
+          "titulo": "Monitorización básica y avanzada",
+          "texto": [
+            "La monitorización básica se aplica a todos los pacientes: electrocardiograma, presión arterial al menos cada cinco minutos, pulsioximetría, **capnografía** y temperatura. La capnografía mide el dióxido de carbono espirado, y su valor es único: si el tubo está en el esófago en lugar de en la tráquea, no hay curva. Ninguna otra monitorización detecta esa situación con la misma fiabilidad y rapidez.",
+            "La cuarta auditoría nacional británica de la vía aérea (NAP4) concluyó que la falta de uso de la capnografía contribuyó al 74 % de los casos de muerte o daño neurológico permanente. La monitorización avanzada se añade cuando hace falta: línea arterial para ver la presión latido a latido y obtener gasometrías, catéter venoso central, índice biespectral (BIS) y monitorización cuantitativa del bloqueo neuromuscular."
+          ],
+          "figura": "g_int_monitorizacion",
+          "pie": "Monitorización básica en todos los pacientes y avanzada cuando hace falta; sin capnografía se concentran las muertes por vía aérea.",
+          "perla": "Sin curva de capnografía tras intubar, el tubo está en el esófago hasta que se demuestre lo contrario."
+        },
+        {
+          "titulo": "Bloqueo residual y broncoaspiración",
+          "texto": [
+            "El relajante muscular no siempre se ha eliminado cuando se retira el tubo. En el estudio RECITE, con el anestesiólogo ciego al valor del monitor, el 63,5 % de los pacientes se extubó con un cociente de tren de cuatro (TOF) inferior a 0,9, es decir, todavía parcialmente relajado. El juicio clínico no basta para detectar el **bloqueo residual**, y por eso existe la monitorización cuantitativa.",
+            "La broncoaspiración tiene un contexto que conviene conocer: ocurre en aproximadamente uno de cada 3.886 pacientes en cirugía programada, pero en uno de cada 895 en cirugía urgente, unas cuatro veces más. La diferencia se explica por el estómago lleno del paciente urgente, que no ha podido ayunar."
+          ],
+          "perla": "El riesgo de aspiración se concentra en la urgencia, no en el paciente programado que ha bebido agua dos horas antes."
+        },
+        {
+          "titulo": "Despertar intraoperatorio",
+          "texto": [
+            "Según el quinto proyecto nacional de auditoría británico (NAP5), el despertar intraoperatorio ocurre globalmente en una de cada 19.600 anestesias generales. Pero cambia por completo según se use relajante: uno de cada 8.200 con bloqueo neuromuscular frente a uno de cada 135.900 sin él, unas dieciséis veces menos. En la cesárea llega a uno de cada 670, porque se intenta dar poco hipnótico para no deprimir al recién nacido y a menudo se trabaja con prisa. El 75 % de los episodios dura menos de cinco minutos, pero el 41 % de esos pacientes queda con secuelas a largo plazo.",
+            "El mecanismo es la clave conceptual: el relajante **no despierta a nadie, suprime la señal de alarma**. Si el paciente no está relajado y empieza a despertar, se mueve, el anestesiólogo lo ve y profundiza. Con relajante, puede estar consciente sin ninguna manera de avisar. En cuanto al BIS, el ensayo BAG-RECALL (6.041 pacientes) registró un 0,24 % de despertar con BIS frente a un 0,07 % con un protocolo de alarma por concentración teleespiratoria de anestésico. Como era un ensayo de superioridad, lo demostrado es que el BIS no fue superior: le gana a guiarse por signos clínicos, pero no a un protocolo bien hecho."
+          ],
+          "figura": "g_int_despertar",
+          "pie": "Incidencia de despertar intraoperatorio global, con y sin relajante y en la cesárea (NAP5); el relajante suprime la señal de alarma."
+        }
+      ]
+    },
+    {
+      "titulo": "Preparación y asepsia",
+      "idea": "Es el bloque con más correcciones: ayunar de más, enfriar, rasurar o prolongar el antibiótico añaden riesgo sin añadir beneficio.",
+      "secciones": [
+        {
+          "titulo": "Ayuno preoperatorio: la regla 2-6-8",
+          "texto": [
+            "La guía de la ASA de 2023 establece la **regla 2-6-8**: líquidos claros hasta dos horas antes, comida ligera hasta seis y comida grasa o carne hasta ocho. En el lactante, leche materna cuatro horas y fórmula seis. Líquidos claros significa agua, té o café sin leche y zumo sin pulpa. En 31 ensayos con líquidos claros hasta dos horas antes no se notificó ni una sola aspiración. El consenso internacional de 2026, con 68 participantes de cinco continentes y pacientes en el panel, va más lejos y recomienda permitir líquidos claros a menos de dos horas, en la práctica hasta que se llama al paciente a quirófano.",
+            "El problema real es el contrario: los pacientes ayunan más de 14 horas de comida y más de 9 de bebida, porque el quirófano se retrasa, nadie actualiza la orden o se mantiene «por si acaso». El riesgo que se pretende evitar no cambia, porque el estómago está vacío de líquidos claros a las dos horas, y los daños sí son reales: deshidratación, hipoglucemia, resistencia a la insulina, sed, ansiedad y malestar.",
+            "Los agonistas del GLP-1, como la semaglutida, retrasan el vaciado gástrico: la odds ratio de encontrar contenido gástrico residual es de 5,96. Sin embargo, la de **aspiración** es de 1,04, sin aumento, en unos 185.000 pacientes. Por eso la guía multisociedad permite mantener el fármaco estratificando el riesgo, en lugar de suspenderlo y cancelar la cirugía. Es un ejemplo perfecto de no confundir un hallazgo intermedio con un desenlace clínico."
+          ],
+          "figura": "g_int_ayuno",
+          "pie": "La regla 2-6-8 frente al ayuno real de los pacientes, y el efecto de la semaglutida sobre el vaciado gástrico.",
+          "perla": "«Nada por boca desde medianoche» paga un precio cierto por un beneficio inexistente."
+        },
+        {
+          "titulo": "Normotermia y posición",
+          "texto": [
+            "Kurz (1996) aleatorizó a 200 pacientes de cirugía colorrectal: los que terminaron a 34,7 °C tuvieron un 19 % de infección de herida frente a un 6 % de los mantenidos a 36,6 °C (p = 0,009), y 2,6 días más de ingreso. La hipotermia produce vasoconstricción cutánea, con menos oxígeno en la herida, deprime la función de los neutrófilos y aumenta el sangrado en torno a un 16 % por cada grado. PROTECT (2022, 5.013 pacientes) no encontró diferencias, pero comparó 37,1 °C con 35,6 °C: los dos brazos estaban calentados activamente. La lectura conjunta es que **PROTECT no refuta a Kurz, le pone un suelo**: no hace falta perseguir los 37 °C, basta con no bajar de unos 35,5 °C.",
+            "La guía NICE define hipotermia como temperatura central inferior a 36 °C y no permite iniciar la inducción por debajo de esa cifra salvo urgencia clínica. Se mide cada 30 minutos en quirófano y cada 15 en reanimación, el quirófano debe estar al menos a 21 °C y los fluidos y hemoderivados se calientan a 37 °C. Los estimadores indirectos, como el termómetro timpánico, el frontal o las tiras, no son válidos. En cuanto a la posición, la lesión del plexo braquial por hiperabducción del brazo es completamente evitable."
+          ],
+          "figura": "g_int_temperatura",
+          "pie": "Kurz demuestra el daño de enfriar al paciente; PROTECT muestra que calentar por encima de 35,6 °C no añade beneficio.",
+          "perla": "Una cifra timpánica no sirve para decidir la inducción: hace falta temperatura central."
+        },
+        {
+          "titulo": "Asepsia: lo que funciona, lo que da igual y lo que empeora",
+          "texto": [
+            "Funcionan la clorhexidina alcohólica frente a la povidona acuosa (infección 9,5 % frente a 16,1 %, RR aproximado 0,59) y el antibiótico oral en cirugía de recto (RR aproximado 0,45). Un matiz: Darouiche comparó clorhexidina con alcohol frente a povidona sin alcohol, de modo que no se sabe cuánto efecto es del alcohol, y el CDC habla de «un agente de base alcohólica». En la preparación de colon, el principio activo es el antibiótico oral y no el lavado mecánico.",
+            "Dan igual la ducha preoperatoria con clorhexidina (RR 0,91), el protector de herida (ensayo ROSSINI, 760 pacientes) y el **drenaje profiláctico** en anastomosis colorrectal: once ensayos y 1.803 pacientes con un RR de fuga de 1,14. El drenaje ni protege ni avisa, porque cuando el contenido intestinal llega a él la fuga ya es evidente o el drenaje se ha tabicado; un drenaje limpio da falsa seguridad. La sonda nasogástrica de rutina tampoco hace lo que se le supone, y el oxígeno al 80 % fue degradado por la OMS de recomendación fuerte a condicional en 2018.",
+            "Empeoran el paño adhesivo de plástico (RR 1,23, intervalo que no cruza el 1) y el **rasurado con cuchilla** (RR 1,82 frente a no retirar el vello, unas 17 infecciones más por cada 1.000 pacientes). La cuchilla produce microcortes en los que las bacterias se multiplican durante las horas previas a la incisión. Lo correcto es no retirar el vello y, si estorba de verdad, usar maquinilla eléctrica el mismo día."
+          ],
+          "figura": "g_int_asepsia",
+          "pie": "Forest plot de medidas de asepsia: arriba las que reducen la infección, en medio las neutras y abajo las que la aumentan.",
+          "perla": "Rasurar la noche anterior es todavía peor que hacerlo en el antequirófano: se da a las bacterias toda la noche."
+        },
+        {
+          "titulo": "La ventana del antibiótico es una U",
+          "texto": [
+            "La profilaxis antibiótica es una de las intervenciones con mejor relación coste-beneficio de la cirugía, y su riesgo tiene forma de U. Administrarla entre 120 y 60 minutos antes de la incisión o entre 60 y 0 da el mismo resultado. Darla después de la incisión casi duplica la infección (OR 1,89), porque el momento crítico es la incisión, cuando se contamina el campo. Darla más de 120 minutos antes la multiplica por cinco (OR 5,26), porque cuando se abre la cefazolina ya se ha eliminado. Demasiado pronto es casi tan malo como no ponerla.",
+            "Tres reglas. Primera: el antibiótico tiene que estar **en el tejido en el momento de la incisión**. Segunda: se redosifica si la operación dura más de dos semividas del fármaco o si hay un sangrado importante. Tercera, la que más se incumple: se **suspende al cerrar**. Prolongarla no reduce la infección (RR 0,89 en el global de 52 ensayos y unos 19.000 pacientes; RR 1,04 en los ensayos con buena práctica actual) y sí genera resistencias y colitis por Clostridioides. El CDC lo dice en su categoría más fuerte: no se prolonga «incluso en presencia de un drenaje».",
+            "La relevancia es práctica: en España, la infección tras cirugía colorrectal ronda el 14,4 %, y pasa del 16,7 % cuando no se aplica ninguna de las seis medidas del paquete preventivo al 6,2 % cuando se aplican todas (OR 0,331)."
+          ],
+          "figura": "g_int_antibiotico",
+          "pie": "El antibiótico se administra en la hora previa para estar en el tejido al cortar la piel, y se suspende al cerrar.",
+          "perla": "Llevar un drenaje no es motivo para seguir dando antibiótico."
+        }
+      ]
+    },
+    {
+      "titulo": "Abordaje y cierre",
+      "idea": "Cada vía de abordaje paga un precio distinto, y las técnicas nuevas deben juzgarse por desenlaces reales y no por subrogados ni por entusiasmo.",
+      "secciones": [
+        {
+          "titulo": "Vías de abordaje y la trampa del subrogado",
+          "texto": [
+            "La cirugía **abierta** permite verlo y tocarlo todo, y el tacto de un cirujano experimentado sigue detectando cosas que la cámara no ve; su precio es una pared abdominal dañada, más dolor y una recuperación larga. La **endoscópica** usa incisiones de 5 a 12 mm, con menos dolor y estancia, a cambio de una curva de aprendizaje de años, un equipamiento caro y la pérdida del tacto. La **transorificial** entra por la boca, la vagina o el ano, sin cicatriz externa; el NOTES puro fracasó, y lo que sobrevivió fue su descendiente endoluminal, el POEM para la acalasia, hoy práctica estándar.",
+            "Dos ensayos, uno americano y otro australiano, compararon laparoscopia y cirugía abierta en cáncer de recto y concluyeron que la laparoscopia no cumplía el criterio de no inferioridad. Medían un desenlace compuesto patológico: integridad del mesorrecto y márgenes negativos, es decir, una **variable subrogada**. Al seguir a los mismos pacientes, la supervivencia libre de enfermedad y la recidiva local a dos años fueron prácticamente iguales (4,6 % frente a 4,5 %). El subrogado decía que la laparoscopia era peor; el desenlace real, que daba igual."
+          ],
+          "figura": "g_int_abordajes",
+          "pie": "Ventajas (verde) y precio (rojo) de las vías abierta, endoscópica y transorificial.",
+          "perla": "Una variable subrogada no es el desenlace: a veces lo predice y en cirugía, bastante a menudo, no."
+        },
+        {
+          "titulo": "TaTME: cuando una técnica se difunde sin control",
+          "texto": [
+            "La escisión total del mesorrecto por vía transanal (TaTME) aborda el recto desde abajo y resuelve un problema real: llegar al recto bajo en un varón obeso con pelvis estrecha. Se difundió deprisa. En 2019, Noruega comunicó una recidiva local del 11,6 % frente al 2,4 % de su registro nacional (HR 6,71). Lo alarmante fue el patrón: 8 de 12 recidivas eran **multifocales**, algo que sugiere siembra tumoral más que una escisión incompleta. Noruega suspendió la técnica a nivel nacional.",
+            "La auditoría externa holandesa de 624 pacientes mostró una recidiva local a tres años del 9,7 % en los diez primeros casos de cada centro, del 3,3 % entre el caso 11 y el 40 y del 3,5 % a partir del 41; la experiencia fue un factor independiente. El problema era la implantación, pero esa conclusión es incompleta: los pacientes de los diez primeros casos eran pacientes, no una curva. Hoy el TaTME se hace en centros expertos con formación estructurada, tutorización y auditoría. COLOR III muestra una seguridad a corto plazo excelente (conversión del 1 % frente al 17 %), pero su resultado oncológico a tres años aún no está publicado."
+          ],
+          "figura": "g_int_tatme",
+          "pie": "Recidiva local a tres años según la experiencia del centro en TaTME y cronología de la alarma noruega a COLOR III."
+        },
+        {
+          "titulo": "Cierre de la pared: small bites",
+          "texto": [
+            "La técnica clásica de cierre de la laparotomía usa puntos grandes, de un centímetro, separados un centímetro. La técnica **small bites** usa puntos de 5 mm separados 5 mm: la mitad de tejido por punto y el doble de puntos. El punto grande estrangula más tejido dentro de cada lazada, que se necrosa, y reparte la fuerza entre menos puntos; con puntos pequeños y numerosos la tensión se reparte y no se isquemiza nada. Desde 1993 se sabe que la relación entre longitud de sutura y longitud de herida debe ser de al menos 4:1: por debajo, la hernia pasa del 9,0 % al 23,7 %.",
+            "El ensayo STITCH (Lancet, 2015) obtuvo un 13 % de hernia incisional al año con small bites frente a un 21 % con puntos grandes (OR ajustada 0,52). El ensayo ESTOIH, con 425 pacientes y cinco años de seguimiento, no encontró diferencia significativa (9,1 % frente a 13,9 %, p = 0,155), aunque la tendencia favorecía al small bites. La afirmación correcta es que **la mejor evidencia lo favorece, pero descansa sobre un único ensayo** que un segundo no confirmó. En pacientes de alto riesgo, como el aneurisma de aorta o la obesidad, la malla profiláctica sí tiene un efecto grande: hernia a dos años del 13 % frente al 30 % (PRIMA)."
+          ],
+          "figura": "g_int_cierre",
+          "pie": "Puntos grandes y separados frente a puntos pequeños y juntos: hernia al año y relación hebra/herida.",
+          "perla": "Una herida de 20 cm necesita al menos 80 cm de sutura."
+        }
+      ]
+    },
+    {
+      "titulo": "Seguridad quirúrgica",
+      "idea": "La lista de verificación de la OMS no es un amuleto: funciona por la conversación que obliga a tener, no por la firma.",
+      "secciones": [
+        {
+          "titulo": "El dato que todos citan mal",
+          "texto": [
+            "El estudio original de Haynes (2009), en ocho hospitales de ocho países, mostró un descenso de complicaciones del 11,0 % al 7,0 % y de mortalidad del 1,5 % al 0,8 %. Son reducciones **relativas** del 36 % y del 47 %; en términos absolutos, 4,0 y 0,7 puntos. El famoso «hasta un 40 %» mezcla dos números que miden cosas distintas. Además, el diseño era antes-después sin grupo control: cualquier otra mejora de esos hospitales en ese periodo se atribuyó a la lista.",
+            "En Ontario (Urbach, 2014), con 101 hospitales, más de 200.000 procedimientos y adopción obligatoria por decreto, la mortalidad pasó del 0,71 % al 0,65 % (p = 0,13) y las complicaciones quedaron prácticamente idénticas (p = 0,29). El efecto desapareció. El único ensayo aleatorizado, noruego, con implantación real y formación del equipo, redujo las complicaciones del 19,9 % al 11,5 %, aunque la mortalidad global no bajó de forma significativa."
+          ],
+          "figura": "g_int_who",
+          "pie": "Haynes 2009 frente a Urbach 2014: el efecto de la lista desaparece cuando se impone por decreto sin trabajo de implantación.",
+          "perla": "La propia OMS habla hoy de «más de un 30 %», no del 40 %."
+        },
+        {
+          "titulo": "Tres momentos y aplanar la jerarquía",
+          "texto": [
+            "La **entrada** se hace antes de dormir al paciente, mientras todavía puede confirmar quién es y qué le van a hacer: identidad, procedimiento y sitio, marcaje, alergias, vía aérea difícil y riesgo de sangrado. La **pausa** se hace antes de la incisión y es el momento clave: todo el equipo parado, cada uno se presenta por nombre y función, se confirma en voz alta paciente, sitio y procedimiento, y se comprueba que el antibiótico se administró en los últimos 60 minutos. La **salida** se hace antes de que nadie abandone el quirófano: procedimiento realizado, recuento de gasas y agujas, etiquetado de muestras en voz alta y plan de recuperación.",
+            "Presentarse por el nombre no es cortesía. En el quirófano hay una jerarquía muy marcada, y quien más a menudo detecta el error no es el cirujano, sino la enfermera circulante o el residente. Que alguien te haya dicho su nombre y su función en voz alta hace más fácil interrumpirle. A eso se le llama aplanar la jerarquía."
+          ],
+          "figura": "g_int_checklist",
+          "pie": "Entrada, pausa y salida de la lista de la OMS, y por qué presentarse por el nombre forma parte de la seguridad."
+        },
+        {
+          "titulo": "Firmada no es hecha",
+          "texto": [
+            "Cuando se han colocado cámaras en el quirófano para ver qué se hace realmente, solo se completa el 47 % de los ítems de la lista, mientras que en la historia clínica consta el 89 %. La mitad de las listas están firmadas y no hechas, y ahí está la explicación más razonable de Ontario: lo que se midió fue la firma, no la conducta.",
+            "La lista es un guion de conversación. Si no hay conversación, no hay efecto. Esta es también la síntesis del tema entero: el drenaje, el paño adhesivo, el rasurado o el reposo en la trombosis tenían toda la lógica y resultaron falsos, y la lista, que parece burocracia, solo funciona cuando cambia lo que el equipo hace."
+          ],
+          "perla": "Una lista firmada al final de la operación no ha protegido a nadie durante ella."
+        }
+      ]
+    }
+  ],
+  "resolucion": [
+    "Empieza por lo que puedes arreglar en minutos. El paciente lleva casi once horas sin beber, algo que la regla 2-6-8 no exige y que el consenso de 2026 considera innecesario: podía haber tomado agua hasta dos horas antes, y la orden debe corregirse para los siguientes pacientes. La semaglutida no justifica suspender la cirugía: retrasa el vaciado gástrico (OR 5,96 de contenido residual) pero no aumenta la aspiración (OR 1,04), y la guía multisociedad permite mantenerla estratificando el riesgo. La temperatura timpánica no es válida: hay que medir la temperatura central, calentar al paciente y la sala, y no iniciar la inducción por debajo de 36 °C salvo urgencia.",
+    "En la preparación hay que cambiar tres órdenes. El rasurado con cuchilla se anula (RR 1,82, unas 17 infecciones más por cada 1.000): no se retira el vello y, solo si estorba, se usa maquinilla eléctrica en ese momento. La cefazolina no puede darse al terminar, porque después de la incisión la infección casi se duplica (OR 1,89): debe administrarse ya, entre las 8:40 y las 9:00, para que esté en el tejido al incidir, y suspenderse al cerrar, porque prolongarla 24 horas no reduce la infección y genera resistencias. El drenaje «para vigilar» no tiene respaldo y tampoco justificaría prolongar el antibiótico.",
+    "La elección entre regional y general debe hacerse por criterios clínicos y de preferencia, no por una protección frente al delirio que REGAIN y RAGA no demostraron. Y a la enfermera circulante la respuesta es clara: la lista se hace en sus tres momentos, la entrada antes de dormirle, la pausa con todo el equipo parado y presentándose antes de cortar, y la salida antes de que nadie se vaya. Firmarla al final es exactamente lo que vació de efecto la lista en Ontario. Tres decisiones de pocos segundos en una hernia de rutina cambian el riesgo de infección de este paciente."
+  ],
+  "claves": [
+    "La regla del ayuno es 2-6-8: líquidos claros 2 horas, comida ligera 6 y comida grasa 8; ayunar más no añade seguridad.",
+    "La semaglutida aumenta el contenido gástrico residual pero no la aspiración, y puede mantenerse con estratificación del riesgo.",
+    "La capnografía es el único monitor que detecta con fiabilidad la intubación esofágica; su ausencia contribuyó al 74 % de las muertes o daños graves por vía aérea en NAP4.",
+    "El relajante muscular multiplica el despertar intraoperatorio porque suprime la señal de alarma del movimiento, y el BIS no supera a un protocolo de gas teleespiratorio.",
+    "Hipotermia es temperatura central inferior a 36 °C; no hay que perseguir los 37 °C, pero sí evitar caer por debajo de unos 35,5 °C.",
+    "Rasurar con cuchilla (RR 1,82) y el paño adhesivo (RR 1,23) aumentan la infección; lo mejor es no retirar el vello.",
+    "La profilaxis antibiótica debe estar en el tejido al incidir, se redosifica en cirugías largas o con sangrado y se suspende al cerrar, aunque haya drenaje.",
+    "El drenaje profiláctico en anastomosis colorrectal ni protege ni avisa de la fuga.",
+    "Small bites redujo la hernia del 21 % al 13 % en STITCH, pero ESTOIH no lo confirmó; la relación sutura/herida debe ser al menos 4:1.",
+    "La lista de la OMS funciona cuando se hace de verdad, con el equipo hablando en voz alta, y no cuando solo se firma."
+  ],
+  "glosario": [
+    {
+      "t": "Nunca-evento",
+      "d": "Error grave y prevenible que no debería ocurrir nunca, como operar el lado equivocado o dejar material dentro del paciente."
+    },
+    {
+      "t": "Capnografía",
+      "d": "Medición continua del CO2 espirado; su ausencia de curva tras intubar indica intubación esofágica."
+    },
+    {
+      "t": "TOF (tren de cuatro)",
+      "d": "Prueba de estimulación nerviosa que cuantifica el bloqueo neuromuscular; un cociente inferior a 0,9 indica bloqueo residual."
+    },
+    {
+      "t": "BIS",
+      "d": "Índice biespectral: monitor derivado del electroencefalograma que estima la profundidad hipnótica."
+    },
+    {
+      "t": "CAM teleespiratoria",
+      "d": "Concentración alveolar mínima del anestésico inhalado medida al final de la espiración; base de los protocolos de alarma frente al despertar."
+    },
+    {
+      "t": "Despertar intraoperatorio",
+      "d": "Consciencia con recuerdo durante una anestesia general, más frecuente con relajante muscular y en la cesárea."
+    },
+    {
+      "t": "Líquidos claros",
+      "d": "Agua, té o café sin leche y zumo sin pulpa; pueden tomarse hasta dos horas antes de la anestesia."
+    },
+    {
+      "t": "Normotermia",
+      "d": "Temperatura central de 36 °C o más; por debajo se habla de hipotermia perioperatoria."
+    },
+    {
+      "t": "Tricotomía",
+      "d": "Retirada del vello del campo quirúrgico; si es necesaria, con maquinilla eléctrica el mismo día y nunca con cuchilla."
+    },
+    {
+      "t": "Profilaxis antibiótica",
+      "d": "Dosis de antibiótico administrada para que esté en el tejido en el momento de la incisión y suspendida al cerrar."
+    },
+    {
+      "t": "Variable subrogada",
+      "d": "Medida intermedia que se usa porque se cree que predice el desenlace que importa al paciente, aunque a menudo no lo hace."
+    },
+    {
+      "t": "TaTME",
+      "d": "Escisión total del mesorrecto por vía transanal, que aborda el recto desde abajo."
+    },
+    {
+      "t": "Small bites",
+      "d": "Cierre de la laparotomía con puntos de 5 mm separados 5 mm."
+    },
+    {
+      "t": "Relación sutura/herida",
+      "d": "Cociente entre la longitud de hebra empleada y la longitud de la incisión; debe ser al menos 4:1."
+    },
+    {
+      "t": "Aplanar la jerarquía",
+      "d": "Reducir las barreras de autoridad para que cualquier miembro del equipo se atreva a señalar un error."
+    }
+  ],
+  "referencias": [
+    "Haynes AB et al. N Engl J Med. 2009. PMID 19144931",
+    "Urbach DR et al. N Engl J Med. 2014. PMID 24620866",
+    "Haugen AS et al. Ann Surg. 2015. PMID 24824415",
+    "Møller KE et al. Surg Endosc. 2025. PMID 40676297",
+    "Hempel S et al. JAMA Surg. 2015. PMID 26061125",
+    "Joshi GP et al. Anesthesiology. 2023. PMID 36629465",
+    "Rüggeberg A et al. Anaesthesia. 2026. PMID 41657234",
+    "Elkin J et al. Anaesthesia. 2025. PMID 40230298",
+    "Kurz A et al. N Engl J Med. 1996. PMID 8606715",
+    "Sessler DI et al. PROTECT. Lancet. 2022. PMID 35390321",
+    "Tanner J et al. Cochrane Database Syst Rev. 2021. PMID 34437723",
+    "Webster J et al. Cochrane Database Syst Rev. 2015. PMID 25901509",
+    "Webster J et al. Cochrane Database Syst Rev. 2015. PMID 25927093",
+    "Darouiche RO et al. N Engl J Med. 2010. PMID 20054046",
+    "de Jonge SW et al. Medicine. 2017. PMID 28723736",
+    "de Jonge SW et al. Lancet Infect Dis. 2020. PMID 32470329",
+    "Pandit JJ et al. NAP5. Br J Anaesth. 2014. PMID 25204697",
+    "Avidan MS et al. BAG-RECALL. N Engl J Med. 2011. PMID 21848460",
+    "Cook TM et al. NAP4. Br J Anaesth. 2011. PMID 21447489",
+    "Fortier LP et al. RECITE. Anesth Analg. 2015. PMID 25902322",
+    "Warner MA et al. Anesthesiology. 1993. PMID 8424572",
+    "Deerenberg EB et al. STITCH. Lancet. 2015. PMID 26188742",
+    "Fortelny RH et al. ESTOIH. Hernia. 2025. PMID 40879826",
+    "Israelsson LA et al. Br J Surg. 1993. PMID 8242299",
+    "Jairam AP et al. PRIMA. Lancet. 2017. PMID 28641875",
+    "Zhang HY et al. Int J Colorectal Dis. 2016. PMID 26833470",
+    "Wasmuth HH et al. Br J Surg. 2020. PMID 31802481",
+    "van Oostendorp SE et al. Colorectal Dis. 2021. PMID 33969621",
+    "Badia JM et al. Int J Surg. 2023. PMID 36917127"
+  ],
+  "test": [
+    {
+      "q": "En el estudio de Haynes (2009) las complicaciones bajaron del 11,0 % al 7,0 % tras implantar la lista de la OMS. ¿Cuál es la reducción ABSOLUTA del riesgo?",
+      "o": [
+        "36 %",
+        "4 puntos porcentuales",
+        "40 %",
+        "7 puntos porcentuales"
+      ],
+      "c": 1,
+      "e": [
+        "El 36 % es la reducción relativa (4/11), no la absoluta.",
+        "Correcta: 11,0 menos 7,0 son 4 puntos porcentuales, la reducción absoluta.",
+        "El «40 %» es una cifra mal citada que mezcla las reducciones relativas de complicaciones (36 %) y mortalidad (47 %).",
+        "7 % es el riesgo final de complicaciones, no la diferencia entre los dos periodos."
+      ]
+    },
+    {
+      "q": "En Ontario la lista de la OMS se impuso por decreto en 101 hospitales y no cambió ni la mortalidad (p = 0,13) ni las complicaciones (p = 0,29). ¿Qué explicación es más coherente con el resto de la evidencia?",
+      "o": [
+        "La lista carece de efecto real y el estudio de Haynes era un falso positivo sin más.",
+        "La mortalidad basal de Ontario era tan alta que ninguna intervención podía reducirla.",
+        "El único ensayo aleatorizado sobre la lista también fue negativo para complicaciones.",
+        "Se midió la firma y no la conducta: cuando se observa con cámaras se completa el 47 % de los ítems frente al 89 % registrado."
+      ],
+      "c": 3,
+      "e": [
+        "Es demasiado radical: el ensayo noruego con implantación real redujo las complicaciones del 19,9 % al 11,5 %.",
+        "Falso: la mortalidad basal en Ontario era baja (0,71 %), no alta.",
+        "Falso: el ensayo aleatorizado noruego sí redujo las complicaciones de forma significativa.",
+        "Correcta: la lista firmada pero no hecha explica que su efecto desaparezca cuando se impone como un papel."
+      ]
+    },
+    {
+      "q": "Tras intubar a un paciente, la saturación se mantiene en el 98 % gracias a la preoxigenación, pero el capnógrafo no muestra ninguna curva. ¿Cuál es la interpretación prioritaria?",
+      "o": [
+        "El tubo está probablemente en el esófago y hay que comprobarlo de inmediato.",
+        "La saturación normal descarta un problema de la vía aérea.",
+        "Es un artefacto habitual que se corrige solo en unos minutos.",
+        "Indica un despertar intraoperatorio incipiente."
+      ],
+      "c": 0,
+      "e": [
+        "Correcta: la ausencia de curva de CO2 espirado es el signo más fiable y rápido de intubación esofágica.",
+        "Falso: tras preoxigenar, la saturación puede mantenerse varios minutos aunque el tubo esté en el esófago; por eso se necesita la capnografía.",
+        "Peligroso: esperar ante una capnografía plana es exactamente el error que NAP4 relacionó con muertes y daño neurológico.",
+        "El despertar no elimina la curva de capnografía; la ausencia de curva indica que no llega CO2 al sensor."
+      ]
+    },
+    {
+      "q": "Según NAP5, el despertar intraoperatorio es unas dieciséis veces más frecuente con bloqueo neuromuscular (1:8.200) que sin él (1:135.900). ¿Cuál es el mecanismo?",
+      "o": [
+        "El relajante acelera el metabolismo del hipnótico.",
+        "El relajante tiene un efecto estimulante directo sobre la corteza.",
+        "El relajante suprime el movimiento, que es la señal que alerta al anestesiólogo de que el paciente se está despertando.",
+        "Con relajante se usan siempre dosis más bajas de analgésico."
+      ],
+      "c": 2,
+      "e": [
+        "No es el mecanismo descrito; el relajante no modifica la eliminación del hipnótico.",
+        "Falso: el relajante no despierta a nadie; actúa en la placa motora, no en el cerebro.",
+        "Correcta: sin relajante, el paciente que empieza a despertar se mueve y el anestesiólogo profundiza; con él, puede estar consciente sin poder avisar.",
+        "No explica el fenómeno; el despertar depende del componente hipnótico, y la clave es la pérdida de la señal de alarma."
+      ]
+    },
+    {
+      "q": "En BAG-RECALL (n = 6.041), un ensayo de superioridad, el despertar fue del 0,24 % con BIS y del 0,07 % con un protocolo de alarma por concentración teleespiratoria de anestésico. ¿Qué conclusión es correcta?",
+      "o": [
+        "El protocolo de gas teleespiratorio es superior al BIS.",
+        "El BIS no fue superior al protocolo de gas teleespiratorio.",
+        "El BIS aumenta el riesgo de despertar y debe abandonarse.",
+        "El BIS no aporta nada frente a guiarse por signos clínicos."
+      ],
+      "c": 1,
+      "e": [
+        "Un ensayo de superioridad negativo no demuestra que el comparador sea mejor; eso no está probado.",
+        "Correcta: lo único demostrado es que el BIS no fue superior al protocolo.",
+        "La diferencia numérica no basta para afirmar que el BIS sea dañino.",
+        "Falso: según el propio razonamiento del tema, el BIS sí supera a guiarse solo por signos clínicos."
+      ]
+    },
+    {
+      "q": "Una paciente sana tiene programada una colecistectomía a las 15:00. Según la guía de la ASA de 2023, ¿hasta qué hora puede beber agua como mínimo?",
+      "o": [
+        "Hasta la medianoche anterior",
+        "Hasta las 9:00",
+        "Hasta las 13:00",
+        "No debe beber nada el día de la intervención"
+      ],
+      "c": 2,
+      "e": [
+        "«Nada por boca desde medianoche» es la práctica que la evidencia ha desmontado.",
+        "Seis horas es el límite para comida ligera, no para líquidos claros.",
+        "Correcta: líquidos claros hasta dos horas antes; el consenso de 2026 incluso permite apurar hasta la llamada a quirófano.",
+        "Falso: en 31 ensayos con líquidos claros hasta dos horas antes no se notificó ninguna aspiración."
+      ]
+    },
+    {
+      "q": "Un paciente con semaglutida semanal va a ser operado de forma programada. Un metaanálisis mostró una OR de 5,96 para contenido gástrico residual y de 1,04 para aspiración. ¿Qué actitud es más coherente?",
+      "o": [
+        "Cancelar siempre la cirugía hasta suspender el fármaco varias semanas.",
+        "Ignorar el fármaco porque no tiene ningún efecto sobre el estómago.",
+        "Exigir una endoscopia preoperatoria a todos los pacientes tratados.",
+        "Mantener el fármaco y estratificar el riesgo, porque el hallazgo intermedio no se traduce en más aspiraciones."
+      ],
+      "c": 3,
+      "e": [
+        "Es lo que la guía multisociedad pretende evitar: cancelar por un hallazgo intermedio sin aumento de aspiración.",
+        "Falso: el retraso del vaciado es real (OR 5,96 de contenido residual).",
+        "No está en las fuentes y no se justifica cuando el desenlace clínico, la aspiración, no aumenta.",
+        "Correcta: el contenido residual aumenta pero la aspiración no (OR 1,04), y la guía permite mantenerlo estratificando el riesgo."
+      ]
+    },
+    {
+      "q": "En el antequirófano un paciente programado tiene 35,8 °C medidos con termómetro timpánico. ¿Qué indica la guía NICE?",
+      "o": [
+        "Iniciar la inducción: 35,8 °C supera el suelo de 35,5 °C que sugiere PROTECT.",
+        "Medir la temperatura central y no iniciar la inducción si es inferior a 36 °C, salvo urgencia, calentando al paciente.",
+        "Calentar de forma agresiva hasta 37 °C antes de cualquier otra actuación.",
+        "Repetir la medición con un termómetro frontal para confirmar."
+      ],
+      "c": 1,
+      "e": [
+        "Confunde dos cosas: NICE define hipotermia por debajo de 36 °C central, y la cifra timpánica no es válida para decidir.",
+        "Correcta: los estimadores indirectos no valen y no se induce por debajo de 36 °C central salvo urgencia clínica.",
+        "PROTECT mostró que perseguir los 37 °C no añade beneficio frente a mantenerse por encima de unos 35,5 °C.",
+        "El termómetro frontal también es un estimador indirecto que NICE excluye."
+      ]
+    },
+    {
+      "q": "¿Cuál de estas medidas de asepsia AUMENTA el riesgo de infección de sitio quirúrgico según la evidencia del tema?",
+      "o": [
+        "El paño adhesivo de plástico sobre la piel",
+        "La ducha preoperatoria con clorhexidina",
+        "El protector de herida",
+        "La clorhexidina alcohólica para preparar la piel"
+      ],
+      "c": 0,
+      "e": [
+        "Correcta: RR 1,23 con un intervalo que no cruza el 1; más infecciones.",
+        "No tiene efecto (RR 0,91, intervalo que cruza el 1), pero no la aumenta.",
+        "En el ensayo ROSSINI no mostró beneficio, pero tampoco aumento de infección.",
+        "Reduce la infección frente a la povidona acuosa (9,5 % frente a 16,1 %)."
+      ]
+    },
+    {
+      "q": "Rasurar con cuchilla frente a no retirar el vello añade unas 17 infecciones por cada 1.000 pacientes. ¿Aproximadamente a cuántos pacientes hay que rasurar con cuchilla para provocar una infección adicional?",
+      "o": [
+        "6",
+        "17",
+        "59",
+        "182"
+      ],
+      "c": 2,
+      "e": [
+        "Seis correspondería a un aumento absoluto de unas 170 infecciones por 1.000, diez veces mayor.",
+        "17 es el número de infecciones adicionales por 1.000, no el número necesario para dañar.",
+        "Correcta: 1.000 / 17 ≈ 59 pacientes rasurados por cada infección adicional.",
+        "182 confunde el cálculo con el riesgo relativo (1,82); el número necesario se obtiene del riesgo absoluto."
+      ]
+    },
+    {
+      "q": "Un paciente recibe cefazolina en planta a las 7:00 y, por retrasos, la incisión se hace a las 10:00. ¿Qué es correcto?",
+      "o": [
+        "El antibiótico probablemente ya no está en el tejido; el riesgo con más de 120 minutos es unas cinco veces mayor y debe administrarse una nueva dosis antes de incidir.",
+        "La protección es óptima porque cuanto antes se administra, más tiempo tiene para distribuirse.",
+        "Basta con dar una segunda dosis al cerrar la herida.",
+        "No importa, porque la ventana eficaz es de cualquier momento en las seis horas previas."
+      ],
+      "c": 0,
+      "e": [
+        "Correcta: administrar más de 120 minutos antes tiene una OR de 5,26, porque la cefazolina ya se ha eliminado al abrir; debe estar en el tejido al incidir.",
+        "Falso: la relación tiene forma de U y demasiado pronto es casi tan malo como no ponerla.",
+        "Llegaría tarde: el momento crítico es la incisión, y después de ella la infección casi se duplica.",
+        "Falso: la ventana operativa es de 120 minutos, no de seis horas."
+      ]
+    },
+    {
+      "q": "Tras una sigmoidectomía con drenaje aspirativo, el cirujano propone mantener la cefazolina 48 horas «mientras lleve el drenaje». ¿Qué es correcto?",
+      "o": [
+        "Es adecuado, porque el drenaje es una puerta de entrada que justifica prolongar la profilaxis.",
+        "Debe mantenerse 24 horas, que es el compromiso habitual entre seguridad y resistencias.",
+        "Debe prolongarse hasta que el débito del drenaje sea seroso.",
+        "La profilaxis se suspende al cerrar, incluso en presencia de un drenaje."
+      ],
+      "c": 3,
+      "e": [
+        "El CDC indica en su categoría más fuerte que no se prolonga ni siquiera con drenaje.",
+        "Prolongarla 24 horas no reduce la infección (RR 0,89 en global, 1,04 con buena práctica) y sí aumenta resistencias y colitis.",
+        "No tiene base: la profilaxis no se guía por el aspecto del drenaje.",
+        "Correcta: dosis única o limitada a la intervención, y el drenaje no cambia esa regla."
+      ]
+    },
+    {
+      "q": "En TaTME, la experiencia noruega mostró una recidiva local del 11,6 % con 8 de 12 recidivas multifocales, y la auditoría holandesa encontró un 9,7 % en los diez primeros casos de cada centro frente a un 3,3-3,5 % después. ¿Qué conclusión es la más completa?",
+      "o": [
+        "La técnica es intrínsecamente peligrosa y debe abandonarse en todos los centros.",
+        "El exceso de recidivas se concentró en la fase de aprendizaje, lo que exige formación, tutorización y auditoría porque esos primeros casos son pacientes reales.",
+        "El patrón multifocal indica que el problema fue una escisión incompleta del mesorrecto.",
+        "COLOR III ya ha demostrado que el resultado oncológico a tres años es equivalente."
+      ],
+      "c": 1,
+      "e": [
+        "En centros expertos la recidiva es similar a la de otras técnicas; lo peligroso fue la implantación sin control.",
+        "Correcta: la experiencia fue un factor independiente, y la curva de aprendizaje tiene un coste real en pacientes.",
+        "El patrón multifocal sugiere siembra tumoral, no una escisión incompleta.",
+        "Falso: COLOR III muestra seguridad a corto plazo, pero su resultado oncológico a tres años aún no está publicado."
+      ]
+    },
+    {
+      "q": "STITCH obtuvo un 13 % de hernia al año con small bites frente a un 21 % (OR 0,52), y ESTOIH, a cinco años, un 9,1 % frente a un 13,9 % (p = 0,155). ¿Qué afirmación es la más correcta?",
+      "o": [
+        "La mejor evidencia favorece el small bites, pero descansa sobre un único ensayo que un segundo no confirmó.",
+        "ESTOIH demuestra que el small bites es equivalente a la técnica clásica.",
+        "ESTOIH demuestra que el small bites es peor a largo plazo.",
+        "El small bites es superior de forma indiscutible y consistente."
+      ],
+      "c": 0,
+      "e": [
+        "Correcta: la tendencia siempre favoreció al small bites, pero solo STITCH alcanzó significación.",
+        "Un resultado no significativo no demuestra equivalencia; solo indica que no se detectó diferencia.",
+        "Falso: la tendencia en ESTOIH también favorecía al small bites.",
+        "Es una sobreinterpretación: un segundo ensayo no confirmó el resultado."
+      ]
+    }
+  ],
+  "cortas": [
+    {
+      "q": "¿Qué mide la capnografía?",
+      "r": "El CO2 espirado",
+      "k": [
+        [
+          "co2",
+          "dioxido",
+          "carbon",
+          "capn"
+        ],
+        [
+          "espir",
+          "exhal",
+          "teleesp"
+        ]
+      ],
+      "e": "Mide el dióxido de carbono espirado; sin curva tras intubar, el tubo está en el esófago."
+    },
+    {
+      "q": "¿Cuántas horas antes de la anestesia pueden tomarse líquidos claros según la ASA 2023?",
+      "r": "Hasta dos horas antes",
+      "k": [
+        [
+          "2",
+          "dos"
+        ]
+      ],
+      "e": "La regla es 2-6-8: líquidos claros 2 horas, comida ligera 6 y comida grasa 8."
+    },
+    {
+      "q": "Si el vello estorba para operar, ¿cómo se retira?",
+      "r": "Con maquinilla eléctrica el mismo día",
+      "k": [
+        [
+          "maquinilla",
+          "electric",
+          "cortapelo",
+          "clipper"
+        ]
+      ],
+      "e": "La cuchilla aumenta la infección (RR 1,82) por los microcortes; lo ideal es no retirar el vello."
+    },
+    {
+      "q": "¿Cuándo se suspende la profilaxis antibiótica quirúrgica?",
+      "r": "Al cerrar la herida",
+      "k": [
+        [
+          "cerr",
+          "cierr",
+          "final",
+          "termin",
+          "unica"
+        ]
+      ],
+      "e": "Prolongarla no reduce la infección y genera resistencias y colitis por Clostridioides, incluso con drenaje."
+    },
+    {
+      "q": "¿Cuál debe ser la relación mínima entre longitud de sutura y longitud de herida al cerrar una laparotomía?",
+      "r": "Al menos cuatro a uno",
+      "k": [
+        [
+          "4",
+          "cuatro"
+        ]
+      ],
+      "e": "Por debajo de 4:1 la hernia incisional pasa del 9,0 % al 23,7 % (Israelsson, 1993)."
+    },
+    {
+      "q": "¿Cuáles son los tres componentes de la anestesia general?",
+      "r": "Hipnosis, analgesia y relajación muscular",
+      "k": [
+        [
+          "hipno",
+          "inconscien"
+        ],
+        [
+          "analges"
+        ],
+        [
+          "relaj",
+          "bloqueo neuromusc"
+        ]
+      ],
+      "e": "Se dosifican por separado: que no se entere, que no le duela y que se pueda operar."
+    },
+    {
+      "q": "¿Por debajo de qué temperatura central se define hipotermia según NICE?",
+      "r": "Por debajo de 36 °C",
+      "k": [
+        [
+          "36",
+          "treinta y seis"
+        ]
+      ],
+      "e": "NICE no permite iniciar la inducción por debajo de 36 °C central salvo urgencia clínica."
+    },
+    {
+      "q": "¿Cuáles son los tres momentos de la lista de verificación de la OMS?",
+      "r": "Entrada, pausa y salida",
+      "k": [
+        [
+          "entrada",
+          "antes de dormir",
+          "induccion"
+        ],
+        [
+          "pausa",
+          "antes de cortar",
+          "antes de la incision",
+          "time out"
+        ],
+        [
+          "salida",
+          "antes de irse",
+          "antes de salir"
+        ]
+      ],
+      "e": "Antes de dormir al paciente, antes de la incisión y antes de que nadie abandone el quirófano."
+    },
+    {
+      "q": "¿Cuál es la causa raíz que más se repite en los nunca-eventos quirúrgicos?",
+      "r": "Un fallo de comunicación",
+      "k": [
+        [
+          "comunic"
+        ]
+      ],
+      "e": "No suele ser la torpeza del cirujano, sino información que alguien tenía y no transmitió o no fue escuchada."
+    },
+    {
+      "q": "En la fractura de cadera del anciano, ¿qué mostraron REGAIN y RAGA sobre el delirio con regional frente a general?",
+      "r": "No hubo diferencias en delirio",
+      "k": [
+        [
+          "sin diferencia",
+          "no hubo diferencia",
+          "ninguna diferencia",
+          "no difier",
+          "igual",
+          "similar",
+          "no hay diferencia"
+        ]
+      ],
+      "e": "Delirio del 20,5 % con regional y 19,7 % con general, sin diferencias tampoco en mortalidad ni marcha."
+    }
+  ],
+  "largas": [
+    {
+      "q": "La lista de verificación quirúrgica de la OMS redujo complicaciones y mortalidad en el estudio de Haynes (2009) y no tuvo efecto en Ontario (2014). Analiza críticamente ambos estudios y explica qué mecanismo hace que la lista funcione y por qué puede dejar de hacerlo.",
+      "guia": "Se espera distinguir reducción relativa y absoluta, valorar el diseño sin control, interpretar Ontario con los datos de adherencia real y explicar el papel de la comunicación y la jerarquía.",
+      "modelo": "El estudio de Haynes, realizado en ocho hospitales de ocho países, mostró un descenso de las complicaciones del 11,0 % al 7,0 % y de la mortalidad del 1,5 % al 0,8 %. Son reducciones relativas del 36 % y del 47 %, pero absolutas de 4,0 y 0,7 puntos, y el «40 %» mezcla ambas. Además, el diseño fue antes-después sin grupo control, de modo que cualquier otra mejora ocurrida en esos hospitales durante el periodo se atribuyó a la lista.\n\nEn Ontario, con 101 hospitales, más de 200.000 procedimientos y adopción obligatoria por decreto, la mortalidad pasó del 0,71 % al 0,65 % (p = 0,13) y las complicaciones no cambiaron (p = 0,29). El único ensayo aleatorizado, noruego, en el que la implantación incluyó formación del equipo, redujo las complicaciones del 19,9 % al 11,5 %, aunque sin descenso significativo de la mortalidad global. La diferencia entre ambos escenarios está en lo que realmente se hace: cuando se han colocado cámaras en el quirófano, solo se completa el 47 % de los ítems, frente al 89 % que consta en la historia. En Ontario se midió la firma, no la conducta.\n\nEl mecanismo de la lista es la comunicación. Los nunca-eventos, como operar el lado equivocado o dejar material retenido, tienen como causa raíz recurrente que alguien sabía algo y no lo dijo. La lista obliga a hablar en tres momentos: antes de dormir al paciente, mientras aún puede confirmar su identidad y el procedimiento; en la pausa previa a la incisión, con todo el equipo parado, presentándose por nombre y función y confirmando el antibiótico; y antes de que nadie salga, con el recuento y el etiquetado. Presentarse no es cortesía: aplana la jerarquía y facilita que la enfermera o el residente interrumpan al cirujano. Si la lista se convierte en un papel que se firma, desaparece la conversación y con ella el efecto.",
+      "rubrica": [
+        {
+          "c": "Diferencia reducción relativa y absoluta en Haynes y desmonta el «40 %»",
+          "p": 2
+        },
+        {
+          "c": "Señala el diseño antes-después sin control como limitación",
+          "p": 1
+        },
+        {
+          "c": "Interpreta correctamente Ontario sin concluir que la lista es inútil, citando el ensayo aleatorizado",
+          "p": 2
+        },
+        {
+          "c": "Usa el dato de adherencia real (47 % frente a 89 %) para explicar la discrepancia",
+          "p": 2
+        },
+        {
+          "c": "Explica el mecanismo comunicativo: nunca-eventos, tres momentos y aplanar la jerarquía",
+          "p": 3
+        }
+      ]
+    },
+    {
+      "q": "En el periodo intraoperatorio se mantienen muchas prácticas porque «tienen toda la lógica». Elige al menos tres ejemplos de preparación y asepsia en los que la evidencia contradijo esa lógica, explica la fisiopatología que los hacía razonables y por qué fallan o empeoran el resultado.",
+      "guia": "Se valora elegir ejemplos pertinentes (ayuno, rasurado, paño adhesivo, drenaje, prolongación antibiótica), aportar cifras de las fuentes y explicar el mecanismo de fallo, no solo enunciarlo.",
+      "modelo": "El ayuno desde medianoche parece prudente porque un estómago vacío no puede aspirarse. Sin embargo, los líquidos claros abandonan el estómago en unas dos horas, y en 31 ensayos con líquidos claros hasta dos horas antes no se notificó ninguna aspiración. La regla actual es 2-6-8 y el consenso de 2026 permite beber casi hasta la llamada a quirófano. En la práctica real los pacientes ayunan más de 14 horas de comida y más de 9 de bebida, con deshidratación, hipoglucemia, resistencia a la insulina y malestar: se paga un precio cierto por un beneficio inexistente.\n\nRasurar el campo parecía lógico porque el vello alberga bacterias. Pero la cuchilla produce microcortes en los que las bacterias se multiplican durante las horas hasta la incisión, y el riesgo de infección aumenta (RR 1,82, unas 17 infecciones más por cada 1.000 pacientes). Rasurar la noche anterior es aún peor. Lo correcto es no retirar el vello y, si estorba, usar maquinilla eléctrica el mismo día. Algo parecido ocurre con el paño adhesivo de plástico, pensado como barrera frente a la flora cutánea, que se asocia a más infección (RR 1,23).\n\nEl drenaje profiláctico en la anastomosis colorrectal se justificaba porque evacuaría colecciones y avisaría precozmente de la fuga. Once ensayos con 1.803 pacientes muestran un RR de fuga de 1,14: no protege. Tampoco avisa, porque cuando el contenido intestinal llega al drenaje la fuga ya es evidente por taquicardia, fiebre o íleo, o el drenaje se ha tabicado y sale limpio, lo que da falsa seguridad.\n\nPor último, prolongar la profilaxis antibiótica parece aumentar la protección. Lo que importa es que el fármaco esté en el tejido al incidir; prolongarlo no reduce la infección (RR 0,89 en el global y 1,04 en ensayos con buena práctica actual) y genera resistencias y colitis por Clostridioides, incluso cuando hay drenaje. Todos estos ejemplos enseñan lo mismo: la plausibilidad no sustituye a la medición.",
+      "rubrica": [
+        {
+          "c": "Elige al menos tres ejemplos pertinentes del tema",
+          "p": 2
+        },
+        {
+          "c": "Explica la lógica fisiopatológica que hacía razonable cada práctica",
+          "p": 2
+        },
+        {
+          "c": "Explica el mecanismo por el que fallan o empeoran (microcortes, fuga tardía o tabicación, ventana tisular)",
+          "p": 3
+        },
+        {
+          "c": "Aporta cifras correctas de las fuentes (2-6-8, RR 1,82, RR 1,23, RR 1,14, RR 0,89)",
+          "p": 2
+        },
+        {
+          "c": "Concluye con la idea de que la plausibilidad debe verificarse con ensayos",
+          "p": 1
+        }
+      ]
+    },
+    {
+      "q": "Usando los ejemplos de la laparoscopia en el cáncer de recto y del TaTME, explica qué es una variable subrogada, qué papel desempeña la curva de aprendizaje y qué condiciones deberían exigirse para introducir una técnica quirúrgica nueva.",
+      "guia": "Se espera definir subrogado frente a desenlace, interpretar los dos ensayos de laparoscopia rectal, analizar los datos noruegos y holandeses del TaTME y proponer condiciones de implantación.",
+      "modelo": "Una variable subrogada es una medida intermedia que se utiliza porque se cree que predice el desenlace que importa al paciente, como la supervivencia o la recidiva. Su riesgo es que la predicción falle. Dos ensayos, uno americano y otro australiano, compararon laparoscopia y cirugía abierta en el cáncer de recto con un desenlace compuesto patológico, la integridad del mesorrecto y los márgenes negativos, y concluyeron que la laparoscopia no cumplía el criterio de no inferioridad. Al seguir a los mismos pacientes, la supervivencia libre de enfermedad y la recidiva local a dos años fueron prácticamente iguales, 4,6 % frente a 4,5 %. El subrogado sugería que la técnica era peor; el desenlace real indicó que daba igual.\n\nEl TaTME ilustra el otro problema. La técnica resolvía una dificultad real, el recto bajo en el varón obeso con pelvis estrecha, y se difundió rápidamente. En 2019 Noruega comunicó una recidiva local del 11,6 % frente al 2,4 % de su registro, con 8 de 12 recidivas multifocales, un patrón que sugiere siembra tumoral, y suspendió la técnica. La auditoría externa holandesa de 624 pacientes encontró una recidiva a tres años del 9,7 % en los diez primeros casos de cada centro frente al 3,3 % y 3,5 % posteriores, con la experiencia como factor independiente. El problema principal fue la implantación, pero los pacientes de la curva de aprendizaje sufrieron un daño real.\n\nDe ambos casos se derivan condiciones razonables: evaluar las técnicas con desenlaces clínicos y no solo con subrogados, concentrar la fase inicial en centros expertos, exigir formación estructurada, tutorización y auditoría externa de resultados, y no dar por cerrada la pregunta oncológica hasta tener seguimiento suficiente. COLOR III ya muestra una seguridad a corto plazo excelente, con conversión del 1 % frente al 17 %, pero su resultado oncológico a tres años todavía no se ha publicado.",
+      "rubrica": [
+        {
+          "c": "Define correctamente variable subrogada y la distingue del desenlace clínico",
+          "p": 2
+        },
+        {
+          "c": "Interpreta los ensayos de laparoscopia rectal con el contraste subrogado frente a recidiva (4,6 % frente a 4,5 %)",
+          "p": 2
+        },
+        {
+          "c": "Describe la alarma noruega y el significado del patrón multifocal",
+          "p": 2
+        },
+        {
+          "c": "Analiza la curva de aprendizaje con los datos holandeses y su coste en pacientes",
+          "p": 2
+        },
+        {
+          "c": "Propone condiciones de implantación y reconoce que el dato oncológico de COLOR III está pendiente",
+          "p": 2
+        }
+      ]
+    }
+  ]
+}

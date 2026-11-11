@@ -1,0 +1,795 @@
+{
+  "id": "t25",
+  "tema": "Temas 25-26",
+  "titulo": "Fisiopatología arterial",
+  "subtitulo": "De la ley de Poiseuille a la decisión de revascularizar: casi toda la clínica arterial se deduce de cuatro principios físicos.",
+  "minutos": 40,
+  "bloquesTemario": [
+    "Principios hemodinámicos",
+    "Bases fisiopatológicas",
+    "Síndrome isquémico agudo",
+    "Síndrome isquémico crónico"
+  ],
+  "objetivos": [
+    "Al terminar serás capaz de calcular cómo cambia el flujo cuando se reduce el radio de una arteria y de explicar con la ley de Poiseuille y la turbulencia por qué la claudicación aparece al andar.",
+    "Al terminar serás capaz de describir la pared arterial y las cinco funciones del endotelio, y de situar la pérdida de óxido nítrico como primer paso de la aterosclerosis.",
+    "Al terminar serás capaz de razonar por qué una estenosis es silenciosa hasta el 50 % de diámetro y por qué la colateral cubre el reposo pero nunca el esfuerzo.",
+    "Al terminar serás capaz de distinguir a pie de cama una embolia de una trombosis arterial y de graduar una isquemia aguda con la clasificación de Rutherford para decidir la conducta.",
+    "Al terminar serás capaz de interpretar un índice tobillo-brazo, reconocer cuándo no es interpretable y elegir la prueba alternativa.",
+    "Al terminar serás capaz de ordenar el tratamiento del síndrome isquémico crónico, desde el ejercicio supervisado hasta la elección entre bypass y endovascular en la CLTI."
+  ],
+  "caso": {
+    "titulo": "Un ITB «normal» y un dedo que no cierra",
+    "narrativa": [
+      "Don Andrés tiene 74 años, es diabético desde hace más de veinte y lleva tres años en hemodiálisis por nefropatía diabética. Su médico de familia lo envía a la consulta de cirugía porque tiene una úlcera en la punta del primer dedo del pie derecho que apareció tras estrenar unos zapatos y que, un mes después, sigue sin cerrar pese a las curas diarias de enfermería. Tiene además una cardiopatía isquémica con disnea de esfuerzo, por la que toma varios fármacos.",
+      "Cuando le preguntas por el dolor, cuenta que el dedo le duele sobre todo por la noche y que desde hace unas semanas duerme en el sillón, con la pierna colgando, porque así «se le calma». Lo atribuye a la edad y a que ya no descansa bien. No refiere claudicación, aunque reconoce que apenas sale de casa salvo para ir a diálisis tres veces por semana.",
+      "En la exploración el pie derecho está frío, con la piel fina y brillante y sin vello. La úlcera mide un centímetro, tiene un fondo pálido, sin tejido de granulación y sin signos de infección. No palpas el pulso pedio ni el tibial posterior en ninguno de los dos pies; los femorales sí se palpan. La sensibilidad con monofilamento está disminuida en ambos pies.",
+      "La enfermera ha medido el índice tobillo-brazo antes de que entres: 1,45 en el lado derecho. En la nota del volante, el médico de familia escribe que «el ITB es normal, por lo que se descarta isquemia» y propone estudiar la úlcera como neuropática; también pregunta si le vendría bien empezar cilostazol «por si acaso»."
+    ],
+    "datos": [
+      {
+        "k": "Edad",
+        "v": "74 años"
+      },
+      {
+        "k": "Antecedentes",
+        "v": "Diabetes de larga evolución, hemodiálisis, cardiopatía isquémica"
+      },
+      {
+        "k": "Lesión",
+        "v": "Úlcera en el primer dedo derecho, un mes sin cerrar"
+      },
+      {
+        "k": "Dolor",
+        "v": "Nocturno, mejora con la pierna colgando"
+      },
+      {
+        "k": "Pulsos distales",
+        "v": "Ausentes en ambos pies; femorales presentes"
+      },
+      {
+        "k": "ITB derecho",
+        "v": "1,45"
+      },
+      {
+        "k": "Sensibilidad",
+        "v": "Disminuida con monofilamento"
+      }
+    ],
+    "decision": "El volante dice que el ITB es normal y que la úlcera es neuropática. ¿Aceptas esa conclusión, o qué harías con este paciente hoy y con qué prioridad?",
+    "discusion": [
+      "¿Qué significa físicamente un ITB de 1,45 y en qué pacientes esperarías encontrarlo?",
+      "¿Qué te dice el hecho de que el dolor sea nocturno y mejore al dejar la pierna colgando?",
+      "Si la perfusión del pie fuera mala, ¿con qué nombre y con qué urgencia habría que etiquetar esta situación?",
+      "¿Qué opinas de la propuesta de iniciar cilostazol en este paciente concreto?"
+    ]
+  },
+  "bloques": [
+    {
+      "titulo": "Principios hemodinámicos",
+      "idea": "El flujo depende del radio a la cuarta potencia, la velocidad depende del área total y la tensión de la pared depende del radio: con eso se explica casi toda la clínica arterial.",
+      "secciones": [
+        {
+          "titulo": "Antes de la física: quién es este paciente",
+          "texto": [
+            "La enfermedad arterial periférica afecta a unos 113 millones de personas mayores de 40 años en el mundo, lo que la sitúa entre las enfermedades más prevalentes que existen. En España, según los estudios, entre el 3,7 % y el 8 % de la población estudiada tiene un índice tobillo-brazo bajo, y en el estudio HERMEX, hecho en Badajoz, solo el 13,3 % de quienes lo tenían referían síntomas. Es decir, el 87 % de los pacientes con enfermedad demostrada no nota absolutamente nada.",
+            "El dato que cambia el marco es el de Criqui: estos pacientes tienen un riesgo relativo de muerte cardiovascular de 5,9 y una mortalidad total tres veces mayor que quien no tiene la enfermedad. Un ITB bajo no significa «a este señor le va a doler la pierna», sino **aterosclerosis generalizada**: coronarias y carótidas están igual, y la pierna es solo la ventana por la que lo estamos viendo.",
+            "Conviene también desaprender una cifra. En muchos apuntes se lee que el 1-2 % de los claudicantes progresa cada año a isquemia grave. Una revisión sistemática de 2025 encuentra tasas que van del 1,1 % al 36,7 %, con una heterogeneidad del 99 % y una tasa agrupada no significativa: **la claudicación no progresa de forma predecible**. Lo defendible es que la mayoría no pierde la pierna y muchos mueren del corazón."
+          ],
+          "figura": "g_art_riesgo",
+          "pie": "Tres números que reencuadran el tema: 113 millones de afectados, 87 % asintomáticos y un riesgo de muerte cardiovascular 5,9 veces mayor.",
+          "perla": "Ante un paciente con enfermedad arterial periférica, pregunta siempre por el corazón y las carótidas: es un paciente cardiovascular al que la pierna le está avisando."
+        },
+        {
+          "titulo": "El radio, elevado a la cuarta",
+          "texto": [
+            "La ley de Poiseuille establece que el flujo por un tubo es directamente proporcional al gradiente de presión y a la **cuarta potencia del radio**, e inversamente proporcional a la longitud y a la viscosidad: Q = ΔP · π · r⁴ / (8 · η · L). La consecuencia práctica es brutal. Si el radio queda en el 75 % del normal, el flujo queda en el 32 % (0,75⁴); si el radio se reduce a la mitad, el flujo cae al 6 % (0,5⁴ = 1/16). No a la mitad: a un dieciseisavo.",
+            "Poiseuille asume un tubo rígido, un flujo laminar y un fluido newtoniano, y una arteria no cumple ninguna de las tres condiciones: es distensible, el flujo es pulsátil y la viscosidad de la sangre cambia con la velocidad de cizalla. Lejos de invalidar la ley, esto la agrava. En la vida real la caída de presión a través de una estenosis es todavía peor de lo que Poiseuille predice, porque a las pérdidas viscosas se suman las **turbulencias**, cuya pérdida de energía crece con el cuadrado de la velocidad.",
+            "Aquí está la explicación física de la claudicación intermitente. En reposo, con poco flujo, la estenosis apenas genera pérdida de energía. Al andar, el músculo pide más flujo, la velocidad a través de la estenosis sube y la pérdida de presión se dispara justo cuando más perfusión hace falta."
+          ],
+          "figura": "g_art_poiseuille",
+          "pie": "Curva de Poiseuille: con el radio al 75 % queda un 32 % del flujo, y con el radio a la mitad, solo un 6 %.",
+          "perla": "Si te piden calcular el flujo tras reducir el radio, eleva la fracción a la cuarta: 0,5⁴ = 0,0625, es decir, un 6 %."
+        },
+        {
+          "titulo": "Por qué la sangre casi se para en el capilar, y la ley de Laplace",
+          "texto": [
+            "La ecuación de continuidad dice que el flujo es igual a la velocidad por el área (Q = v × A). Como el flujo total que atraviesa cada nivel del árbol vascular es constante, la velocidad es inversamente proporcional al **área de sección total** del lecho. Un capilar aislado es minúsculo, pero hay tantos que su área sumada es unas mil veces la de la aorta, de modo que la velocidad cae desde unos 40 cm/s en la aorta hasta unas cinco centésimas de cm/s en el capilar, ochocientas veces menos. Esa lentitud no es una curiosidad: es el diseño que da tiempo de tránsito suficiente para el intercambio de oxígeno y metabolitos.",
+            "Hay un error clásico de examen que conviene desmontar: el área total es máxima en los capilares, pero la **resistencia es máxima en las arteriolas**, que por eso se llaman vasos de resistencia. Son dos gráficas distintas que en los apuntes suelen superponerse.",
+            "La tercera ley del bloque es la de Laplace: la tensión de la pared es igual a la presión por el radio dividida por el grosor. Aplicada a un aneurisma explica su historia natural. Al dilatarse, el radio aumenta y la pared se adelgaza al mismo tiempo, de modo que el estrés parietal crece más deprisa que el diámetro y el riesgo de rotura aumenta de forma exponencial."
+          ],
+          "figura": "g_art_velocidad",
+          "pie": "La «X» del área total (gris) y la velocidad (azul): la velocidad es mínima donde el área total es máxima, en los capilares."
+        },
+        {
+          "titulo": "Estenosis crítica: la meseta y el acantilado",
+          "texto": [
+            "Hasta que la estenosis reduce el diámetro un 50 %, el flujo distal se mantiene plano y el paciente está perfectamente. La razón es la **reserva vasodilatadora**: las arteriolas situadas más allá de la estenosis se dilatan, baja la resistencia periférica y se compensa la caída de presión. Cuando esa reserva se agota, flujo y presión se desploman juntos. Ese punto es la estenosis crítica, y explica por qué la enfermedad arterial es silenciosa durante décadas.",
+            "Leerás «50 %» en unos textos y «75 %» en otros, y no se contradicen: es la misma lesión medida de dos formas. Si el diámetro cae al 50 %, el área, que depende del cuadrado del radio, queda en 0,5² = 0,25, es decir, se ha reducido un 75 %. **El 50 % de diámetro es el 75 % de área.**",
+            "Además, «crítica» no es un número universal. Depende del flujo que exige el territorio, de la reserva que quede, de la longitud de la estenosis, de si hay varias en serie y de la colateralidad. Y sobre todo, el umbral baja con el ejercicio: al andar sube el flujo, la pérdida de energía crece con el cuadrado de la velocidad y una estenosis que no era crítica en reposo pasa a serlo. Eso es, literalmente, la claudicación intermitente."
+          ],
+          "figura": "g_art_estenosis",
+          "pie": "Flujo distal frente a reducción del diámetro: meseta hasta el 50 % y caída brusca cuando se agota la reserva vasodilatadora.",
+          "perla": "Diámetro y área no son intercambiables: para pasar de uno a otro, eleva al cuadrado la fracción de diámetro que queda."
+        }
+      ]
+    },
+    {
+      "titulo": "Bases fisiopatológicas",
+      "idea": "La enfermedad arterial empieza décadas antes de la placa, en un endotelio que deja de producir óxido nítrico, y la clínica depende de cuánta reserva y cuánta colateral queden.",
+      "secciones": [
+        {
+          "titulo": "La pared arterial",
+          "texto": [
+            "En un corte transversal se reconocen tres capas y dos láminas elásticas. De fuera adentro, la **adventicia** contiene los vasa vasorum, que nutren la propia pared, los nervios y el colágeno que le da resistencia. La **media** está formada por músculo liso; es la capa que se contrae y se relaja, y por tanto la que regula el calibre, y es la más gruesa en una arteria muscular. La **íntima** es una sola capa de células endoteliales sobre su membrana basal. Las láminas elásticas interna y externa separan las tres capas.",
+            "La íntima parece un detalle en el dibujo, pero tiene el grosor de una sola célula y, si se extendiera todo el endotelio de un adulto, pesaría alrededor de un kilo. Un kilo de tejido en contacto directo con toda la sangre del organismo no es un revestimiento: se comporta como un órgano."
+          ],
+          "figura": "g_art_pared",
+          "pie": "Corte de la pared arterial: adventicia, media e íntima, separadas por las láminas elásticas interna y externa."
+        },
+        {
+          "titulo": "El endotelio hace cinco cosas",
+          "texto": [
+            "Las funciones del endotelio caben en cinco palabras. **Barrera**: sus uniones estrechas dejan pasar menos del 0,05 % de las proteínas. **Hemostasia**: en reposo el endotelio es activamente antitrombótico gracias a la trombomodulina, el heparán sulfato y el activador tisular del plasminógeno; la sangre no coagula dentro del vaso porque alguien lo está impidiendo. **Tono**: a partir de la L-arginina, la óxido nítrico sintasa produce óxido nítrico, que vasodilata e inhibe la agregación plaquetaria. **Inflamación**: cuando se activa expresa selectinas, ICAM y VCAM, y los leucocitos ruedan, se adhieren y lo atraviesan. Y **reparación**, mediada por factores de crecimiento.",
+            "El óxido nítrico tiene una historia que vale la pena recordar. Furchgott observó en 1980 que la relajación de unas tiras de aorta desaparecía cuando, sin querer, frotaba su superficie interna; siete años después, el grupo de Moncada identificó ese factor relajante como óxido nítrico, y el descubrimiento recibió el Nobel en 1998.",
+            "La disfunción endotelial es, esencialmente, la pérdida de disponibilidad de óxido nítrico, y es el primer paso de la aterosclerosis. Ocurre años o décadas antes de que haya una placa visible en cualquier prueba de imagen."
+          ],
+          "figura": "g_art_endotelio",
+          "pie": "Las cinco funciones del endotelio: barrera, hemostasia, tono, inflamación y reparación; perder el óxido nítrico es la disfunción endotelial."
+        },
+        {
+          "titulo": "De la disfunción endotelial a la placa",
+          "texto": [
+            "La secuencia de la aterosclerosis se puede dibujar en cuatro círculos. Primero se estropea el endotelio y pierde su óxido nítrico; después entra colesterol en la pared; a continuación llegan los macrófagos, atraídos por un endotelio activado que expresa moléculas de adhesión; y finalmente se forma la placa, que va estrechando la luz.",
+            "Esta secuencia explica dos ideas clínicas. La primera es que cuando ves una estenosis en una angiografía estás viendo el final de una historia que empezó veinte años antes. La segunda es que, por la reserva vasodilatadora, la luz puede estrecharse mucho antes de que aparezca el primer síntoma, de modo que la ausencia de clínica no significa ausencia de enfermedad."
+          ],
+          "figura": "g_art_ateroma",
+          "pie": "Cuatro pasos de la aterosclerosis: daño endotelial, entrada de colesterol, llegada de macrófagos y formación de la placa."
+        },
+        {
+          "titulo": "La colateral tiene un techo, y la obliteración funcional",
+          "texto": [
+            "Se suele decir que la colateral crece «porque hay isquemia», y no es así. Lo que dispara la **arteriogénesis** es el aumento de la cizalla sobre el endotelio de arteriolas que ya existían. Al ocluirse un eje aparece un gradiente de presión entre antes y después de la oclusión; por las arteriolas colaterales pasa mucha más sangre, sube la cizalla, el endotelio libera óxido nítrico y factores de crecimiento, llegan monocitos y el músculo liso de la media prolifera hasta que la arteriola se convierte en arteria. Ese proceso tarda semanas o meses, y por eso una embolia sobre una arteria sana es dramática y una trombosis sobre una estenosis antigua puede dar poquísima clínica.",
+            "Aunque la masa de tejido colateral puede multiplicarse por cincuenta, la restauración funcional se detiene en torno al **40 % de la conductancia máxima**. La colateral cubre el reposo, pero nunca el ejercicio ni la cicatrización de una herida, y eso es exactamente lo que hace que la claudicación aparezca al andar y se quite al parar.",
+            "El otro concepto del bloque es la **obliteración funcional**: un vaso se colapsa sin que su pared tenga nada, por caída de la presión dentro, por aumento de la presión fuera o por vasoespasmo. Lo volverás a ver en el síndrome compartimental tras revascularizar una isquemia aguda."
+          ],
+          "figura": "g_art_colateral",
+          "pie": "La conductancia colateral crece durante semanas pero se estabiliza en torno al 40 % del eje sano: cubre el reposo, no el esfuerzo.",
+          "perla": "Una isquemia aguda brusca y grave en un paciente sin antecedentes sugiere que no hubo tiempo de formar colaterales: piensa en embolia."
+        }
+      ]
+    },
+    {
+      "titulo": "Síndrome isquémico agudo",
+      "idea": "En la isquemia aguda no decide un reloj, decide el grado de Rutherford, y lo único que separa la pierna salvable de la irreversible es el Doppler venoso.",
+      "secciones": [
+        {
+          "titulo": "Embolia o trombosis",
+          "texto": [
+            "Los apuntes clásicos dicen que la isquemia aguda es embólica en el 80 % de los casos, algo que era cierto en la época de la cardiopatía reumática. En el registro nacional sueco, con 16.229 casos, la distribución actual es **trombosis 53 %, embolia 44 % y aneurisma poplíteo trombosado 3 %**. La trombosis es ya más frecuente, y eso importa porque una embolia sobre arteria sana se resuelve extrayendo el coágulo con un catéter de Fogarty, mientras que en una trombosis sobre placa sigue habiendo debajo una arteria enferma que requiere arteriografía y revascularización.",
+            "Dos tercios de las embolias proceden de una fibrilación auricular, y en el estudio de Oxford solo el 14,5 % de quienes embolizaron teniendo una fibrilación conocida estaba anticoagulado. En la embolia no hay colateralidad porque no ha dado tiempo y la instauración es de minutos; en la trombosis la colateralidad se ha desarrollado durante años y la instauración es de horas o días.",
+            "La pregunta que resuelve el diagnóstico en diez segundos es **cómo está el pulso de la otra pierna**. Si es normal, ese árbol arterial está sano y lo de hoy ha venido de fuera: embolia. Si también está disminuido, el paciente tiene aterosclerosis bilateral y lo de hoy es una trombosis. La segunda pregunta es si claudicaba antes."
+          ],
+          "figura": "g_art_embolia",
+          "pie": "Embolia sobre arteria sana frente a trombosis sobre arteria enferma: colateralidad, instauración, pulso contralateral y tratamiento.",
+          "perla": "El pronóstico de la isquemia aguda es serio: la supervivencia a 30 días es del 75,3 %, y a los 6 meses el 73,4 % ha muerto o es dependiente."
+        },
+        {
+          "titulo": "Las seis P",
+          "texto": [
+            "Los signos de isquemia aguda se memorizan en inglés porque en español no empiezan todos por P: **pain** (dolor, primer síntoma y habitualmente intenso), **pallor** (palidez), **pulselessness** (ausencia de pulso), **poikilothermia** (frialdad, porque la extremidad adopta la temperatura ambiente), **paresthesia** (parestesias) y **paralysis** (parálisis).",
+            "Las cuatro primeras dicen que hay isquemia; las dos últimas dicen que el nervio ya está sufriendo. El nervio periférico es el tejido de la extremidad que peor tolera la isquemia, menos que el músculo y mucho menos que la piel, y por eso es el que avisa primero de que se acaba el tiempo. Son precisamente esos dos signos los que deciden la conducta.",
+            "Explorar el déficit motor en una pierna fría y dolorosa es difícil porque el paciente no quiere mover nada. Pídele que mueva los dedos: si no puede, hay déficit motor, y eso cambia lo que vas a hacer en la próxima hora."
+          ],
+          "figura": "g_art_6p",
+          "pie": "Las seis P de la isquemia aguda; parestesias y parálisis indican que el nervio, el tejido menos tolerante, ya está sufriendo."
+        },
+        {
+          "titulo": "Rutherford: la clasificación que decide",
+          "texto": [
+            "La clasificación de Rutherford para la isquemia aguda funciona como un semáforo. **Grado I, viable**: sin déficit sensitivo ni motor y con Doppler arterial audible; no hay amenaza inmediata, y la trombólisis está formalmente contraindicada (Clase III). **Grado IIa, marginalmente amenazada**: déficit sensitivo mínimo, limitado a los dedos, sin déficit motor; el Doppler arterial ya no se oye pero el venoso sí, y la trombólisis dirigida por catéter es Clase I, nivel A.",
+            "**Grado IIb, inmediatamente amenazada**: el déficit sensitivo sobrepasa los dedos, hay dolor de reposo y aparece déficit motor leve o moderado; la revascularización es urgente. **Grado III, irreversible**: anestesia, parálisis con rigidez y Doppler venoso también inaudible. Esa pierna no se salva y revascularizarla expone al paciente a un síndrome de reperfusión letal, por lo que la conducta es la amputación primaria.",
+            "Lo único que separa el IIb del III es el **Doppler venoso**, un dato que se obtiene en treinta segundos con una sonda y decide entre salvar una pierna y amputarla. Y un mito que conviene abandonar: la «ventana de oro de seis horas» no aparece en la guía europea de 2020; lo que la guía gradúa es la conducta según el grado."
+          ],
+          "figura": "g_art_rutherford",
+          "pie": "Semáforo de Rutherford para la isquemia aguda: viable, marginal, inmediata e irreversible, con la conducta de cada grado.",
+          "perla": "No memorices un reloj; memoriza el semáforo y explora siempre el Doppler venoso."
+        },
+        {
+          "titulo": "Qué hacer, en orden, y el problema de reperfundir",
+          "texto": [
+            "El primer paso, antes de cualquier prueba de imagen, es la **heparina no fraccionada** (bolo de 5.000 UI o de 70-100 UI/kg seguido de perfusión), junto con analgesia, que suele olvidarse pese a que es un dolor de los peores que existen, y rehidratación. Después se gradúa con Rutherford y el grado decide la actuación.",
+            "Lo que más se olvida es lo que ocurre después de abrir. El músculo que llevaba horas isquémico libera potasio, mioglobina y ácido a la circulación: puede producir arritmias por hiperpotasemia, fracaso renal agudo por rabdomiólisis y acidosis. Además, hasta el 23 % de los revascularizados desarrolla un **síndrome compartimental**: el músculo se edematiza dentro de una fascia que no da de sí, la presión sube y los vasos se colapsan. Es obliteración funcional: vasos sanos aplastados desde fuera.",
+            "La fasciotomía fue necesaria en el 4,2 % de los grados I, el 13,2 % de los IIa y el 53,3 % de los IIb. La fasciotomía profiláctica de rutina no está recomendada (Clase III), porque alarga el ingreso, se infecta y la mitad de los fasciotomizados acaba con insuficiencia venosa crónica; la selectiva, si la isquemia fue profunda o prolongada, es Clase IIa, y la urgente ante un síndrome establecido es Clase I. El diagnóstico es clínico, y retrasarla eleva la amputación a 30 días al 50 %, frente al 5,9 % cuando se hace a tiempo."
+          ],
+          "figura": "g_art_tratamiento",
+          "pie": "Algoritmo de la isquemia aguda: heparina, graduar con Rutherford y Doppler, actuar según el grado y vigilar potasio y síndrome compartimental."
+        }
+      ]
+    },
+    {
+      "titulo": "Síndrome isquémico crónico",
+      "idea": "Cada escalón de la isquemia crónica es reserva vasodilatadora agotada; el ITB se lee con sus trampas y el mejor tratamiento de la claudicación no es quirúrgico.",
+      "secciones": [
+        {
+          "titulo": "La escalera de Fontaine y la CLTI",
+          "texto": [
+            "La clasificación de Fontaine es una escalera en la que lo que sube en cada escalón es la reserva vasodilatadora agotada. **Estadio I**, asintomático: las estenosis no son críticas. **Estadio II**, claudicación intermitente: en reposo la reserva compensa, pero al andar el músculo pide cinco o diez veces más flujo, aparece el dolor, el paciente se para y el dolor cede; es la angina de la pierna. El IIa claudica a más de 200 metros y el IIb a menos. **Estadio III**, dolor de reposo. **Estadio IV**, úlcera o gangrena. No hay que confundirla con la clasificación de Rutherford crónica, que tiene categorías de 0 a 6 y es distinta de la aguda.",
+            "El dolor de reposo isquémico es típicamente **nocturno** y cede cuando el paciente saca la pierna de la cama, porque al bajarla la gravedad suma la presión de la columna de sangre a la presión de perfusión. Un paciente que duerme sentado con la pierna colgando tiene una isquemia grave, y muchos no lo cuentan si no se les pregunta porque lo achacan a la edad.",
+            "El término «isquemia crítica» quedó obsoleto en 2019 porque connota un umbral hemodinámico que no existe. Hoy se habla de **isquemia crónica que amenaza la extremidad (CLTI)**, definida por enfermedad arterial demostrada más dolor de reposo o pérdida tisular de al menos dos semanas. Su mortalidad al año es del 25-35 % y la amputación al año llega al 30 %. Para graduar la amenaza se usa WIfI, que puntúa de 0 a 3 la herida, la isquemia y la infección del pie, porque en el diabético la perfusión es solo uno de los tres factores; la amputación al año va del 3,2 % en el estadio 1 al 23,3 % en el 4."
+          ],
+          "figura": "g_art_fontaine",
+          "pie": "Escalera de Fontaine: asintomático, claudicación a más o menos de 200 m, dolor de reposo y úlcera o gangrena.",
+          "perla": "Pregunta siempre dónde y cómo duerme el paciente: dormir sentado con la pierna colgando es un signo de isquemia grave."
+        },
+        {
+          "titulo": "El índice tobillo-brazo y sus trampas",
+          "texto": [
+            "El índice tobillo-brazo es el cociente entre la presión sistólica más alta del tobillo y la más alta de los dos brazos; requiere dos minutos, un manguito y una sonda Doppler. No mide flujo: mide la **caída de presión** que produce la enfermedad oclusiva proximal. Se interpreta así: 1,00-1,40 normal; 0,91-0,99 límite; 0,90 o menos, anormal; por debajo de 0,40, isquemia grave que exige valoración urgente, igual que una presión de tobillo menor de 50 mmHg, una presión digital menor de 30 mmHg o una TcPO₂ menor de 30 mmHg.",
+            "Por encima de 1,40 la arteria es **no compresible** y el resultado no es normal, sino ininterpretable. La causa es la calcificación de la media (esclerosis de Mönckeberg), típica del diabético de larga evolución, del paciente en diálisis y del muy anciano: la arteria es tan rígida que el manguito no la colapsa y la presión medida es artefactualmente alta. La trampa es que ocurre precisamente en los pacientes de más riesgo.",
+            "Hay otros dos fallos. La enfermedad tibial y pedia pura, patrón típico del diabético, puede dar un ITB normal porque la oclusión está por debajo del punto de medida; y un ITB normal en reposo no excluye la claudicación, por lo que en ese caso hay que repetirlo tras hacer andar al paciente. Cuando el ITB no es interpretable se recurre al **índice dedo-brazo**, anormal por debajo de 0,70 porque las arterias digitales casi nunca se calcifican, y a la presión transcutánea de oxígeno."
+          ],
+          "figura": "g_art_itb",
+          "pie": "Escala del índice tobillo-brazo: por encima de 1,40 no es normal sino no compresible e ininterpretable."
+        },
+        {
+          "titulo": "Lo que de verdad funciona en la claudicación",
+          "texto": [
+            "El **ejercicio supervisado** mejora la distancia máxima de marcha en unos 120 metros, con evidencia de certeza alta; el cilostazol, el fármaco de la claudicación, la mejora en unos 40 metros, con certeza muy baja y sospecha de sesgo de publicación. En el ensayo CLEVER, en enfermedad aortoilíaca, el ejercicio supervisado añadió 5,8 minutos de marcha a los 6 meses, el stent 3,7 y el tratamiento médico 1,2, y la comparación entre ejercicio y stent fue significativa (p = 0,04): el ejercicio ganó al stent en un ensayo aleatorizado.",
+            "El ejercicio mejora la distancia sin cambiar el ITB. No abre ninguna arteria: mejora la extracción periférica de oxígeno, el metabolismo oxidativo del músculo, la biogénesis mitocondrial y la eficiencia de la marcha. Si un paciente vuelve a los tres meses andando el doble con el mismo ITB, no es un fallo de la prueba, sino exactamente lo esperado. El programa supervisado consiste en tres sesiones semanales de 30-60 minutos durante 12 semanas, y su principal problema es que casi no existe en nuestro sistema, lo que es un problema de organización y no de fisiología.",
+            "El cilostazol es un inhibidor de la fosfodiesterasa 3 y está **contraindicado en la insuficiencia cardíaca** de cualquier grado (advertencia de recuadro negro de la FDA), y muchos de estos pacientes son cardiópatas. La prioridad es andar, dejar de fumar, estatina de alta intensidad y antiagregación si hay síntomas; en la enfermedad asintomática la aspirina no reduce eventos (AAA trial HR 1,03; POPADAD HR 0,98), y en COMPASS el rivaroxabán 2,5 mg cada 12 horas con aspirina redujo los eventos de la extremidad (HR 0,54)."
+          ],
+          "figura": "g_art_ejercicio",
+          "pie": "Orden de tratamiento del claudicante: andar, dejar de fumar, estatina y antiagregante, y operar solo si persiste la limitación.",
+          "perla": "Antes de prescribir cilostazol, pregunta por la función cardíaca: la insuficiencia cardíaca lo contraindica."
+        },
+        {
+          "titulo": "Bypass o endovascular: dos ensayos que parecen contradecirse",
+          "texto": [
+            "En la CLTI la revascularización es Clase I y cuanto antes, por su mortalidad del 25-35 % al año; en la claudicación, en cambio, es un segundo escalón que solo se plantea tras tres meses de tratamiento médico y ejercicio. Las dos opciones son el **bypass**, que rodea la zona ocluida con un injerto, idealmente vena del propio paciente, y el tratamiento **endovascular**, que abre la luz desde dentro con balón y stent a través de un catéter.",
+            "BEST-CLI (2022, 1.830 pacientes) favoreció la cirugía abierta, con un HR de 0,68 para su desenlace principal. BASIL-2 (2023, 345 pacientes) favoreció la estrategia endovascular, con un HR de 1,35 en contra del bypass. No están mal ninguno de los dos: contestaban preguntas distintas. BEST-CLI incluía todo el sector infrainguinal y exigía una safena de un solo segmento; BASIL-2 exigía enfermedad infrapoplítea y permitía cualquier vena. BEST-CLI medía eventos de la extremidad o muerte, incluida la reintervención, que penaliza al endovascular; BASIL-2 medía amputación o muerte, y su diferencia vino de más muertes en el brazo de bypass.",
+            "La síntesis honesta es que, si hay buena safena y la enfermedad es más proximal, conviene el bypass; si es infrapoplítea o el paciente es frágil, el endovascular primero. Cuando dos buenos ensayos dan resultados opuestos, casi siempre estaban contestando **preguntas distintas**, y esa forma de leerlos sirve para cualquier especialidad."
+          ],
+          "figura": "g_art_revasc",
+          "pie": "Bypass, que rodea la oclusión con un injerto venoso, frente a endovascular, que la abre desde dentro con balón y stent."
+        }
+      ]
+    }
+  ],
+  "resolucion": [
+    "La conclusión del volante es un error, y además peligroso. Un ITB de 1,45 no es normal: por encima de 1,40 la arteria es no compresible y el resultado es ininterpretable. Don Andrés reúne las tres condiciones típicas de la calcificación de la media (diabetes de larga evolución, hemodiálisis y edad avanzada), de modo que el manguito no consigue colapsar unas arterias rígidas y la presión que se mide en el tobillo es artefactualmente alta. Además, los pulsos distales ausentes con femorales conservados y el patrón del diabético, con enfermedad tibial y pedia, encajan con una oclusión distal que el ITB no puede ver.",
+    "La anamnesis ya había dado la respuesta. El dolor nocturno que mejora con la pierna colgando es dolor de reposo isquémico: el paciente usa la gravedad para sumar la columna hidrostática a su presión de perfusión. Que duerma en el sillón y lo atribuya a la edad es justo lo que ocurre cuando no se pregunta. Una úlcera de un mes que no cierra, con fondo pálido y sin granulación, en un pie frío, cumple con la enfermedad arterial probable la definición de CLTI: dolor de reposo o pérdida tisular de al menos dos semanas.",
+    "Lo que hay que hacer hoy es medir el índice dedo-brazo, anormal por debajo de 0,70 porque las arterias digitales casi nunca se calcifican, y la presión transcutánea de oxígeno, y remitir al paciente para valoración vascular sin demora, no a una consulta preferente, porque la CLTI tiene una mortalidad al año del 25-35 %. Repetir el ITB tras ejercicio no sirve: ese recurso es para el ITB normal o límite con síntomas de esfuerzo, y repetir una medición inválida no la convierte en válida. Graduar la amenaza con WIfI ayudará a decidir, porque en el diabético la perfusión es solo uno de los tres factores.",
+    "La propuesta de cilostazol es la peor de las opciones. Es un inhibidor de la fosfodiesterasa 3 contraindicado en la insuficiencia cardíaca, y don Andrés es un cardiópata con disnea de esfuerzo; además, no tiene una claudicación que tratar, sino una isquemia que amenaza el pie. Lo que sí necesita, junto a la valoración para revascularizar, es el tratamiento de un paciente cardiovascular: estatina de alta intensidad, antiagregación y control estricto de sus factores de riesgo."
+  ],
+  "claves": [
+    "El flujo depende de la cuarta potencia del radio: con la mitad de radio queda un 6 % del flujo.",
+    "La velocidad es mínima en los capilares porque allí el área total es máxima, pero la resistencia es máxima en las arteriolas.",
+    "Una estenosis del 50 % de diámetro equivale al 75 % de área y es silenciosa hasta que se agota la reserva vasodilatadora.",
+    "La disfunción endotelial es la pérdida de óxido nítrico y precede en décadas a la placa visible.",
+    "La colateral nace de la cizalla en arteriolas preexistentes y se detiene en torno al 40 % de la conductancia: cubre el reposo, no el esfuerzo.",
+    "Hoy la isquemia aguda es más a menudo trombótica (53 %) que embólica (44 %), y el pulso de la otra pierna orienta el diagnóstico.",
+    "En la isquemia aguda decide el grado de Rutherford, no un reloj, y el Doppler venoso separa el IIb del III.",
+    "Un ITB por encima de 1,40 es ininterpretable y obliga a medir el índice dedo-brazo y la TcPO₂.",
+    "El ejercicio supervisado mejora la claudicación más que el cilostazol y ganó al stent en CLEVER, sin cambiar el ITB.",
+    "BEST-CLI y BASIL-2 no se contradicen: comparaban territorios, conductos y desenlaces distintos."
+  ],
+  "glosario": [
+    {
+      "t": "ITB",
+      "d": "Índice tobillo-brazo: cociente entre la presión sistólica más alta del tobillo y la más alta de los brazos; mide caída de presión, no flujo."
+    },
+    {
+      "t": "Índice dedo-brazo",
+      "d": "Cociente entre la presión digital y la braquial; útil cuando el ITB no es interpretable, anormal por debajo de 0,70."
+    },
+    {
+      "t": "TcPO₂",
+      "d": "Presión transcutánea de oxígeno; valora la perfusión cutánea, y por debajo de 30 mmHg indica isquemia grave."
+    },
+    {
+      "t": "Estenosis crítica",
+      "d": "Grado de estenosis (en torno al 50 % de diámetro, 75 % de área) a partir del cual se agota la reserva vasodilatadora y cae el flujo distal."
+    },
+    {
+      "t": "Reserva vasodilatadora",
+      "d": "Capacidad de las arteriolas distales a una estenosis para dilatarse y compensar la caída de presión."
+    },
+    {
+      "t": "Disfunción endotelial",
+      "d": "Pérdida de disponibilidad de óxido nítrico por el endotelio; primer paso de la aterosclerosis."
+    },
+    {
+      "t": "Arteriogénesis",
+      "d": "Transformación de arteriolas colaterales preexistentes en arterias, desencadenada por el aumento de la cizalla."
+    },
+    {
+      "t": "Obliteración funcional",
+      "d": "Colapso de un vaso con pared sana por caída de presión interna, aumento de presión externa o vasoespasmo."
+    },
+    {
+      "t": "Ley de Laplace",
+      "d": "La tensión de la pared es proporcional a la presión por el radio e inversa al grosor; explica el riesgo de rotura del aneurisma."
+    },
+    {
+      "t": "Clasificación de Rutherford aguda",
+      "d": "Gradúa la isquemia aguda en I, IIa, IIb y III según déficit sensitivo y motor y Doppler arterial y venoso, y decide la conducta."
+    },
+    {
+      "t": "Fontaine",
+      "d": "Clasificación de la isquemia crónica: I asintomático, IIa y IIb claudicación por encima o por debajo de 200 m, III dolor de reposo, IV úlcera o gangrena."
+    },
+    {
+      "t": "CLTI",
+      "d": "Isquemia crónica que amenaza la extremidad: enfermedad arterial demostrada con dolor de reposo o pérdida tisular de al menos dos semanas."
+    },
+    {
+      "t": "WIfI",
+      "d": "Sistema que gradúa de 0 a 3 la herida, la isquemia y la infección del pie para estimar la amenaza a la extremidad."
+    },
+    {
+      "t": "Esclerosis de Mönckeberg",
+      "d": "Calcificación de la capa media arterial, frecuente en diabéticos, pacientes en diálisis y ancianos; hace la arteria no compresible."
+    },
+    {
+      "t": "Síndrome de reperfusión",
+      "d": "Liberación de potasio, mioglobina y ácido al restablecer el flujo en un músculo isquémico, con riesgo de arritmia, acidosis y fracaso renal."
+    }
+  ],
+  "referencias": [
+    "Eid MA et al. J Vasc Surg. 2023. PMID 36565779",
+    "Félix-Redondo FJ et al. Rev Esp Cardiol. 2012. PMID 22727799",
+    "Criqui MH et al. N Engl J Med. 1992. PMID 1729621",
+    "Froud JLJ et al. Ann Vasc Surg. 2025. PMID 39694186",
+    "Gornik HL et al. Circulation. 2024. PMID 38743805",
+    "Conte MS et al. J Vasc Surg. 2019. PMID 31159978",
+    "Schaper W. Basic Res Cardiol. 2009. PMID 19101749",
+    "Grip O et al. Br J Surg. 2018. PMID 30043994",
+    "Howard DPJ et al. Circulation. 2015. PMID 26350058",
+    "Rothenberg KA et al. Ann Vasc Surg. 2019. PMID 31034949",
+    "Lane R et al. Cochrane Database Syst Rev. 2017. PMID 29278423",
+    "Brown T et al. Cochrane Database Syst Rev. 2021. PMID 34192807",
+    "Murphy TP et al. Circulation. 2012. PMID 22090168",
+    "Anand SS et al. Lancet. 2018. PMID 29132880",
+    "Farber A et al. N Engl J Med. 2022. PMID 36342173",
+    "Bradbury AW et al. Lancet. 2023. PMID 37116524"
+  ],
+  "test": [
+    {
+      "q": "Una placa reduce el radio de la arteria femoral superficial a la mitad de su valor normal. Si el gradiente de presión, la longitud y la viscosidad no cambiaran, ¿qué fracción del flujo basal quedaría según la ley de Poiseuille?",
+      "o": [
+        "Un 50 %",
+        "Un 25 %",
+        "Un 12,5 %",
+        "Alrededor de un 6 %"
+      ],
+      "c": 3,
+      "e": [
+        "Falsa: el flujo no es proporcional al radio, sino a su cuarta potencia; la mitad de radio no deja la mitad de flujo.",
+        "Falsa: 0,5² = 0,25 es lo que queda de ÁREA de la luz, no de flujo; el flujo depende de r⁴.",
+        "Falsa: 0,5³ = 0,125 correspondería a una dependencia cúbica, que no es la de Poiseuille.",
+        "Correcta: 0,5⁴ = 1/16 ≈ 6 %. En la realidad la caída es aún peor por las pérdidas turbulentas, que Poiseuille no contempla."
+      ]
+    },
+    {
+      "q": "En el informe de un eco-Doppler carotídeo se describe una estenosis «del 75 %» y, en el de la angiografía del mismo paciente, una estenosis «del 50 %». No ha pasado tiempo entre ambas pruebas. ¿Cuál es la interpretación más correcta?",
+      "o": [
+        "Las pruebas son discordantes y hay que repetir ambas antes de decidir.",
+        "Probablemente es la misma lesión: un 50 % de reducción de diámetro equivale a un 75 % de reducción de área.",
+        "La lesión ha progresado entre las dos pruebas.",
+        "Un 75 % de área equivale a un 87 % de diámetro, así que la lesión es más grave de lo que dice la angiografía."
+      ],
+      "c": 1,
+      "e": [
+        "Falsa: no hay discordancia necesaria; las cifras pueden expresar la misma lesión en dos magnitudes distintas.",
+        "Correcta: el área va con el cuadrado del radio; si el diámetro queda al 50 %, el área queda al 25 % (0,5²), es decir, reducida un 75 %.",
+        "Falsa: el enunciado dice que no ha pasado tiempo, y la diferencia se explica por la geometría, no por progresión.",
+        "Falsa: la conversión está mal hecha; un 75 % de reducción de área corresponde a un 50 % de reducción de diámetro."
+      ]
+    },
+    {
+      "q": "Un estudiante afirma que, como la velocidad de la sangre es mínima en los capilares, allí es donde se concentra la mayor resistencia vascular. ¿Dónde está realmente la resistencia máxima del árbol arterial?",
+      "o": [
+        "En los capilares",
+        "En la aorta",
+        "En las arteriolas",
+        "En las vénulas"
+      ],
+      "c": 2,
+      "e": [
+        "Falsa: en los capilares es máxima el área total, lo que explica la baja velocidad, pero no la resistencia, porque están dispuestos en paralelo en enorme número.",
+        "Falsa: la aorta tiene un radio grande y opone poca resistencia; su velocidad es alta precisamente porque su área es pequeña.",
+        "Correcta: las arteriolas son los vasos de resistencia; área total y resistencia son dos gráficas distintas que suelen confundirse.",
+        "Falsa: las vénulas pertenecen al sector de capacitancia, con baja resistencia."
+      ]
+    },
+    {
+      "q": "Un aneurisma de aorta pasa de 4 a 6 cm de diámetro en varios años. ¿Por qué su riesgo de rotura aumenta más deprisa que su diámetro?",
+      "o": [
+        "Porque, según Laplace, la tensión parietal sube con el radio y además la pared se adelgaza al dilatarse, de modo que ambos efectos se suman.",
+        "Porque, según Poiseuille, el flujo dentro del aneurisma aumenta con la cuarta potencia del radio.",
+        "Porque la velocidad de la sangre aumenta dentro del saco al crecer su área.",
+        "Porque la presión arterial sistémica aumenta proporcionalmente al diámetro del aneurisma."
+      ],
+      "c": 0,
+      "e": [
+        "Correcta: la tensión es presión por radio dividida por grosor; el radio sube y el grosor baja a la vez, y el estrés crece más rápido que el diámetro.",
+        "Falsa: Poiseuille describe el flujo por un tubo, no la tensión que soporta su pared, que es lo que determina la rotura.",
+        "Falsa: por continuidad, al aumentar el área la velocidad disminuye, no aumenta.",
+        "Falsa: el aneurisma no eleva la presión sistémica; lo que aumenta es la tensión de su pared a igual presión."
+      ]
+    },
+    {
+      "q": "Tras ocluirse la femoral superficial, en las semanas siguientes se desarrollan colaterales. ¿Cuál es el estímulo principal de esa arteriogénesis?",
+      "o": [
+        "La hipoxia tisular distal, que induce la formación de nuevos capilares.",
+        "El aumento de la cizalla sobre el endotelio de arteriolas colaterales que ya existían.",
+        "La liberación de mioglobina por el músculo isquémico.",
+        "La formación de trombo en el segmento ocluido, que recluta células progenitoras."
+      ],
+      "c": 1,
+      "e": [
+        "Falsa: es el error clásico; la isquemia no es el motor de la colateral, y formar capilares nuevos sería angiogénesis, no arteriogénesis.",
+        "Correcta: el gradiente de presión desvía flujo a arteriolas preexistentes, sube la cizalla, el endotelio libera óxido nítrico y factores de crecimiento y la media prolifera.",
+        "Falsa: la mioglobina es relevante en el síndrome de reperfusión, no en la arteriogénesis.",
+        "Falsa: el trombo no es el estímulo; el proceso depende del flujo desviado por vasos que ya existían."
+      ]
+    },
+    {
+      "q": "Mujer de 81 años con fibrilación auricular no anticoagulada que presenta, desde hace una hora, dolor súbito y frialdad en la pierna izquierda. Nunca había claudicado. Los pulsos de la pierna derecha son amplios y normales. ¿Cuál es el diagnóstico más probable y su implicación terapéutica?",
+      "o": [
+        "Embolia sobre arteria sana; es candidata a extracción del émbolo con catéter de Fogarty.",
+        "Trombosis sobre placa; requiere arteriografía y revascularización del segmento enfermo.",
+        "Trombosis de un aneurisma poplíteo, la causa más frecuente de isquemia aguda.",
+        "Embolia, pero lo indicado es esperar a que se desarrollen colaterales."
+      ],
+      "c": 0,
+      "e": [
+        "Correcta: inicio en minutos, sin claudicación previa, fuente embolígena y pulso contralateral normal indican un árbol arterial sano con un émbolo venido de fuera.",
+        "Falsa: la trombosis suele asentar sobre aterosclerosis bilateral, con pulsos contralaterales disminuidos y claudicación previa.",
+        "Falsa: el aneurisma poplíteo trombosado supone solo un 3 % de los casos.",
+        "Falsa: en la embolia no hay colaterales y tardarían semanas o meses en formarse; la extremidad no puede esperar."
+      ]
+    },
+    {
+      "q": "Varón con isquemia aguda de la pierna derecha. Tiene hipoestesia que se extiende al dorso del pie, no consigue flexionar bien los dedos y el Doppler arterial pedio es inaudible, aunque el venoso se oye. ¿Qué grado de Rutherford tiene y qué conducta procede?",
+      "o": [
+        "Grado I; tratamiento anticoagulante y observación.",
+        "Grado IIa; trombólisis dirigida por catéter.",
+        "Grado IIb; revascularización urgente.",
+        "Grado III; amputación primaria."
+      ],
+      "c": 2,
+      "e": [
+        "Falsa: el grado I no tiene déficit sensitivo ni motor y conserva el Doppler arterial audible.",
+        "Falsa: el IIa tiene déficit sensitivo mínimo, limitado a los dedos, y sin déficit motor; aquí ya hay déficit motor.",
+        "Correcta: déficit sensitivo más allá de los dedos y déficit motor con Doppler venoso audible definen la extremidad inmediatamente amenazada.",
+        "Falsa: el grado III exige anestesia, parálisis con rigidez y Doppler venoso inaudible; aquí el venoso se oye."
+      ]
+    },
+    {
+      "q": "Paciente con isquemia aguda de 30 horas de evolución: la pierna está anestésica y rígida, no hay movilidad y no se oye ni el Doppler arterial ni el venoso. El residente propone revascularizar «para intentar salvarla». ¿Qué es lo correcto?",
+      "o": [
+        "Trombólisis por catéter, que es Clase I en isquemia aguda.",
+        "Revascularización urgente, porque todavía no se han cumplido 48 horas.",
+        "Fasciotomía y después decidir.",
+        "Amputación primaria, porque revascularizar expondría a un síndrome de reperfusión potencialmente mortal."
+      ],
+      "c": 3,
+      "e": [
+        "Falsa: la trombólisis por catéter es Clase I en el grado IIa, no en una extremidad irreversible.",
+        "Falsa: no decide un reloj sino el grado; además, la ventana de seis horas tampoco aparece en la guía europea.",
+        "Falsa: la fasciotomía trata un compartimental en una extremidad viable; aquí el tejido es irreversible.",
+        "Correcta: es un grado III; liberar potasio, mioglobina y ácido de un músculo necrótico puede provocar arritmia, acidosis y fracaso renal: se salvaría la pierna y se perdería al paciente."
+      ]
+    },
+    {
+      "q": "Tras una embolectomía en un Rutherford IIb con isquemia prolongada, ¿qué afirmación sobre el síndrome compartimental es correcta?",
+      "o": [
+        "Debe hacerse fasciotomía profiláctica a todo paciente revascularizado.",
+        "Su mecanismo es una obliteración funcional y la fasciotomía selectiva es razonable en isquemia profunda o prolongada; el diagnóstico es clínico.",
+        "Solo ocurre tras traumatismos, no tras revascularizar una isquemia aguda.",
+        "Se debe confirmar siempre con medición de presión compartimental antes de operar, aunque eso retrase la fasciotomía."
+      ],
+      "c": 1,
+      "e": [
+        "Falsa: la fasciotomía profiláctica de rutina es Clase III, porque alarga el ingreso, se infecta y la mitad acaba con insuficiencia venosa crónica.",
+        "Correcta: el edema dentro de la fascia colapsa vasos sanos desde fuera; la selectiva es Clase IIa, la urgente ante un compartimental establecido Clase I, y la sospecha es clínica.",
+        "Falsa: afecta hasta al 23 % de los revascularizados y fue necesaria en el 53,3 % de los IIb.",
+        "Falsa: el diagnóstico es clínico y retrasar la fasciotomía eleva la amputación a 30 días al 50 %, frente al 5,9 %."
+      ]
+    },
+    {
+      "q": "Varón de 70 años, fumador, que refiere dolor intenso en el antepié por la noche que le despierta y se alivia cuando se sienta en el borde de la cama con la pierna colgando. No tiene lesiones cutáneas. ¿Qué estadio de Fontaine tiene y por qué mejora al colgar la pierna?",
+      "o": [
+        "Estadio IIb; al colgar la pierna disminuye la demanda muscular de oxígeno.",
+        "Estadio IV; el dolor nocturno indica gangrena incipiente.",
+        "Estadio IIa; el decúbito favorece el retorno venoso y descongestiona el pie.",
+        "Estadio III; la gravedad suma la presión hidrostática de la columna de sangre a la presión de perfusión."
+      ],
+      "c": 3,
+      "e": [
+        "Falsa: el estadio II es claudicación de esfuerzo; este dolor aparece en reposo y no depende de la demanda muscular.",
+        "Falsa: el estadio IV requiere úlcera o gangrena, que no hay.",
+        "Falsa: el estadio IIa es claudicación a más de 200 m, y el mecanismo de alivio no es venoso sino arterial.",
+        "Correcta: dolor de reposo nocturno es estadio III; al bajar la pierna el paciente usa la gravedad para perfundir el pie, signo de isquemia grave."
+      ]
+    },
+    {
+      "q": "Mujer de 66 años con dolor en la pantorrilla al caminar unos 300 metros que cede al parar. Su ITB en reposo es de 1,02 en ambas piernas. ¿Cuál es el siguiente paso más adecuado?",
+      "o": [
+        "Repetir el ITB tras hacerla caminar.",
+        "Descartar enfermedad arterial, porque el ITB está en rango normal.",
+        "Medir el índice dedo-brazo, porque el ITB está falseado por calcificación.",
+        "Solicitar directamente una arteriografía para revascularizar."
+      ],
+      "c": 0,
+      "e": [
+        "Correcta: un ITB normal en reposo no excluye la claudicación, porque la estenosis puede ser significativa solo cuando el ejercicio aumenta el flujo.",
+        "Falsa: la clínica es típica de claudicación y el ITB en reposo puede ser normal; descartar con ese dato es un error.",
+        "Falsa: el índice dedo-brazo se usa cuando el ITB es mayor de 1,40 o no es interpretable, y 1,02 no lo es.",
+        "Falsa: en la claudicación la revascularización es un segundo escalón tras tres meses de tratamiento médico y ejercicio, y primero hay que confirmar el diagnóstico."
+      ]
+    },
+    {
+      "q": "Un claudicante con insuficiencia cardíaca y FEVI reducida completa 12 semanas de ejercicio supervisado. Vuelve andando el doble de distancia, pero su ITB es idéntico al previo. ¿Qué conclusión es correcta?",
+      "o": [
+        "La prueba está mal hecha, porque si mejora la marcha debe mejorar el ITB.",
+        "Hay que añadir cilostazol para conseguir que mejore el ITB.",
+        "Es lo esperado: el ejercicio mejora la extracción de oxígeno y el metabolismo muscular sin abrir arterias.",
+        "La mejoría se debe a que el ejercicio ha recanalizado la oclusión y el ITB tardará meses en reflejarlo."
+      ],
+      "c": 2,
+      "e": [
+        "Falsa: el ejercicio mejora la distancia sin modificar el ITB, así que un ITB idéntico no indica error de medida.",
+        "Falsa: el cilostazol está contraindicado en la insuficiencia cardíaca de cualquier grado y tampoco tiene como objetivo el ITB.",
+        "Correcta: mejoran la extracción periférica de oxígeno, el metabolismo oxidativo, la biogénesis mitocondrial y la eficiencia de la marcha.",
+        "Falsa: el ejercicio no abre ninguna arteria; por eso el ITB no cambia."
+      ]
+    },
+    {
+      "q": "BEST-CLI favoreció la cirugía abierta y BASIL-2 la estrategia endovascular en la CLTI. ¿Qué explicación es la más sólida?",
+      "o": [
+        "BASIL-2 es más fiable porque es más reciente, y debe sustituir a BEST-CLI.",
+        "Los ensayos estudiaban poblaciones, conductos y desenlaces distintos: BASIL-2 exigía enfermedad infrapoplítea y permitía cualquier vena, y BEST-CLI exigía safena de un segmento.",
+        "BEST-CLI es más fiable porque incluyó más pacientes, y BASIL-2 debe ignorarse.",
+        "Ambos ensayos están sesgados y la elección debe basarse solo en la preferencia del cirujano."
+      ],
+      "c": 1,
+      "e": [
+        "Falsa: la fecha no hace a un ensayo más válido; ambos son aleatorizados y contestan preguntas diferentes.",
+        "Correcta: además, BEST-CLI incluía la reintervención en su desenlace y BASIL-2 medía amputación o muerte; de ahí la síntesis: buena safena y enfermedad proximal, bypass; infrapoplítea o frágil, endovascular.",
+        "Falsa: el tamaño no anula un ensayo que estudia otra población; BASIL-2 aporta información sobre el territorio infrapoplíteo.",
+        "Falsa: no hay base para descartarlos; la discrepancia se explica por diferencias de diseño, no por sesgo."
+      ]
+    },
+    {
+      "q": "En un cribado se detecta un ITB de 0,78 en un varón de 68 años completamente asintomático. ¿Cuál es la interpretación que más cambia su manejo?",
+      "o": [
+        "Es un marcador de aterosclerosis generalizada con un riesgo de muerte cardiovascular unas seis veces mayor.",
+        "Indica que en uno o dos años desarrollará con alta probabilidad isquemia grave de la extremidad.",
+        "Es irrelevante mientras no tenga síntomas, porque la mayoría de estos pacientes no los desarrolla.",
+        "Obliga a iniciar aspirina, que en la enfermedad asintomática reduce los eventos cardiovasculares."
+      ],
+      "c": 0,
+      "e": [
+        "Correcta: el RR de muerte cardiovascular es de 5,9 (Criqui); la pierna es la ventana a coronarias y carótidas enfermas.",
+        "Falsa: la progresión de la enfermedad arterial no es predecible (rango 1,1-36,7 %, I² 99 %) y la mayoría no pierde la pierna.",
+        "Falsa: aunque no tenga síntomas en la pierna, su riesgo cardiovascular es muy alto y debe tratarse.",
+        "Falsa: en la enfermedad asintomática la aspirina no redujo eventos en el AAA trial (HR 1,03) ni en POPADAD (HR 0,98)."
+      ]
+    }
+  ],
+  "cortas": [
+    {
+      "q": "¿A qué potencia del radio es proporcional el flujo según Poiseuille?",
+      "r": "A la cuarta potencia del radio",
+      "k": [
+        [
+          "cuart",
+          "4",
+          "r4"
+        ]
+      ],
+      "e": "Q = ΔP · π · r⁴ / (8 · η · L); por eso la mitad de radio deja solo un 6 % del flujo."
+    },
+    {
+      "q": "¿En qué vasos es máxima la resistencia vascular?",
+      "r": "En las arteriolas",
+      "k": [
+        [
+          "arteriol"
+        ]
+      ],
+      "e": "Las arteriolas son los vasos de resistencia; en los capilares lo máximo es el área total, no la resistencia."
+    },
+    {
+      "q": "¿Qué capa de la pared arterial regula el calibre?",
+      "r": "La media, de músculo liso",
+      "k": [
+        [
+          "media",
+          "muscul"
+        ]
+      ],
+      "e": "La media está formada por músculo liso, que al contraerse y relajarse regula el calibre arterial."
+    },
+    {
+      "q": "¿Qué pérdida define la disfunción endotelial?",
+      "r": "La pérdida de óxido nítrico",
+      "k": [
+        [
+          "nitric",
+          "oxido nitrico"
+        ]
+      ],
+      "e": "La disfunción endotelial es la pérdida de disponibilidad de óxido nítrico y es el primer paso de la aterosclerosis."
+    },
+    {
+      "q": "¿A qué porcentaje de la conductancia máxima llegan las colaterales?",
+      "r": "Hasta aproximadamente un 40 %",
+      "k": [
+        [
+          "40",
+          "cuarenta"
+        ]
+      ],
+      "e": "La restauración funcional se detiene en torno al 40 %: suficiente para el reposo, no para el ejercicio ni la cicatrización."
+    },
+    {
+      "q": "¿Qué dato separa el grado IIb del III de Rutherford?",
+      "r": "Si se oye el Doppler venoso",
+      "k": [
+        [
+          "doppler",
+          "eco",
+          "sonda"
+        ],
+        [
+          "venos"
+        ]
+      ],
+      "e": "En el IIb el Doppler venoso es audible; en el III también es inaudible y la extremidad es irreversible."
+    },
+    {
+      "q": "¿Qué significa un ITB superior a 1,40?",
+      "r": "Arteria no compresible, resultado ininterpretable",
+      "k": [
+        [
+          "compresib",
+          "interpret",
+          "calcific",
+          "falsead",
+          "artefact",
+          "monckeberg",
+          "rigid"
+        ]
+      ],
+      "e": "Refleja calcificación de la media (Mönckeberg), típica de diabéticos y pacientes en diálisis; no es un ITB normal."
+    },
+    {
+      "q": "¿Qué pruebas usar cuando el ITB no es interpretable?",
+      "r": "Índice dedo-brazo y presión transcutánea de oxígeno",
+      "k": [
+        [
+          "dedo",
+          "digital",
+          "tcpo",
+          "transcutan"
+        ]
+      ],
+      "e": "Las arterias digitales casi nunca se calcifican; el índice dedo-brazo es anormal por debajo de 0,70."
+    },
+    {
+      "q": "¿Cuál es el primer tratamiento de la claudicación intermitente?",
+      "r": "Ejercicio supervisado de marcha",
+      "k": [
+        [
+          "ejercicio",
+          "andar",
+          "marcha",
+          "caminar",
+          "entrenamiento"
+        ]
+      ],
+      "e": "Mejora la distancia máxima unos 120 m con certeza alta, tres veces más que el cilostazol, y ganó al stent en CLEVER."
+    },
+    {
+      "q": "¿Por qué no se revasculariza una isquemia aguda grado III?",
+      "r": "Por el síndrome de reperfusión",
+      "k": [
+        [
+          "reperfus",
+          "hiperpotas",
+          "rabdomiol",
+          "potasio",
+          "mioglobin"
+        ]
+      ],
+      "e": "El músculo necrótico liberaría potasio, mioglobina y ácido: arritmia, acidosis y fracaso renal; la conducta es amputación primaria."
+    }
+  ],
+  "largas": [
+    {
+      "q": "Explica, a partir de los principios hemodinámicos y de la fisiopatología de la colateral, por qué la claudicación intermitente aparece al andar y desaparece al parar, y por qué un programa de ejercicio supervisado puede duplicar la distancia de marcha sin modificar el índice tobillo-brazo.",
+      "guia": "Se espera que integres Poiseuille, turbulencia, estenosis crítica, reserva vasodilatadora y techo de la colateral, y que expliques el mecanismo periférico del ejercicio.",
+      "modelo": "La claudicación es un problema de demanda que supera una oferta limitada, y la física explica por qué. Según Poiseuille, el flujo depende de la cuarta potencia del radio: con la mitad de radio queda solo un 6 % del flujo. Además, una arteria real no es un tubo rígido con flujo laminar, y a las pérdidas viscosas se suman las turbulentas, que crecen con el cuadrado de la velocidad. En reposo, con poco flujo, la estenosis apenas genera pérdida de energía; al andar, la velocidad a través de la lesión aumenta y la caída de presión se dispara.\n\nLa estenosis permanece silenciosa mientras exista reserva vasodilatadora: las arteriolas distales se dilatan y compensan. Hasta un 50 % de reducción de diámetro, que equivale a un 75 % de área, el flujo distal se mantiene. Pero el umbral crítico no es fijo y baja con el ejercicio, porque el músculo pide cinco o diez veces más flujo. Cuando la reserva se agota aparece el dolor, el paciente se detiene, la demanda cae y el dolor cede.\n\nLas colaterales no lo evitan. La arteriogénesis se desencadena por la cizalla sobre arteriolas preexistentes, que tardan semanas o meses en convertirse en arterias, y aunque su masa puede multiplicarse por cincuenta, la conductancia se detiene en torno al 40 % del eje sano. Cubre el reposo, nunca el esfuerzo.\n\nEl ejercicio supervisado actúa en el otro lado de la ecuación. No abre ninguna arteria, por eso el ITB no cambia; mejora la extracción periférica de oxígeno, el metabolismo oxidativo, la biogénesis mitocondrial y la eficiencia de la marcha. Añade unos 120 metros de distancia máxima con certeza alta, frente a unos 40 del cilostazol, y en el ensayo CLEVER superó al stent en enfermedad aortoilíaca. Un paciente que duplica su distancia con el mismo ITB muestra exactamente lo que la fisiología predice.",
+      "rubrica": [
+        {
+          "c": "Aplica la ley de Poiseuille y la dependencia del flujo con la cuarta potencia del radio",
+          "p": 2
+        },
+        {
+          "c": "Explica las pérdidas turbulentas proporcionales al cuadrado de la velocidad y su papel en el esfuerzo",
+          "p": 2
+        },
+        {
+          "c": "Describe la estenosis crítica y la reserva vasodilatadora, incluida la equivalencia 50 % de diámetro y 75 % de área",
+          "p": 2
+        },
+        {
+          "c": "Explica la arteriogénesis por cizalla y el techo de la colateral en torno al 40 %",
+          "p": 2
+        },
+        {
+          "c": "Justifica por qué el ejercicio mejora la marcha sin cambiar el ITB, con datos de evidencia",
+          "p": 2
+        }
+      ]
+    },
+    {
+      "q": "Un paciente llega a urgencias con una pierna fría y dolorosa de pocas horas de evolución. Razona cómo distinguirías una embolia de una trombosis, cómo graduarías la gravedad y qué harías en orden, incluyendo los riesgos que aparecen después de restablecer el flujo.",
+      "guia": "Integra epidemiología actual, exploración clínica (pulso contralateral, seis P, Doppler), clasificación de Rutherford y manejo, incluidas reperfusión y síndrome compartimental.",
+      "modelo": "Lo primero es abandonar la idea de que la isquemia aguda es casi siempre embólica. En el registro sueco, con más de dieciséis mil casos, la trombosis supone el 53 %, la embolia el 44 % y el aneurisma poplíteo trombosado el 3 %. La distinción importa porque la embolia sobre arteria sana se resuelve con un catéter de Fogarty, mientras que la trombosis asienta sobre una arteria enferma que necesita arteriografía y revascularización. La pregunta clave es cómo está el pulso de la otra pierna: si es normal, el árbol está sano y el problema vino de fuera; si está disminuido, hay aterosclerosis bilateral. Una fibrilación auricular, un inicio en minutos y la ausencia de claudicación previa apoyan la embolia.\n\nLa gravedad se gradúa explorando las seis P. Dolor, palidez, ausencia de pulso y frialdad indican isquemia; parestesias y parálisis indican que sufre el nervio, el tejido menos tolerante, y por eso deciden la conducta. Con Rutherford: grado I, sin déficit y con Doppler arterial audible; IIa, déficit sensitivo limitado a los dedos, candidato a trombólisis por catéter; IIb, déficit motor, revascularización urgente; III, anestesia, rigidez y Doppler venoso inaudible, amputación primaria. Solo el Doppler venoso separa el IIb del III, y no existe una ventana de seis horas en la guía europea.\n\nAntes de cualquier prueba se administra heparina no fraccionada, en bolo de 5.000 UI o 70-100 UI/kg y perfusión, con analgesia e hidratación. Después de abrir comienza el otro problema: el músculo isquémico libera potasio, mioglobina y ácido, con riesgo de arritmia, acidosis y fracaso renal. Hasta el 23 % desarrolla síndrome compartimental, una obliteración funcional de vasos sanos comprimidos desde fuera. La fasciotomía rutinaria no está indicada, la selectiva es razonable tras isquemia prolongada y la urgente es obligada ante un síndrome establecido, cuyo diagnóstico es clínico; retrasarla eleva la amputación al 50 %.",
+      "rubrica": [
+        {
+          "c": "Distingue embolia y trombosis con la epidemiología actual y el pulso contralateral",
+          "p": 2
+        },
+        {
+          "c": "Interpreta las seis P y el valor de parestesias y parálisis como signos de sufrimiento nervioso",
+          "p": 2
+        },
+        {
+          "c": "Aplica correctamente los grados de Rutherford y el papel del Doppler venoso",
+          "p": 2
+        },
+        {
+          "c": "Ordena el manejo inicial: heparina, analgesia y conducta según el grado",
+          "p": 2
+        },
+        {
+          "c": "Explica el síndrome de reperfusión y las indicaciones de fasciotomía",
+          "p": 2
+        }
+      ]
+    },
+    {
+      "q": "Analiza qué mide el índice tobillo-brazo, cómo se interpreta y en qué situaciones engaña. Aplícalo al caso de un diabético en hemodiálisis con una úlcera digital de un mes y un ITB de 1,45, y razona el diagnóstico y la urgencia del manejo.",
+      "guia": "Se espera que expliques el fundamento del ITB, sus rangos, las tres trampas y la alternativa, y que reconozcas una CLTI con su pronóstico.",
+      "modelo": "El índice tobillo-brazo es el cociente entre la presión sistólica más alta del tobillo y la más alta de ambos brazos. Se obtiene en minutos con un manguito y una sonda Doppler, y no mide flujo sino la caída de presión que produce la enfermedad oclusiva proximal. Entre 1,00 y 1,40 es normal, entre 0,91 y 0,99 límite, y 0,90 o menos indica enfermedad arterial. Por debajo de 0,40, igual que una presión digital o una TcPO₂ menores de 30 mmHg, señala isquemia grave con necesidad de valoración urgente.\n\nLa prueba tiene tres trampas. La primera es la no compresibilidad: por encima de 1,40 el resultado no es normal sino ininterpretable, porque la calcificación de la media impide que el manguito colapse la arteria y la presión aparece falsamente alta. Ocurre en diabéticos de larga evolución, pacientes en diálisis y ancianos, justo los de más riesgo. La segunda es la enfermedad tibial y pedia pura del diabético, que puede dar un ITB normal porque la oclusión está por debajo del punto de medida. La tercera es el claudicante con ITB normal en reposo, que exige repetirlo tras el ejercicio.\n\nEn el paciente planteado coinciden diabetes y hemodiálisis, de modo que un ITB de 1,45 no descarta nada. Repetirlo tras ejercicio tampoco sirve, porque la medición sigue siendo inválida. Lo correcto es medir el índice dedo-brazo, anormal por debajo de 0,70 porque las arterias digitales casi nunca se calcifican, y la TcPO₂.\n\nAdemás, una úlcera que no cierra durante más de dos semanas en un paciente con enfermedad arterial cumple la definición de isquemia crónica que amenaza la extremidad. Su mortalidad al año es del 25-35 %, por lo que exige valoración vascular sin demora y graduación con WIfI, ya que herida e infección pesan tanto como la perfusión. Etiquetarla como úlcera neuropática supone perder el pie.",
+      "rubrica": [
+        {
+          "c": "Define el ITB y explica que mide caída de presión, no flujo",
+          "p": 2
+        },
+        {
+          "c": "Expone los rangos de interpretación y el umbral de isquemia grave",
+          "p": 2
+        },
+        {
+          "c": "Explica la no compresibilidad por calcificación de la media y las otras dos trampas",
+          "p": 2
+        },
+        {
+          "c": "Propone índice dedo-brazo y TcPO₂ como alternativa razonada",
+          "p": 2
+        },
+        {
+          "c": "Identifica la CLTI, su pronóstico y la necesidad de valoración vascular sin demora",
+          "p": 2
+        }
+      ]
+    }
+  ]
+}

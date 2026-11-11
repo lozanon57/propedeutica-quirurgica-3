@@ -1,0 +1,491 @@
+{
+  "id": "t27",
+  "tema": "Tema 27",
+  "titulo": "Fisiopatología venosa y linfática",
+  "subtitulo": "Dos sistemas de retorno a baja presión, y el tema donde más cosas que parecían lógicas han resultado ser falsas",
+  "minutos": 40,
+  "bloquesTemario": ["Bases venosas", "Insuficiencia venosa crónica", "Trombosis venosa profunda", "Sistema linfático", "Linfedema y linfangitis"],
+  "objetivos": [
+    "Al terminar serás capaz de explicar cómo sube la sangre contra la gravedad y por qué la presión venosa ambulatoria, y no la variz, define la enfermedad venosa crónica.",
+    "Al terminar serás capaz de clasificar a un paciente con la CEAP 2020 y justificar el tratamiento actual de las varices y de la úlcera venosa con las recomendaciones de la guía y el ensayo EVRA.",
+    "Al terminar serás capaz de ordenar los factores de riesgo y la profilaxis de la trombosis venosa profunda en los tres vértices de la tríada de Virchow.",
+    "Al terminar serás capaz de calcular la escala de Wells, decidir entre dímero D y eco-Doppler de compresión y proponer un tratamiento de la TVP basado en ensayos.",
+    "Al terminar serás capaz de explicar por qué existe el sistema linfático y por qué el linfedema secundario es frecuente y definitivo.",
+    "Al terminar serás capaz de distinguir a pie de cama el edema venoso del linfedema y de indicar el tratamiento del linfedema y de la linfangitis según la evidencia vigente."
+  ],
+  "caso": {
+    "titulo": "La pierna derecha de Carmen",
+    "narrativa": [
+      "Carmen tiene 62 años, es administrativa y acude a Urgencias un martes por la tarde porque desde hace cuatro días nota la pantorrilla derecha hinchada, tensa y dolorosa al caminar. Tiene varices en esa pierna desde los cuarenta años, por las que nunca ha consultado. Hace tres semanas pasó cinco días encamada por una gripe con fiebre alta. No fuma, no toma tratamiento hormonal, no tiene antecedentes oncológicos ni trombosis previas, y nunca ha sangrado de forma relevante. Está asustada porque a una vecina «le subió un coágulo al pulmón».",
+      "En la exploración está eupneica, con frecuencia cardiaca de 84 lpm, presión arterial de 132/78 mmHg y saturación de oxígeno del 98 % sin oxígeno. La pantorrilla derecha mide 3,5 cm más que la izquierda, hay edema con fóvea limitado a esa pierna y dolor a la palpación a lo largo del trayecto de la vena femoral. Se ven varices tortuosas en la cara interna del muslo y de la pierna, pero no hay circulación colateral no varicosa. El hueco poplíteo está libre, sin masa palpable, y la piel no está caliente ni eritematosa. El dorso del pie está respetado y el pliegue cutáneo de la base del segundo dedo se pellizca sin dificultad.",
+      "Desde triaje ya se ha extraído un dímero D, que es de 1.800 ng/mL. El eco-Doppler de compresión muestra que la vena poplítea y la vena femoral derechas no se colapsan al presionar con la sonda, con material ecogénico en su interior. La función renal y el hemograma son normales. El residente que la ha atendido propone ingresarla, dejarla en reposo absoluto con la pierna elevada y pautar heparina sódica en perfusión; el adjunto de guardia le pide que lo piense dos veces antes de escribir la orden."
+    ],
+    "datos": [
+      {"k": "Edad y sexo", "v": "Mujer de 62 años"},
+      {"k": "Antecedente reciente", "v": "Encamada 5 días por gripe hace 3 semanas"},
+      {"k": "Exploración de la pierna", "v": "Pantorrilla derecha +3,5 cm, fóvea unilateral, dolor en trayecto venoso profundo"},
+      {"k": "Diagnóstico alternativo", "v": "Hueco poplíteo libre; sin signos de celulitis"},
+      {"k": "Signo de Stemmer", "v": "Negativo; dorso del pie respetado"},
+      {"k": "Estado hemodinámico", "v": "FC 84 lpm, PA 132/78 mmHg, SatO2 98 %"},
+      {"k": "Dímero D", "v": "1.800 ng/mL"},
+      {"k": "Eco-Doppler de compresión", "v": "Venas poplítea y femoral derechas no colapsables"}
+    ],
+    "decision": "Con la trombosis venosa profunda femoropoplítea ya confirmada, ¿aceptaríais la propuesta del residente (ingreso, reposo y heparina en perfusión) o la trataríais de otra manera? Justificad dónde, con qué, cuánto tiempo y qué le diríais a Carmen sobre andar, las medias y la trombólisis.",
+    "discusion": [
+      "¿Cuántos puntos tiene Carmen en la escala de Wells? ¿Cuentan sus varices como circulación colateral? ¿Hacía falta el dímero D para llegar al eco-Doppler?",
+      "¿Qué vértices de la tríada de Virchow explican su trombosis, y qué medida de profilaxis habría atacado cada uno?",
+      "Si el trombo puede soltarse, ¿no es más prudente que no se mueva de la cama? ¿Qué tipo de evidencia necesitaríais para responder a esa pregunta?",
+      "Carmen ya tenía varices. ¿Son la causa de la trombosis, y qué riesgo tiene esa pierna de acabar con una úlcera dentro de unos años?"
+    ]
+  },
+  "bloques": [
+    {
+      "titulo": "Bases venosas",
+      "idea": "La sangre sube gracias a la bomba muscular y a las válvulas, y la enfermedad venosa no es la variz que se ve sino la presión que queda en el tobillo cuando el paciente anda.",
+      "secciones": [
+        {
+          "titulo": "Tres cifras para situar el problema",
+          "texto": [
+            "En atención primaria española, el 48,5 % de los casi veinte mil sujetos estudiados tenía algún grado de enfermedad venosa crónica (C1 a C6), con más frecuencia en mujeres (58,5 %) que en hombres (32,1 %). Es de las enfermedades más prevalentes que vais a ver, pero **solo el 4 % necesita una intervención** (escleroterapia, ablación o cirugía). La úlcera venosa, que es el final del camino, tiene una prevalencia poblacional del 0,7 %.",
+            "La segunda lección es epidemiológica. Todos hemos aprendido que las varices son cosa de mujeres, y sin embargo en el Edinburgh Vein Study, que fue poblacional y salió a buscar a la gente en lugar de esperarla en la consulta, las varices troncales fueron más frecuentes en hombres (40 %) que en mujeres (32 %). El predominio femenino de los libros nace de un **sesgo de consulta**: ellas consultan más, por motivos estéticos y sintomáticos."
+          ],
+          "figura": "g_ven_cifras",
+          "pie": "La enfermedad venosa crónica es muy prevalente y poco quirúrgica: casi la mitad de los pacientes de primaria la tienen, solo el 4 % necesita intervención y el 0,7 % de la población tiene úlcera.",
+          "perla": "Antes de creer una diferencia de prevalencia entre sexos, preguntad de dónde salieron los pacientes: una serie de consulta mide quién consulta, no quién enferma."
+        },
+        {
+          "titulo": "Cómo sube la sangre en contra de la gravedad",
+          "texto": [
+            "El miembro inferior tiene dos sistemas separados por la fascia: el superficial, donde están las varices que se ven, y el profundo, dentro del compartimento muscular. Se comunican por las venas perforantes, cuyo flujo normal va de superficial a profundo. El dato clave es que **el 90 % del retorno va por el sistema profundo** y solo el 10 % por el superficial; por eso se puede cerrar o extirpar la safena sin comprometer el retorno.",
+            "Tres mecanismos empujan la sangre hacia el corazón. El principal es la **bomba muscular de la pantorrilla**, el llamado corazón periférico: al contraerse el sóleo y los gemelos exprimen las venas profundas y generan picos de más de 200 mmHg. El segundo son las válvulas bicúspides, que dan una sola dirección al flujo; sin ellas la bomba no sirve de nada, porque la sangre exprimida volvería a caer. El tercero es la bomba abdómino-torácica: la presión intratorácica negativa de la inspiración aspira sangre hacia la aurícula derecha.",
+            "A estas se suma la bomba plantar: al apoyar el pie se exprime el plexo venoso de Lejars. Por eso el paciente encamado pierde dos bombas a la vez, la plantar y la muscular, y por eso la inmovilidad es un factor de riesgo tan potente de trombosis."
+          ],
+          "figura": "g_ven_sistema",
+          "pie": "Sistemas superficial y profundo separados por la fascia y unidos por perforantes, con los tres mecanismos del retorno: bomba muscular, válvulas y bomba abdómino-torácica.",
+          "perla": "El sistema profundo mueve el 90 % del retorno; la safena es prescindible precisamente porque no hace el trabajo."
+        },
+        {
+          "titulo": "Cuando la válvula se rompe",
+          "texto": [
+            "Con la válvula sana, toda la sangre que impulsa la bomba sube. Cuando la válvula se vuelve incompetente, parte de esa sangre vuelve a bajar: es el **reflujo**. El segmento de vena situado por debajo recibe más volumen del que le corresponde, se dilata, y al dilatarse sus propias valvas dejan de coaptar. Así se instaura un círculo vicioso que progresa de arriba abajo y que explica por qué la variz tiende a extenderse.",
+            "Hay una segunda vía para generar varices. Si fallan las válvulas de las perforantes, el flujo se invierte y el sistema profundo, que durante la contracción muscular está a alta presión, descarga hacia el superficial. En los dos casos el resultado es el mismo: la presión del sistema superficial deja de bajar cuando el paciente camina."
+          ],
+          "figura": "g_ven_variz",
+          "pie": "La válvula sana deja subir toda la sangre; la rota la deja caer, la vena inferior se sobrecarga y se dilata, y sus válvulas también dejan de cerrar.",
+          "perla": "La variz es la consecuencia visible de un fallo hemodinámico: si solo miráis la vena dilatada, os perdéis la enfermedad."
+        },
+        {
+          "titulo": "El parámetro que define la enfermedad: la presión venosa ambulatoria",
+          "texto": [
+            "La presión venosa ambulatoria se mide con una aguja en una vena del dorso del pie mientras el paciente hace diez flexiones de tobillo. De pie y quieto, sano y enfermo tienen la misma presión, unos 90 mmHg, que no es patológica: es el peso de la columna de sangre desde la aurícula hasta el pie. En el sistema normal, al empezar el ejercicio la bomba vacía el sistema profundo, las válvulas impiden el regreso y la presión cae a 20-30 mmHg; al parar, se recupera lentamente, en más de 20 segundos, porque solo entra sangre por vía arterial. Ese es el **tiempo de rellenado venoso**.",
+            "En el paciente con reflujo, la presión apenas baja al andar, porque lo que la bomba expulsa vuelve a caer, y al parar se rellena en 3 o 4 segundos, por gravedad a través de las válvulas rotas. Esa pierna pasa el día por encima del umbral de unos 45 mmHg a partir del cual aparece la úlcera. Por eso se llama **ambulatoria**: en reposo no hay diferencia, y la enfermedad solo se ve cuando el paciente anda."
+          ],
+          "figura": "g_ven_presion",
+          "pie": "Presión en el tobillo durante el ejercicio: en el sistema normal cae a 20-30 mmHg y se recupera despacio; en la insuficiencia venosa apenas baja, se rellena en segundos y queda por encima del umbral de 45 mmHg.",
+          "perla": "Tiempo de rellenado corto significa reflujo: la sangre no llega desde la arteria, cae desde arriba por válvulas que no cierran."
+        }
+      ]
+    },
+    {
+      "titulo": "Insuficiencia venosa crónica",
+      "idea": "La úlcera venosa es la consecuencia inflamatoria de una presión ambulatoria alta, y todo lo que funciona (compresión, ablación del reflujo, stent de la obstrucción) funciona porque baja esa presión.",
+      "secciones": [
+        {
+          "titulo": "De la presión a la úlcera",
+          "texto": [
+            "Nicolaides estudió 236 miembros y encontró una relación prácticamente lineal (r = 0,79) entre presión venosa ambulatoria e incidencia de úlcera: **ninguna úlcera por debajo de 30 mmHg y el 100 % por encima de 90**. Y lo que da todo el valor al estudio es que la relación se cumple con independencia de que la enfermedad sea superficial o profunda. Da igual dónde esté el fallo: lo que predice la úlcera es la presión.",
+            "El mecanismo tiene una corrección histórica. En 1982 Browse y Burnand propusieron que la hipertensión venosa dejaba escapar fibrinógeno, que formaba un manguito de fibrina pericapilar que impedía la difusión del oxígeno y producía isquemia cutánea. La teoría era elegante y es falsa: el manguito es permeable al oxígeno. Existe, y se ve en cualquier corte histológico, pero es un marcador de extravasación, no la causa de la úlcera.",
+            "Lo que se sostiene hoy es que la úlcera venosa es una **enfermedad inflamatoria crónica**. La hipertensión venosa reduce el esfuerzo de cizalla sobre el endotelio y produce disfunción endotelial, igual que en el lado arterial. Se degrada el glucocálix, los leucocitos se adhieren y atraviesan la pared y liberan citoquinas, radicales libres y metaloproteinasas de matriz, que destruyen la matriz extracelular: fibrosis dérmica, lipodermatoesclerosis y, al final, úlcera."
+          ],
+          "figura": "g_ven_ulcera",
+          "pie": "Relación lineal entre presión venosa ambulatoria e incidencia de úlcera (Nicolaides, n = 236): ninguna por debajo de 30 mmHg y el 100 % por encima de 90.",
+          "perla": "Si os preguntan por el manguito de fibrina, la respuesta correcta es que existe pero no explica la úlcera: es permeable al oxígeno."
+        },
+        {
+          "titulo": "La clasificación CEAP (revisión 2020)",
+          "texto": [
+            "La C clínica es una escalera que reproduce la historia natural: C0 sin signos, C1 telangiectasias o venas reticulares, C2 varices, C3 edema (el primer escalón con hipertensión venosa de verdad), C4 cambios cutáneos, C5 úlcera cicatrizada y C6 úlcera activa. C4 se divide en C4a (pigmentación por hemosiderina o eccema), C4b (lipodermatoesclerosis o atrofia blanca, la piel leñosa que estrangula el tobillo y da a la pierna forma de botella de champán invertida) y **C4c, la corona flebectásica**, el abanico de venillas en el maléolo, que es nueva de 2020.",
+            "La revisión de 2020 añadió también el **modificador «r» de recurrencia** (C2r varices recurrentes, C6r úlcera recurrente), porque un paciente reoperado no es igual que uno virgen. Se mantienen los sufijos S y A (sintomático o asintomático). La E es la etiología (primaria, secundaria o congénita), la A la anatomía (superficial, profunda o perforantes) y la P la fisiopatología: reflujo (Pr), obstrucción (Po) o ambas.",
+            "En la clínica casi todo el mundo usa solo la C, pero la P tiene consecuencias: el reflujo se ablaciona y la obstrucción se trata con stent. Y la CEAP describe, no mide cambio; para seguir la evolución con un tratamiento se usa el Venous Clinical Severity Score."
+          ],
+          "figura": "g_ven_ceap",
+          "pie": "La escalera CEAP de C0 a C6, con la C4c (corona flebectásica) y el modificador «r» de recurrencia añadidos en la revisión de 2020.",
+          "perla": "C3, el edema, es el primer escalón con hipertensión venosa real; C1 y C2 pueden ser casi solo estética."
+        },
+        {
+          "titulo": "Qué hacer y en qué orden",
+          "texto": [
+            "La mayoría de los pacientes no necesita cirugía. El primer escalón son las **medias de compresión**, que comprimen desde fuera y ayudan a que la sangre suba, y el segundo es andar y no permanecer quieto de pie, porque la bomba de la pantorrilla solo funciona si se usa. Cuando hay que tratar el reflujo, hoy se cierra la vena enferma desde dentro con calor.",
+            "La guía europea de 2022 sitúa la **ablación térmica endovenosa** (láser o radiofrecuencia) como primera elección en el reflujo de la safena magna, Clase I, Nivel A. La ligadura alta con stripping, la safenectomía clásica, ha quedado en Clase IIa, Nivel A, con una condición literal: solo si no hay ablación térmica disponible. El ensayo CLASS, a 5 años, mostró que láser y cirugía son equivalentes en calidad de vida y que la espuma es inferior a ambas.",
+            "La prueba primaria no es la flebografía, como se enseñaba hace treinta años, sino el **eco-Doppler completo del miembro** (Clase I); la flebografía queda en Clase IIb y solo cuando la imagen seccional es inadecuada o no está disponible. Y como el reflujo superficial eleva la presión ambulatoria por sí mismo, la guía manda tratarlo incluso cuando coexiste con reflujo profundo (Clase I, Nivel A)."
+          ],
+          "figura": "g_ven_tratamiento",
+          "pie": "El orden del tratamiento de las varices: compresión, deambulación, cierre endovenoso de la vena enferma y, solo si no hay otra opción, safenectomía.",
+          "perla": "Si a la pregunta «tratamiento quirúrgico de elección de las varices» contestáis safenectomía, contestáis con la guía de hace quince años."
+        },
+        {
+          "titulo": "EVRA: operar para que la úlcera cierre",
+          "texto": [
+            "Durante años se esperaba a que la úlcera cicatrizara para tratar las varices. El ensayo EVRA aleatorizó a 450 pacientes con úlcera venosa activa a compresión más **ablación endovenosa precoz** (en las dos primeras semanas) o compresión con ablación diferida. La mediana de tiempo hasta la cicatrización fue de 56 frente a 82 días, con un hazard ratio de 1,38 (1,13-1,68; p = 0,001), y a las 24 semanas estaban cicatrizadas el 85,6 % frente al 76,3 %.",
+            "La práctica cambió: ya no se opera después de que la úlcera cierre, se opera para que cierre. La guía recoge la ablación precoz cuando hay insuficiencia superficial (Clase I, Nivel B) junto a la compresión de al menos 40 mmHg en la úlcera activa (Clase I, Nivel A). Las dos medidas hacen lo mismo por caminos distintos: bajar la presión venosa ambulatoria."
+          ],
+          "figura": "g_ven_evra",
+          "pie": "EVRA: la ablación precoz acorta la cicatrización de la úlcera venosa de 82 a 56 días (HR 1,38), y las recomendaciones que de ello se derivan en la guía.",
+          "perla": "Úlcera venosa activa con reflujo superficial: compresión y ablación precoz, sin esperar a que cicatrice."
+        }
+      ]
+    },
+    {
+      "titulo": "Trombosis venosa profunda",
+      "idea": "La trombosis se explica con Virchow, se diagnostica calculando una probabilidad y se trata con anticoagulación oral, compresión para los síntomas y el paciente andando, casi siempre en casa.",
+      "secciones": [
+        {
+          "titulo": "La tríada de Virchow, 170 años después",
+          "texto": [
+            "Virchow describió en 1856 los tres vértices de la trombosis: **estasis, lesión endotelial e hipercoagulabilidad**. Sigue siendo útil porque todos los factores de riesgo caben en uno de ellos. El encamamiento, la cirugía larga, la inmovilización y el viaje largo son estasis; el catéter central, el traumatismo y la cirugía sobre la propia vena son lesión endotelial; el cáncer, los anticonceptivos, la gestación y el factor V Leiden son hipercoagulabilidad. Si entendéis a qué vértice pertenece cada uno, no hace falta memorizarlos.",
+            "La segunda razón es práctica: toda la profilaxis hospitalaria ataca uno de los vértices. La compresión neumática intermitente y la movilización precoz atacan la estasis, operar con cuidado ataca la lesión endotelial y la heparina de bajo peso molecular ataca la hipercoagulabilidad.",
+            "Para dimensionarlo: la incidencia es de 53 a 162 trombosis venosas profundas y de 39 a 115 embolias pulmonares por 100.000 habitantes y año, casi ocho veces mayor por encima de los 80 años que a los cuarenta y tantos. Es la complicación prevenible más frecuente de un ingreso hospitalario."
+          ],
+          "figura": "g_ven_virchow",
+          "pie": "La tríada de Virchow (1856) con los factores de riesgo agrupados en sus tres vértices: estasis, lesión endotelial e hipercoagulabilidad.",
+          "perla": "Tres vértices, tres medidas: movilizar y comprimir contra la estasis, técnica cuidadosa contra la lesión, heparina contra la hipercoagulabilidad."
+        },
+        {
+          "titulo": "Cómo se diagnostica hoy",
+          "texto": [
+            "Edema con fóvea, dolor, empastamiento y cambio de coloración no son específicos: una celulitis, una rotura del gemelo o un quiste de Baker roto, que es lo que más se confunde, dan exactamente lo mismo. Por eso la trombosis no se diagnostica mirando la pierna, sino **calculando una probabilidad** antes de pedir nada.",
+            "La escala de Wells suma un punto por cada uno de estos ítems: cáncer activo, parálisis o inmovilización reciente, encamamiento de tres días o más o cirugía mayor en las doce semanas previas, dolor en el trayecto venoso profundo, toda la pierna edematosa, pantorrilla más de 3 cm mayor que la contralateral, fóvea limitada a la pierna sintomática, circulación colateral superficial no varicosa y trombosis previa. Y **resta dos puntos** si hay un diagnóstico alternativo al menos igual de probable, el ítem más olvidado y el más inteligente, porque obliga a pensar en el diferencial antes de puntuar. Con 1 punto o menos la trombosis es improbable; con 2 o más, probable.",
+            "Si es improbable se pide dímero D: si es negativo, la trombosis queda descartada; si es positivo, eco-Doppler. Si es probable se va directamente al **eco-Doppler de compresión**, en el que se aprieta con la sonda: la vena normal se colapsa y la que tiene trombo no. El dímero D es muy sensible y nada específico, y está alto en el postoperado, la embarazada, el séptico, el anciano y el paciente oncológico; sirve solo para descartar."
+          ],
+          "figura": "g_ven_wells",
+          "pie": "Algoritmo diagnóstico de la TVP: con Wells improbable, dímero D para descartar; con Wells probable, eco-Doppler de compresión directamente.",
+          "perla": "Un dímero D alto no diagnostica nada; un dímero D negativo con Wells improbable sí permite mandar al paciente a casa."
+        },
+        {
+          "titulo": "Lo que ha cambiado en el tratamiento",
+          "texto": [
+            "El reposo en cama con la pierna elevada hasta estar anticoagulado no tiene base, y hay evidencia en contra. Un metaanálisis de 5 estudios con 3.048 pacientes mostró que la **deambulación precoz no aumenta la embolia pulmonar** (RR 1,03; IC 0,65-1,63; p = 0,90), y además alivia antes el dolor. En el estudio de Blättler y Partsch el trombo progresó menos en los pacientes que caminaban con compresión que en los que estaban en cama. Que el trombo se suelte depende de su antigüedad y de su adherencia a la pared, no de que el paciente ande.",
+            "Se acabaron la heparina sódica en perfusión con controles de cefalina y el acenocumarol como primera opción. El metaanálisis de los seis ensayos en fase III con unos 27.000 pacientes muestra que los **anticoagulantes orales directos** son igual de eficaces que los antivitamina K para la recurrencia (RR 0,90; 0,77-1,06) y producen la mitad de hemorragia mayor (RR 0,61; 0,45-0,83), con menos hemorragia intracraneal y mortal. Se puede empezar con heparina de bajo peso molecular o directamente con un ACOD.",
+            "La duración mínima son tres meses, y es a los tres meses, no el día del diagnóstico, cuando se decide si se prolonga, según si la trombosis fue provocada y cuál es el riesgo hemorrágico. Y la trombosis no complicada se trata en casa, como recoge la guía de la Sociedad Americana de Hematología."
+          ],
+          "figura": "g_ven_tvp",
+          "pie": "Cuatro cambios en el tratamiento de la TVP: de reposo a deambulación con compresión, de heparina en perfusión y acenocumarol a ACOD durante al menos tres meses, y de ingreso a tratamiento domiciliario.",
+          "perla": "Anticoagulante oral directo, compresión para los síntomas, a andar y a casa: así se resume el tratamiento de la TVP no complicada."
+        },
+        {
+          "titulo": "Complicaciones, y dos ideas obvias que los ensayos tumbaron",
+          "texto": [
+            "Un trombo venoso profundo puede soltarse (embolia pulmonar), quedarse y destruir las válvulas (síndrome postrombótico) o volver (recurrencia). La embolia es la que mata: en el registro RIETE (n = 34.380) la mortalidad a 30 días fue del 14 % con inestabilidad hemodinámica frente al 5,4 % sin ella, y el 3,2 % de los supervivientes desarrolla hipertensión pulmonar tromboembólica crónica. El síndrome postrombótico aparece en el 22,8 % a 2 años, el 28,0 % a 5 y el 29,1 % a 8, y lo dispara sobre todo la **recidiva en la misma pierna** (HR 6,4; 3,1-13,3).",
+            "ATTRACT probó una idea impecable: si el síndrome postrombótico lo causa el trombo que destruye las válvulas, retirémoslo con trombólisis dirigida por catéter. En 692 pacientes, el síndrome apareció en el 47 % con trombólisis y en el 48 % sin ella (RR 0,96; p = 0,56), con más hemorragia mayor (1,7 % frente a 0,3 %; p = 0,049). **No beneficia y hace daño**; queda para casos seleccionados como la flegmasía, la trombosis ilíaca extensa o el paciente joven.",
+            "SOX aleatorizó a 806 pacientes con primera trombosis proximal a medias de compresión o a medias placebo: síndrome postrombótico en el 14,2 % frente al 12,7 % (HR 1,13; 0,73-1,76; p = 0,58). Las medias no lo previenen. Siguen sirviendo para el dolor y el edema y para reducir la gravedad del síndrome ya establecido (Clase IIa); lo que no se sostiene es prescribirlas a todos como profilaxis."
+          ],
+          "figura": "g_ven_nofunciona",
+          "pie": "ATTRACT y SOX: ni la trombólisis por catéter ni las medias de compresión redujeron el síndrome postrombótico frente a su control.",
+          "perla": "La mejor prevención del síndrome postrombótico es que no haya una segunda trombosis en esa pierna: anticoagulación bien hecha y bien cumplida."
+        }
+      ]
+    },
+    {
+      "titulo": "Sistema linfático",
+      "idea": "El linfático es la única vía por la que vuelven al torrente las proteínas que escapan al intersticio, y como no tiene colaterales, cuando se secciona el daño es definitivo.",
+      "secciones": [
+        {
+          "titulo": "Para qué existe el sistema linfático",
+          "texto": [
+            "Por las fuerzas de Starling, el capilar sanguíneo filtra en su extremo arterial más líquido del que reabsorbe en el venoso, y además se le escapan proteínas al intersticio. Esas proteínas son demasiado grandes para volver al capilar sanguíneo: **el linfático es su única vía de retorno**. Las cifras dan la medida del trabajo: en 24 horas escapa al intersticio más del 50 % de la albúmina circulante, y en ese mismo tiempo unos 2 kg de linfa vuelven al sistema venoso. Sin linfáticos, el intersticio se encharcaría en horas.",
+            "Los capilares linfáticos están entre la epidermis y la dermis superficial y **no tienen membrana basal**, de ahí que sean muy permeables y puedan captar hematíes, bacterias y proteínas enteras. No hay linfáticos en músculo, tendón, cartílago, cerebro ni córnea."
+          ],
+          "figura": "g_lin_anatomia",
+          "pie": "El linfático devuelve las proteínas que escapan del capilar sanguíneo: cada día sale al intersticio el 50 % de la albúmina y vuelven unos 2 kg de linfa, por una vía sin colaterales.",
+          "perla": "Capilar linfático sin membrana basal: por eso absorbe proteínas, bacterias y células, y por eso es la puerta de entrada de la linfangitis."
+        },
+        {
+          "titulo": "Sin colaterales: el linfedema secundario",
+          "texto": [
+            "La diferencia decisiva con la vena es que el sistema linfático **no tiene un buen sistema de colaterales**. Si se trombosa una femoral hay veinte caminos alternativos; si se extirpan los ganglios axilares no hay ninguno. Por eso el linfedema secundario a la cirugía oncológica es tan frecuente y tan definitivo.",
+            "En el cáncer de mama, el linfedema aparece en el 16,6 % global, el 19,9 % tras linfadenectomía axilar frente al 5,6 % tras biopsia del ganglio centinela. En el cáncer de vulva, el estudio GROINSS-V encontró linfedema en el 1,9 % de las pacientes con solo ganglio centinela frente al 25,2 % con linfadenectomía inguinal (p < 0,0001). La lección para el cirujano es directa: **cuantos menos linfáticos se seccionan, menos linfedema**, y la biopsia selectiva del ganglio centinela es, también, una técnica de prevención del linfedema."
+          ],
+          "perla": "Linfadenectomía axilar 19,9 % frente a centinela 5,6 %: el linfedema se previene sobre todo en la indicación quirúrgica."
+        }
+      ]
+    },
+    {
+      "titulo": "Linfedema y linfangitis",
+      "idea": "Las proteínas retenidas convierten el linfedema en una enfermedad de sólidos (grasa y colágeno), que se trata con compresión y se previene operando mejor.",
+      "secciones": [
+        {
+          "titulo": "Edema venoso o linfedema",
+          "texto": [
+            "El edema venoso es un **trasudado pobre en proteínas**: agua libre que el dedo desplaza, deja fóvea y mejora mucho con la elevación. Afecta a la región perimaleolar, respeta el dorso del pie y pigmenta la piel con hemosiderina. El linfedema es **linfa rica en proteínas**, que retienen agua por presión oncótica, son crónicamente proinflamatorias y estimulan fibroblastos y adipocitos. El intersticio se llena de sólidos, grasa y colágeno, en lugar de líquido; el dedo ya no desplaza nada y aparecen hiperqueratosis y papilomatosis. Afecta al dorso del pie, con dedos gruesos y cuadrados en salchicha, y mejora poco o nada al elevar la pierna.",
+            "El **signo de Stemmer** cuesta cinco segundos: si no se puede pellizcar y levantar un pliegue de piel en el dorso de la base del segundo dedo, es positivo y orienta a linfedema.",
+            "La corrección más importante del bloque: «el linfedema no deja fóvea» solo es cierto en fases avanzadas. En la clasificación de la International Society of Lymphology, el estadio 0 es latente; el I es un edema que cede con la elevación y **puede dejar fóvea**; en el II el edema es permanente y la fóvea es manifiesta, hasta desaparecer al final del estadio; y el III es la elefantiasis con cambios tróficos. La gravedad se gradúa por el exceso de volumen: mínimo de más del 5 al 20 %, moderado del 20 al 40 % y grave por encima del 40 %. El «estadio Ia» no existe en el documento vigente. La ausencia de fóvea no indica linfedema: indica fibrosis."
+          ],
+          "figura": "g_lin_edema",
+          "pie": "Edema venoso frente a linfedema según fóvea, composición, dorso del pie, signo de Stemmer y respuesta a la elevación; en el estadio I el linfedema puede dejar fóvea.",
+          "perla": "Si esperáis a que el linfedema deje de dejar fóvea para diagnosticarlo, llegáis tarde: el precoz es el que mejor responde."
+        },
+        {
+          "titulo": "Qué funciona en el linfedema",
+          "texto": [
+            "Se repite que el tratamiento es la terapia descongestiva compleja y que su pilar es el drenaje linfático manual. La revisión Cochrane lo desglosa: **el vendaje compresivo solo reduce el volumen del miembro un 30-38,6 %**, y añadir el drenaje manual aporta un 7,11 % adicional (1,75-12,47), y solo en linfedema leve o moderado. El masaje es agradable y seguro, pero el pilar es la compresión; una revisión de revisiones de 2024 concluye que el drenaje no aporta beneficio adicional de volumen.",
+            "La novedad esperanzadora es quirúrgica y preventiva. En la reconstrucción linfática inmediata (técnica LYMPHA), en el mismo acto de la linfadenectomía se anastomosan los linfáticos seccionados a una vénula. En el ensayo aleatorizado del Memorial Sloan Kettering, con 144 pacientes, el linfedema fue del 9,5 % frente al 32 % (p = 0,014), y el metaanálisis de 2025 con 1.487 pacientes da un 7,85 % frente a un 20,8 % (RR 0,31; 0,19-0,51). En lugar de tratar el linfedema, se evita que aparezca."
+          ],
+          "figura": "g_lin_tratamiento",
+          "pie": "A la izquierda, la compresión explica casi toda la reducción de volumen y el drenaje manual añade un 7 %; a la derecha, la reconstrucción linfática inmediata reduce el linfedema tras la linfadenectomía.",
+          "perla": "Compresión primero; el drenaje linfático manual es un complemento, no el pilar."
+        },
+        {
+          "titulo": "Linfangitis y Stewart-Treves",
+          "texto": [
+            "La linfa estancada, rica en proteínas, es un medio de cultivo, y el paciente con linfedema sufre linfangitis y celulitis de repetición. La pauta clásica de penicilina G procaína intramuscular, un millón de unidades cada doce horas, está obsoleta. La guía vigente de la IDSA indica **antibiótico oral activo frente a estreptococo** (penicilina V, amoxicilina o cefalexina) y reserva la vía parenteral para el paciente con afectación sistémica.",
+            "En quien ha tenido dos o más episodios, la profilaxis con penicilina V 250 mg cada 12 horas durante un año reduce la recurrencia del 37 % al 22 %, con un número necesario a tratar de 5. La pega honesta es que el efecto se pierde al suspenderla.",
+            "La complicación más temida del linfedema crónico es el síndrome de Stewart-Treves, el angiosarcoma que aparece sobre un miembro linfedematoso: latencia media de 14,9 años, mortalidad del 53,9 % y supervivencia a 5 años del 22,4 %. Una lesión violácea nueva en un brazo con linfedema de muchos años se biopsia."
+          ],
+          "perla": "Linfangitis sin afectación sistémica: amoxicilina, penicilina V o cefalexina por vía oral; tras dos o más episodios, valorar profilaxis con penicilina V."
+        }
+      ]
+    }
+  ],
+  "resolucion": [
+    "Empecemos por el diagnóstico, que en Carmen ya estaba hecho pero conviene reconstruir. En la escala de Wells suma un punto por encamamiento de tres días o más reciente, uno por la pantorrilla más de 3 cm mayor, uno por la fóvea limitada a la pierna sintomática y uno por el dolor en el trayecto venoso profundo: 4 puntos. Sus varices no cuentan como circulación colateral, porque el ítem exige colaterales no varicosas, y no hay un diagnóstico alternativo igual de probable: el hueco poplíteo está libre y no hay signos de celulitis. Con Wells probable el camino era el eco-Doppler de compresión directamente; el dímero D de triaje no añadía nada, porque solo sirve para descartar en el paciente de probabilidad baja. Su trombosis encaja en el vértice de la estasis de Virchow, con cinco días en cama que le quitaron la bomba muscular y la plantar a la vez.",
+    "La propuesta del residente es la de los apuntes de hace veinte años, y es incorrecta en sus tres componentes. Carmen está estable, sin datos de embolia, con función renal normal y sin riesgo hemorrágico conocido: es una trombosis no complicada que se trata en casa. Se anticoagula con un anticoagulante oral directo, igual de eficaz que el antivitamina K y con la mitad de hemorragia mayor, durante un mínimo de tres meses; la decisión de prolongarlo se toma a los tres meses, valorando que fue una trombosis provocada por un factor transitorio. Debe caminar desde el primer día: la deambulación precoz no aumenta la embolia pulmonar (RR 1,03) y alivia antes el dolor, y el trombo progresa menos en quien anda con compresión que en quien está en cama.",
+    "A Carmen hay que explicarle también lo que no vamos a hacer. No está indicada la trombólisis por catéter: en ATTRACT no redujo el síndrome postrombótico (47 % frente a 48 %) y aumentó la hemorragia mayor, y ella no tiene flegmasía ni trombosis ilíaca extensa. Las medias se le pueden recomendar para el dolor y el edema de estas semanas, pero sin prometerle que prevendrán el síndrome postrombótico, porque SOX demostró frente a placebo que no lo hacen. Lo que más la protege es que no tenga una segunda trombosis en esa pierna, el factor que multiplica por seis el riesgo de síndrome postrombótico.",
+    "Por último, sus varices. No son la causa de la trombosis, pero sí el reflejo de una pierna con reflujo superficial, y si a ello se suma el daño valvular profundo que puede dejar el trombo, su presión venosa ambulatoria puede subir hacia la zona en la que aparece la úlcera. Cuando pase la fase aguda merece un eco-Doppler completo del miembro, una clasificación CEAP y, si hay reflujo de safena sintomático, ablación térmica endovenosa, que la guía recomienda incluso cuando coexiste reflujo profundo. Y el Stemmer negativo con el dorso del pie respetado nos permitió, desde el principio, descartar un linfedema como explicación de su pierna hinchada."
+  ],
+  "claves": [
+    "La variz es el síntoma; la enfermedad venosa crónica es la hipertensión venosa ambulatoria.",
+    "Ninguna úlcera por debajo de 30 mmHg de presión ambulatoria y el 100 % por encima de 90, sea superficial o profundo el fallo.",
+    "La úlcera venosa es una enfermedad inflamatoria por cizalla baja, leucocitos y metaloproteinasas; el manguito de fibrina es marcador, no causa.",
+    "La CEAP 2020 añadió la C4c (corona flebectásica) y el modificador «r» de recurrencia.",
+    "En las varices, la ablación térmica endovenosa es primera elección (I A) y el eco-Doppler la prueba primaria; el stripping y la flebografía han quedado como alternativas.",
+    "En la úlcera venosa activa con reflujo superficial, la ablación precoz acelera la cicatrización (EVRA).",
+    "La TVP se diagnostica calculando el Wells; el dímero D solo sirve para descartar.",
+    "TVP no complicada: ACOD al menos tres meses, compresión para los síntomas, deambulación precoz y tratamiento domiciliario.",
+    "Ni la trombólisis por catéter (ATTRACT) ni las medias profilácticas (SOX) previenen el síndrome postrombótico.",
+    "En el linfedema el pilar es la compresión, la fóvea no lo excluye en el estadio I y la linfangitis se trata con antibiótico oral antiestreptocócico."
+  ],
+  "glosario": [
+    {"t": "Presión venosa ambulatoria", "d": "Presión medida en una vena del dorso del pie durante el ejercicio; en el sano cae a 20-30 mmHg y en la insuficiencia venosa apenas baja."},
+    {"t": "Tiempo de rellenado venoso", "d": "Tiempo que tarda en recuperarse la presión del tobillo tras el ejercicio; más de 20 s es normal y 3-4 s indica reflujo."},
+    {"t": "Reflujo venoso", "d": "Flujo retrógrado por incompetencia valvular que impide que la presión baje al andar."},
+    {"t": "CEAP", "d": "Clasificación de la enfermedad venosa crónica por clínica (C0-C6), etiología, anatomía y fisiopatología."},
+    {"t": "Corona flebectásica", "d": "Abanico de venillas dilatadas en el maléolo; clase C4c, añadida en la revisión CEAP de 2020."},
+    {"t": "Lipodermatoesclerosis", "d": "Fibrosis dura y leñosa de la piel y el tejido subcutáneo del tobillo; clase C4b."},
+    {"t": "Ablación térmica endovenosa", "d": "Cierre de la vena enferma desde dentro con láser o radiofrecuencia; primera elección en el reflujo de safena magna."},
+    {"t": "Tríada de Virchow", "d": "Estasis, lesión endotelial e hipercoagulabilidad: los tres determinantes de la trombosis (1856)."},
+    {"t": "Escala de Wells", "d": "Puntuación clínica de probabilidad de TVP; con 2 o más puntos es probable y con 1 o menos improbable."},
+    {"t": "Dímero D", "d": "Producto de degradación de la fibrina, muy sensible y poco específico; útil solo para descartar trombosis."},
+    {"t": "Eco-Doppler de compresión", "d": "Ecografía en la que se comprime la vena con la sonda; la vena con trombo no se colapsa."},
+    {"t": "ACOD", "d": "Anticoagulante oral directo; primera línea en la TVP, con eficacia similar al antivitamina K y la mitad de hemorragia mayor."},
+    {"t": "Síndrome postrombótico", "d": "Insuficiencia venosa crónica tras una TVP por daño valvular u obstrucción residual; su principal desencadenante es la recidiva ipsilateral."},
+    {"t": "Signo de Stemmer", "d": "Imposibilidad de pellizcar la piel del dorso de la base del segundo dedo; orienta a linfedema."},
+    {"t": "Síndrome de Stewart-Treves", "d": "Angiosarcoma que aparece sobre un linfedema crónico, con mal pronóstico."}
+  ],
+  "referencias": [
+    "Escudero Rodríguez JR et al. Cir Esp. 2014. PMID 24355629",
+    "Evans CJ et al. J Epidemiol Community Health. 1999. PMID 10396491",
+    "Maurins U et al. J Vasc Surg. 2008. PMID 18586443",
+    "Nicolaides AN et al. J Vasc Surg. 1993. PMID 8433436",
+    "Gohel MS et al. N Engl J Med. 2018. PMID 29688123",
+    "Brittenden J et al. N Engl J Med. 2019. PMID 31483962",
+    "Konstantinides SV et al. Eur Heart J. 2020. PMID 31504429",
+    "van Es N et al. Blood. 2014. PMID 24963045",
+    "Aissaoui N et al. Int J Cardiol. 2009. PMID 18691773",
+    "Vedantham S et al. N Engl J Med. 2017. PMID 29211671",
+    "Kahn SR et al. Lancet. 2014. PMID 24315521",
+    "Prandoni P et al. Ann Intern Med. 1996. PMID 8644983",
+    "Jiménez D et al. Int J Cardiol. 2018. PMID 30025658",
+    "Ende-Verhaar YM et al. Eur Respir J. 2017. PMID 28232411",
+    "DiSipio T et al. Lancet Oncol. 2013. PMID 23540561",
+    "Van der Zee AGJ et al. J Clin Oncol. 2008. PMID 18281661",
+    "Ezzo J et al. Cochrane Database Syst Rev. 2015. PMID 25994425",
+    "Wong AWJ et al. Eur J Surg Oncol. 2025. PMID 39547134",
+    "Kim PJ et al. Int J Dermatol. 2022. PMID 34196958"
+  ],
+  "test": [
+    {
+      "q": "A un paciente con varices se le mide la presión venosa en el dorso del pie: 90 mmHg de pie y quieto, 82 mmHg tras diez flexiones de tobillo, y recupera la cifra basal en 3 segundos al parar. ¿Qué interpretación es correcta?",
+      "o": ["Es un registro normal, porque 90 mmHg de pie es la presión fisiológica esperada", "Hay reflujo por incompetencia valvular: la bomba expulsa sangre pero vuelve a caer, y se rellena por gravedad", "Hay una insuficiencia arterial asociada que acelera el rellenado", "Falla la bomba abdómino-torácica, que es la principal responsable del descenso de presión al andar"],
+      "c": 1,
+      "e": ["La cifra de reposo es normal en cualquier sujeto; lo patológico es que apenas baje al andar y que se rellene en 3 s.", "Correcta: presión que no cae con el ejercicio y rellenado de segundos son las dos firmas del reflujo; en el sano cae a 20-30 mmHg y tarda más de 20 s en recuperarse.", "El rellenado por vía arterial es lento; un rellenado de 3 s indica que la sangre cae desde arriba por válvulas incompetentes, no que llegue más deprisa por la arteria.", "El descenso de presión al andar depende sobre todo de la bomba muscular de la pantorrilla y de las válvulas, no de la bomba abdómino-torácica."]
+    },
+    {
+      "q": "Paciente A: reflujo de safena magna aislado con presión venosa ambulatoria de 80 mmHg. Paciente B: reflujo profundo con presión venosa ambulatoria de 35 mmHg. Según el estudio de Nicolaides, ¿quién tiene más riesgo de úlcera?",
+      "o": ["B, porque la enfermedad venosa profunda es siempre más grave que la superficial", "Los dos el mismo, porque ambos tienen reflujo", "Ninguno, porque por debajo de 90 mmHg no aparecen úlceras", "A, porque lo que predice la úlcera es la presión ambulatoria, sea cual sea la localización del fallo"],
+      "c": 3,
+      "e": ["Nicolaides demostró que la relación presión-úlcera se cumple con independencia de que el fallo sea superficial o profundo; la localización no predice.", "El reflujo no es binario en cuanto a riesgo: la incidencia de úlcera crece de forma lineal con la presión ambulatoria.", "Por encima de 90 mmHg la incidencia es del 100 %, pero entre 30 y 90 la relación es lineal y ya hay úlceras; la cifra que marca ausencia es 30 mmHg.", "Correcta: con 80 mmHg el paciente A está en una zona de riesgo alto de la recta, mientras que B está cerca del umbral de 30 mmHg."]
+    },
+    {
+      "q": "Un compañero explica que la úlcera venosa se produce porque el manguito de fibrina pericapilar impide la difusión del oxígeno. ¿Qué le contestaríais?",
+      "o": ["Que el manguito existe pero es permeable al oxígeno; la úlcera se explica por disfunción endotelial con atrapamiento leucocitario y metaloproteinasas", "Que tiene razón, y por eso la úlcera venosa se trata con revascularización arterial", "Que el manguito no existe; es un artefacto histológico", "Que la úlcera venosa se debe a la trombosis de los capilares dérmicos"],
+      "c": 0,
+      "e": ["Correcta: la teoría de Browse y Burnand de 1982 se refutó; la cizalla baja produce disfunción endotelial, adhesión y migración leucocitaria y liberación de citoquinas, radicales libres y metaloproteinasas.", "La hipótesis del manguito es falsa y la úlcera venosa no se trata revascularizando la arteria, sino bajando la presión venosa.", "El manguito sí existe y se ve en cualquier corte; lo que se ha demostrado es que no causa la isquemia, es un marcador de extravasación.", "No es el mecanismo aceptado; el proceso es inflamatorio crónico, no una microtrombosis capilar."]
+    },
+    {
+      "q": "Mujer de 55 años con varices en la pierna izquierda, edema perimaleolar vespertino y un abanico de venillas dilatadas bajo el maléolo interno, sin pigmentación, sin lipodermatoesclerosis y sin úlcera actual ni previa. ¿Cuál es su clase C en la CEAP 2020?",
+      "o": ["C2, porque lo dominante son las varices", "C3, porque el edema es el hallazgo de mayor rango", "C4c", "C5"],
+      "c": 2,
+      "e": ["La CEAP clasifica por el signo de mayor gravedad presente; tiene signos por encima de C2.", "El edema es C3, pero la corona flebectásica es un cambio cutáneo de rango superior.", "Correcta: el abanico de venillas en el maléolo es la corona flebectásica, clase C4c, introducida en la revisión de 2020.", "C5 es úlcera cicatrizada y esta paciente nunca ha tenido úlcera."]
+    },
+    {
+      "q": "Varón de 50 años con varices sintomáticas y reflujo demostrado por eco-Doppler en la safena magna. Dispone de todas las técnicas. ¿Cuál es el tratamiento de elección según la guía europea de 2022?",
+      "o": ["Ligadura alta y stripping de la safena, que es la técnica con más años de seguimiento", "Escleroterapia con espuma, por ser la menos invasiva", "Ablación térmica endovenosa con láser o radiofrecuencia", "Flebografía previa para planificar la cirugía y después safenectomía"],
+      "c": 2,
+      "e": ["La ligadura con stripping ha quedado en Clase IIa, Nivel A, y solo si no hay ablación térmica disponible.", "En el ensayo CLASS la espuma fue inferior a láser y cirugía; no es la primera elección.", "Correcta: la ablación térmica endovenosa es Clase I, Nivel A, en el reflujo de la safena magna.", "La flebografía es Clase IIb y solo si la imagen seccional no está disponible; aquí ya hay un eco-Doppler, que es la prueba primaria."]
+    },
+    {
+      "q": "Mujer de 70 años con úlcera venosa activa de tres semanas y reflujo de safena magna en el eco-Doppler. ¿Qué conducta se apoya en el ensayo EVRA?",
+      "o": ["Compresión y ablación endovenosa precoz del reflujo, sin esperar a que la úlcera cicatrice", "Compresión sola hasta la cicatrización completa, y solo entonces tratar las varices", "Ablación endovenosa sin compresión, puesto que elimina la causa", "Injerto cutáneo inmediato, porque la cicatrización espontánea tarda meses"],
+      "c": 0,
+      "e": ["Correcta: en EVRA la ablación en las dos primeras semanas añadida a la compresión acortó la cicatrización de 82 a 56 días (HR 1,38).", "Era la práctica previa a EVRA; diferir la ablación cicatriza más despacio.", "En EVRA ambos brazos llevaban compresión, que además es recomendación Clase I A en la úlcera activa; no se sustituye.", "No es lo que estudió EVRA ni la medida de primera línea; la úlcera cicatriza cuando se baja la presión venosa."]
+    },
+    {
+      "q": "¿Cuál de estos emparejamientos factor de riesgo, vértice de Virchow y medida profiláctica es correcto?",
+      "o": ["Factor V Leiden, estasis, compresión neumática intermitente", "Vuelo transoceánico, hipercoagulabilidad, heparina de bajo peso molecular", "Gestación, lesión endotelial, técnica quirúrgica cuidadosa", "Encamamiento, estasis, movilización precoz y compresión neumática intermitente"],
+      "c": 3,
+      "e": ["El factor V Leiden es una trombofilia, es decir, hipercoagulabilidad, no estasis.", "El vuelo largo produce estasis por inmovilidad; no es un estado de hipercoagulabilidad.", "La gestación pertenece al vértice de la hipercoagulabilidad; la lesión endotelial la producen catéteres, traumatismos o cirugía sobre la vena.", "Correcta: el encamamiento es estasis, y la movilización y la compresión neumática atacan precisamente ese vértice."]
+    },
+    {
+      "q": "Varón de 66 años en tratamiento por cáncer de pulmón con dolor e hinchazón de la pantorrilla derecha, que mide 4 cm más que la izquierda, con fóvea solo en esa pierna. En el hueco poplíteo se palpa una masa y la ecografía previa mostraba un quiste de Baker, por lo que la rotura del quiste es al menos tan probable como la TVP. ¿Cuál es su Wells y la conducta?",
+      "o": ["3 puntos: probable, eco-Doppler de compresión directamente", "1 punto: improbable, pedir dímero D", "3 puntos: anticoagular sin más pruebas", "−2 puntos: se descarta la TVP sin pruebas"],
+      "c": 1,
+      "e": ["Olvida restar los 2 puntos del diagnóstico alternativo al menos igual de probable.", "Correcta: cáncer activo (+1), pantorrilla > 3 cm (+1) y fóvea unilateral (+1) suman 3, menos 2 por el diagnóstico alternativo: 1 punto, improbable, y el siguiente paso es el dímero D.", "Ni el cálculo es correcto ni ninguna puntuación de Wells permite anticoagular sin confirmar el diagnóstico.", "El ítem negativo resta del total, no lo sustituye; y ni siquiera una probabilidad baja descarta la TVP sin dímero D."]
+    },
+    {
+      "q": "Mujer de 74 años, en el quinto día tras una hemicolectomía, con molestias inespecíficas en una pierna. Wells 1 punto. El dímero D es de 2.400 ng/mL. ¿Qué haríais?",
+      "o": ["Pedir eco-Doppler de compresión, porque un dímero D elevado no diagnostica nada en una postoperada", "Diagnosticar TVP y anticoagular a dosis plenas, porque el dímero D está muy alto", "Descartar TVP, porque el Wells es improbable", "Repetir el dímero D en 24 horas y decidir según la tendencia"],
+      "c": 0,
+      "e": ["Correcta: con Wells improbable y dímero D positivo el algoritmo pasa al eco-Doppler; el dímero D es muy sensible y nada específico y está alto en postoperados y ancianos.", "El dímero D solo sirve para descartar; un valor alto no confirma la trombosis.", "Con Wells improbable solo se descarta si el dímero D es negativo; aquí es positivo.", "Repetir el dímero D no aporta especificidad; la prueba que confirma o excluye es el eco-Doppler de compresión."]
+    },
+    {
+      "q": "Un metaanálisis de 5 estudios (3.048 pacientes con TVP) compara deambulación precoz frente a reposo y obtiene para la embolia pulmonar un RR de 1,03 (IC 95 % 0,65-1,63; p = 0,90). ¿Qué conclusión es correcta?",
+      "o": ["La deambulación reduce la embolia un 3 %", "La deambulación aumenta de forma significativa la embolia un 3 %", "La deambulación precoz no aumenta la embolia pulmonar, y no hay base para mantener el reposo", "El estudio no permite concluir nada porque el intervalo de confianza es amplio"],
+      "c": 2,
+      "e": ["Un RR de 1,03 no indica reducción; y con un intervalo que cruza el 1 no hay diferencia demostrada.", "El intervalo incluye el 1 y la p es 0,90: no hay diferencia significativa.", "Correcta: el reposo no aporta protección frente a la embolia, y andar alivia antes el dolor; por eso la deambulación precoz es la recomendación actual.", "Con más de 3.000 pacientes y un punto estimado de 1,03 la evidencia es suficiente para abandonar una medida que no tenía base, máxime cuando el trombo progresó menos en quienes caminaban."]
+    },
+    {
+      "q": "Varón de 45 años con primera TVP femoropoplítea, sin flegmasía, que pregunta si una trombólisis por catéter le evitaría el síndrome postrombótico. ¿Qué le diríais basándoos en ATTRACT?",
+      "o": ["Que sí, porque disolver el trombo preserva las válvulas", "Que sí, pero solo si se hace en las primeras 24 horas", "Que no cambia nada, ni para bien ni para mal", "Que no reduce el síndrome postrombótico y aumenta la hemorragia mayor"],
+      "c": 3,
+      "e": ["Es la hipótesis que motivó el ensayo, pero no se confirmó: 47 % de síndrome postrombótico con trombólisis frente a 48 % sin ella.", "ATTRACT no apoya ninguna ventana en la que la trombólisis prevenga el síndrome en una TVP como la suya.", "No es inocua: la hemorragia mayor fue del 1,7 % frente al 0,3 % (p = 0,049).", "Correcta: RR 0,96 para el síndrome postrombótico (p = 0,56) con más hemorragia mayor; queda para casos seleccionados como la flegmasía o la trombosis ilíaca extensa."]
+    },
+    {
+      "q": "En el ensayo SOX las medias de compresión no redujeron el síndrome postrombótico frente a medias placebo (14,2 % frente a 12,7 %; HR 1,13). ¿Cuál es la lectura correcta?",
+      "o": ["Las medias de compresión deben retirarse de todos los pacientes con enfermedad venosa", "Las medias no previenen el síndrome postrombótico, pero siguen siendo útiles para el dolor y el edema y para reducir la gravedad del síndrome ya establecido", "Las medias aumentan el síndrome postrombótico y están contraindicadas tras una TVP", "SOX no es interpretable porque comparó contra placebo"],
+      "c": 1,
+      "e": ["SOX respondía a una sola pregunta, la prevención del síndrome postrombótico tras una TVP; no afecta a la compresión en la insuficiencia venosa crónica o la úlcera.", "Correcta: la compresión para los síntomas y para el síndrome establecido sigue siendo Clase IIa; lo que no se sostiene es prescribirla a todos como profilaxis.", "La diferencia numérica no fue significativa (IC 0,73-1,76); no demuestra perjuicio ni justifica una contraindicación.", "El control con placebo es precisamente lo que da valor al ensayo, porque elimina el efecto de la expectativa."]
+    },
+    {
+      "q": "Mujer de 48 años, seis meses tras una linfadenectomía axilar por cáncer de mama, con el brazo homolateral hinchado. El edema deja fóvea y mejora claramente al elevar el brazo por la noche. ¿Qué interpretación es correcta?",
+      "o": ["No es un linfedema, porque el linfedema no deja fóvea", "Es un linfedema en estadio III de la ISL", "Es compatible con un linfedema en estadio I de la ISL; la fóvea no lo excluye", "Es un edema venoso, y la única prueba necesaria es un eco-Doppler venoso"],
+      "c": 2,
+      "e": ["Es el error clásico de los apuntes: la ausencia de fóvea indica fibrosis, y en las fases precoces el linfedema sí deja fóvea.", "El estadio III es la elefantiasis con cambios tróficos; este edema reversible con la elevación es precoz.", "Correcta: en el estadio I el edema cede con la elevación y puede dejar fóvea; tras una linfadenectomía axilar, con un 19,9 % de linfedema, es el diagnóstico esperable.", "El contexto de linfadenectomía apunta al linfático; pensar solo en lo venoso retrasa el diagnóstico de un linfedema precoz, el que mejor responde."]
+    },
+    {
+      "q": "Varón de 58 años con linfedema crónico de la pierna tras una linfadenectomía inguinal presenta eritema y calor en la pierna desde ayer, sin fiebre, hemodinámicamente estable. Es su primer episodio. ¿Qué tratamiento indicaríais?",
+      "o": ["Antibiótico oral activo frente a estreptococo, como amoxicilina, penicilina V o cefalexina", "Penicilina G procaína intramuscular, un millón de unidades cada 12 horas", "Drenaje linfático manual urgente para movilizar la linfa infectada", "Ingreso y antibiótico intravenoso de amplio espectro"],
+      "c": 0,
+      "e": ["Correcta: la guía de la IDSA indica antibiótico oral antiestreptocócico y reserva la vía parenteral para la afectación sistémica.", "Es la pauta obsoleta que aún aparece en muchos apuntes.", "El drenaje manual no trata la infección, y en el linfedema ni siquiera es el pilar del tratamiento.", "Sin afectación sistémica no hace falta la vía parenteral; la profilaxis con penicilina V se valoraría tras dos o más episodios."]
+    }
+  ],
+  "cortas": [
+    {
+      "q": "¿Qué parámetro define la enfermedad venosa crónica?",
+      "r": "La presión venosa ambulatoria elevada",
+      "k": [["presion"], ["ambulator"]],
+      "e": "La variz es el síntoma; la enfermedad es una presión en el tobillo que no baja al andar. Por debajo de 30 mmHg no hay úlceras y por encima de 90 las hay en el 100 %."
+    },
+    {
+      "q": "¿Por qué sistema va el 90 % del retorno venoso de la pierna?",
+      "r": "Por el sistema venoso profundo",
+      "k": [["profund"]],
+      "e": "El superficial solo mueve el 10 %, y por eso se puede cerrar o extirpar la safena sin comprometer el retorno."
+    },
+    {
+      "q": "¿Qué clase clínica añadió la revisión CEAP de 2020?",
+      "r": "C4c, la corona flebectásica",
+      "k": [["c4c", "corona", "flebectas"]],
+      "e": "La revisión de 2020 incorporó la C4c (corona flebectásica) y el modificador «r» de recurrencia."
+    },
+    {
+      "q": "¿Tratamiento de elección del reflujo de safena magna?",
+      "r": "Ablación térmica endovenosa",
+      "k": [["ablac"], ["termic", "endoven", "laser", "radiofrec"]],
+      "e": "Es Clase I, Nivel A, en la guía europea de 2022; la ligadura con stripping queda en IIa A, solo si no hay ablación disponible."
+    },
+    {
+      "q": "¿Prueba de imagen primaria en la insuficiencia venosa crónica?",
+      "r": "Eco-Doppler completo del miembro",
+      "k": [["doppler", "ecograf"]],
+      "e": "El eco-Doppler completo es Clase I; la flebografía quedó en Clase IIb y solo cuando la imagen seccional no está disponible."
+    },
+    {
+      "q": "¿Para qué sirve el dímero D en la sospecha de TVP?",
+      "r": "Solo para descartar la trombosis",
+      "k": [["descart", "exclu"]],
+      "e": "Es muy sensible y nada específico: un valor negativo con Wells improbable descarta, pero un valor alto no diagnostica."
+    },
+    {
+      "q": "¿Anticoagulación de primera línea en la TVP no complicada?",
+      "r": "Anticoagulante oral directo, mínimo tres meses",
+      "k": [["acod", "directo"]],
+      "e": "Los ACOD son igual de eficaces que los antivitamina K (RR 0,90) con la mitad de hemorragia mayor (RR 0,61); la prolongación se decide a los tres meses."
+    },
+    {
+      "q": "¿Qué factor dispara el síndrome postrombótico?",
+      "r": "La recidiva trombótica en la misma pierna",
+      "k": [["recidiv", "recurren", "segunda trombosis", "nueva trombosis"]],
+      "e": "La recidiva ipsilateral tiene un HR de 6,4; la mejor prevención del síndrome es evitar una segunda trombosis."
+    },
+    {
+      "q": "¿Qué indica la ausencia de fóvea en un linfedema?",
+      "r": "Fibrosis, es decir, fase avanzada",
+      "k": [["fibros", "avanzad", "solid"]],
+      "e": "En el estadio I el linfedema puede dejar fóvea y en el II es manifiesta; deja de dejarla cuando el intersticio se llena de grasa y colágeno."
+    },
+    {
+      "q": "¿Cuál es el pilar del tratamiento del linfedema?",
+      "r": "La compresión, no el masaje",
+      "k": [["compres", "vendaj"]],
+      "e": "La compresión sola reduce el volumen un 30-38,6 %; el drenaje linfático manual añade solo un 7,11 %, y únicamente en casos leves o moderados."
+    }
+  ],
+  "largas": [
+    {
+      "q": "Explica por qué se dice que la variz es el síntoma y la hipertensión venosa ambulatoria la enfermedad. Recorre la fisiología del retorno venoso, lo que ocurre cuando fallan las válvulas, la relación entre presión y úlcera con su mecanismo, y cómo esa idea justifica el tratamiento actual.",
+      "guia": "Se espera un razonamiento encadenado desde la bomba muscular y las válvulas hasta la úlcera, con las cifras de Nicolaides, el mecanismo inflamatorio y la ablación como forma de bajar la presión.",
+      "modelo": "La sangre del miembro inferior vuelve al corazón contra la gravedad gracias a la bomba muscular de la pantorrilla, que exprime las venas profundas con picos de más de 200 mmHg, a las válvulas bicúspides, que impiden que la sangre exprimida vuelva a bajar, y a la bomba abdómino-torácica. El 90 % del retorno va por el sistema profundo y solo el 10 % por el superficial, donde aparecen las varices.\n\nDe pie y quieto, cualquier persona tiene en el tobillo unos 90 mmHg, el peso de la columna de sangre. Lo que distingue al sano es lo que ocurre al andar: la presión cae a 20-30 mmHg y tarda más de 20 segundos en recuperarse, porque solo entra sangre por vía arterial. Si las válvulas son incompetentes, la sangre impulsada vuelve a caer, la presión apenas baja y se rellena en 3 o 4 segundos por gravedad. La vena situada por debajo de una válvula rota se sobrecarga y se dilata, y sus propias válvulas dejan de cerrar; la variz es la consecuencia visible de ese fallo, no la enfermedad.\n\nNicolaides lo demostró en 236 miembros: ninguna úlcera por debajo de 30 mmHg de presión ambulatoria y el 100 % por encima de 90, con una relación lineal y con independencia de que el reflujo fuera superficial o profundo. El mecanismo no es el manguito de fibrina, que es permeable al oxígeno, sino la inflamación: la cizalla baja daña el endotelio, los leucocitos se adhieren y liberan citoquinas y metaloproteinasas, y llegan la lipodermatoesclerosis y la úlcera.\n\nDe ahí se deduce el tratamiento. Todo lo que funciona baja la presión ambulatoria: la compresión, caminar para usar la bomba y eliminar el reflujo. La ablación térmica endovenosa es primera elección (Clase I, Nivel A), la safena es prescindible porque no hace el trabajo, y el ensayo EVRA mostró que la ablación precoz acelera la cicatrización de la úlcera activa.",
+      "rubrica": [
+        {"c": "Describe los mecanismos del retorno venoso y el reparto 90/10 entre sistemas profundo y superficial", "p": 2},
+        {"c": "Explica la curva de presión ambulatoria normal y patológica, incluido el tiempo de rellenado", "p": 2},
+        {"c": "Cita correctamente la relación de Nicolaides y su independencia de la localización", "p": 2},
+        {"c": "Explica el mecanismo inflamatorio de la úlcera y descarta el manguito de fibrina como causa", "p": 2},
+        {"c": "Relaciona el tratamiento actual (ablación I A, compresión, EVRA) con la reducción de la presión", "p": 2}
+      ]
+    },
+    {
+      "q": "Mujer de 62 años, hemodinámicamente estable, con sospecha de TVP femoropoplítea tras varios días encamada. Razona el proceso diagnóstico y el tratamiento actuales, y explica con datos por qué hoy no se recomiendan el reposo en cama, la trombólisis por catéter para prevenir el síndrome postrombótico ni las medias como profilaxis de ese síndrome.",
+      "guia": "Se espera la secuencia Wells, dímero D o eco-Doppler, el tratamiento con ACOD, compresión y deambulación en casa, y la interpretación de las cifras de los ensayos negativos.",
+      "modelo": "El primer paso es reconocer que la clínica de la trombosis venosa profunda no es específica: un quiste de Baker roto, una rotura del gemelo o una celulitis producen edema y dolor iguales. Por eso se calcula la probabilidad con la escala de Wells, que suma un punto por factores como el encamamiento de tres días o más, la pantorrilla más de 3 cm mayor, la fóvea unilateral o el dolor en el trayecto venoso profundo, y resta dos si hay un diagnóstico alternativo igual de probable. Con 2 o más puntos se pide directamente eco-Doppler de compresión, en el que la vena trombosada no se colapsa; con 1 o menos se pide dímero D, que solo sirve para descartar porque es muy sensible y poco específico.\n\nConfirmada la trombosis sin inestabilidad, el tratamiento es domiciliario. Se anticoagula con un anticoagulante oral directo, que en el metaanálisis de los seis ensayos en fase III fue igual de eficaz que el antivitamina K para la recurrencia (RR 0,90) con la mitad de hemorragia mayor (RR 0,61). La duración mínima son tres meses y la prolongación se decide entonces, según si fue provocada y el riesgo hemorrágico.\n\nEl reposo no tiene base: en un metaanálisis de 3.048 pacientes la deambulación precoz no aumentó la embolia pulmonar (RR 1,03; p = 0,90). La trombólisis dirigida por catéter se ensayó en ATTRACT con 692 pacientes: síndrome postrombótico del 47 % frente al 48 % (p = 0,56) y más hemorragia mayor, 1,7 % frente a 0,3 %. Y en SOX, frente a medias placebo, las medias reales no previnieron el síndrome (14,2 % frente a 12,7 %; HR 1,13). Siguen siendo útiles para el dolor y el edema y para el síndrome establecido, pero no como profilaxis universal. Lo que más protege de ese síndrome es evitar la recidiva en la misma pierna, que multiplica el riesgo por 6,4.",
+      "rubrica": [
+        {"c": "Aplica correctamente la escala de Wells, incluido el ítem que resta dos puntos, y el algoritmo dímero D o eco-Doppler", "p": 2},
+        {"c": "Indica ACOD con su justificación (RR 0,90 y 0,61) y la duración mínima de tres meses", "p": 2},
+        {"c": "Justifica la deambulación precoz y el tratamiento domiciliario con datos", "p": 2},
+        {"c": "Interpreta ATTRACT con sus cifras de eficacia y de hemorragia", "p": 2},
+        {"c": "Interpreta SOX distinguiendo prevención del síndrome de alivio sintomático", "p": 2}
+      ]
+    },
+    {
+      "q": "Compara el edema venoso y el linfedema. Explica por qué existe el sistema linfático y por qué el linfedema secundario es frecuente y definitivo, en qué se diferencian ambos edemas en la exploración y por qué, cómo se estadifica el linfedema y qué tratamiento y prevención tienen respaldo.",
+      "guia": "Se espera partir de las proteínas como eje fisiopatológico, desmontar el mito de la fóvea con la clasificación ISL y defender la compresión y la prevención quirúrgica con sus cifras.",
+      "modelo": "El capilar sanguíneo filtra más de lo que reabsorbe y deja escapar proteínas al intersticio, más del 50 % de la albúmina circulante cada 24 horas. Esas proteínas no pueden volver al capilar: el linfático, cuyos capilares carecen de membrana basal, es su única vía de retorno, y devuelve unos 2 kg de linfa al día. A diferencia de la vena, no tiene un buen sistema de colaterales, de modo que una linfadenectomía deja un daño definitivo. Tras cirugía por cáncer de mama el linfedema aparece en el 19,9 % tras linfadenectomía axilar frente al 5,6 % con ganglio centinela.\n\nLa diferencia esencial entre ambos edemas son las proteínas. El edema venoso es un trasudado pobre en proteínas: agua libre que el dedo desplaza, deja fóvea, mejora mucho con la elevación, afecta a la región perimaleolar y respeta el dorso del pie. En el linfedema las proteínas retenidas son proinflamatorias y estimulan fibroblastos y adipocitos, de modo que el intersticio se llena de grasa y colágeno. Por eso se afecta el dorso del pie con dedos en salchicha, el signo de Stemmer es positivo y la elevación ayuda poco.\n\nEl error habitual es creer que el linfedema nunca deja fóvea. En la clasificación de la International Society of Lymphology, el estadio I cede con la elevación y puede dejar fóvea, en el II la fóvea es manifiesta hasta desaparecer al final del estadio y el III es la elefantiasis. La ausencia de fóvea indica fibrosis, y esperar a ella es llegar tarde.\n\nEn el tratamiento, la revisión Cochrane muestra que el vendaje compresivo reduce el volumen un 30-38,6 % y el drenaje manual añade solo un 7,11 %: el pilar es la compresión. La prevención es quirúrgica: menos linfadenectomía y reconstrucción linfática inmediata, que en el metaanálisis de 2025 redujo el linfedema del 20,8 % al 7,85 % (RR 0,31). La linfangitis se trata con antibiótico oral antiestreptocócico.",
+      "rubrica": [
+        {"c": "Explica la función del linfático (proteínas, cifras) y la ausencia de colaterales como causa del linfedema secundario", "p": 2},
+        {"c": "Fundamenta las diferencias clínicas en el contenido proteico y la fibrosis", "p": 2},
+        {"c": "Incluye fóvea, dorso del pie y signo de Stemmer en la exploración diferencial", "p": 2},
+        {"c": "Estadifica según la ISL y corrige el mito de la fóvea", "p": 2},
+        {"c": "Defiende la compresión como pilar y la prevención quirúrgica con datos", "p": 2}
+      ]
+    }
+  ]
+}
