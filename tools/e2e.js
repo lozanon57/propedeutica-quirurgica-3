@@ -47,7 +47,8 @@
       ok($$(".opt .why").length === 4, `${id}: test ${i} sin 4 explicaciones`);
       $("[data-next]").click(); await wait(20);
     }
-    ok($(".result h2")?.textContent.startsWith("7 de 14"), `${id}: resultado test (${$(".result h2")?.textContent})`);
+    const n = cls.test.length;
+    ok($(".result h2")?.textContent.startsWith(`${Math.floor(n / 2)} de ${n}`), `${id}: resultado test (${$(".result h2")?.textContent})`);
     $("[data-wrong]").click(); await wait(20);
     ok(!$(".verdict"), `${id}: repaso de falladas no limpia la pregunta`);
 

@@ -98,7 +98,8 @@
           "titulo": "Cuando la válvula se rompe",
           "texto": [
             "Con la válvula sana, toda la sangre que impulsa la bomba sube. Cuando la válvula se vuelve incompetente, parte de esa sangre vuelve a bajar: es el **reflujo**. El segmento de vena situado por debajo recibe más volumen del que le corresponde, se dilata, y al dilatarse sus propias valvas dejan de coaptar. Así se instaura un círculo vicioso que progresa de arriba abajo y que explica por qué la variz tiende a extenderse.",
-            "Hay una segunda vía para generar varices. Si fallan las válvulas de las perforantes, el flujo se invierte y el sistema profundo, que durante la contracción muscular está a alta presión, descarga hacia el superficial. En los dos casos el resultado es el mismo: la presión del sistema superficial deja de bajar cuando el paciente camina."
+            "Hay una segunda vía para generar varices. Si fallan las válvulas de las perforantes, el flujo se invierte y el sistema profundo, que durante la contracción muscular está a alta presión, descarga hacia el superficial. En los dos casos el resultado es el mismo: la presión del sistema superficial deja de bajar cuando el paciente camina.",
+            "La definición clásica que conviene saber literal: la **insuficiencia venosa crónica es una alteración funcional y morfológica del sistema venoso, mantenida en el tiempo**, que dificulta el retorno. Su manifestación más frecuente, con mucho, son las **varices**."
           ],
           "figura": "g_ven_variz",
           "pie": "La válvula sana deja subir toda la sangre; la rota la deja caer, la vena inferior se sobrecarga y se dilata, y sus válvulas también dejan de cerrar.",
@@ -125,7 +126,8 @@
           "texto": [
             "Nicolaides estudió 236 miembros y encontró una relación prácticamente lineal (r = 0,79) entre presión venosa ambulatoria e incidencia de úlcera: **ninguna úlcera por debajo de 30 mmHg y el 100 % por encima de 90**. Y lo que da todo el valor al estudio es que la relación se cumple con independencia de que la enfermedad sea superficial o profunda. Da igual dónde esté el fallo: lo que predice la úlcera es la presión.",
             "El mecanismo tiene una corrección histórica. En 1982 Browse y Burnand propusieron que la hipertensión venosa dejaba escapar fibrinógeno, que formaba un manguito de fibrina pericapilar que impedía la difusión del oxígeno y producía isquemia cutánea. La teoría era elegante y es falsa: el manguito es permeable al oxígeno. Existe, y se ve en cualquier corte histológico, pero es un marcador de extravasación, no la causa de la úlcera.",
-            "Lo que se sostiene hoy es que la úlcera venosa es una **enfermedad inflamatoria crónica**. La hipertensión venosa reduce el esfuerzo de cizalla sobre el endotelio y produce disfunción endotelial, igual que en el lado arterial. Se degrada el glucocálix, los leucocitos se adhieren y atraviesan la pared y liberan citoquinas, radicales libres y metaloproteinasas de matriz, que destruyen la matriz extracelular: fibrosis dérmica, lipodermatoesclerosis y, al final, úlcera."
+            "Lo que se sostiene hoy es que la úlcera venosa es una **enfermedad inflamatoria crónica**. La hipertensión venosa reduce el esfuerzo de cizalla sobre el endotelio y produce disfunción endotelial, igual que en el lado arterial. Se degrada el glucocálix, los leucocitos se adhieren y atraviesan la pared y liberan citoquinas, radicales libres y metaloproteinasas de matriz, que destruyen la matriz extracelular: fibrosis dérmica, lipodermatoesclerosis y, al final, úlcera.",
+            "La úlcera venosa aparece casi siempre por encima del maléolo interno, donde desembocan las **perforantes del tobillo**: cuando sus válvulas fallan, cada contracción de la pantorrilla transmite la presión del sistema profundo a la piel, y el eco-Doppler muestra reflujo en esas perforantes. La base del tratamiento de toda úlcera venosa es la **compresión con vendaje multicapa**, tras comprobar con el ITB que no hay isquemia; sobre ella, si hay reflujo superficial, la ablación precoz acelera la cicatrización."
           ],
           "figura": "g_ven_ulcera",
           "pie": "Relación lineal entre presión venosa ambulatoria e incidencia de úlcera (Nicolaides, n = 236): ninguna por debajo de 30 mmHg y el 100 % por encima de 90.",
@@ -147,7 +149,8 @@
           "texto": [
             "La mayoría de los pacientes no necesita cirugía. El primer escalón son las **medias de compresión**, que comprimen desde fuera y ayudan a que la sangre suba, y el segundo es andar y no permanecer quieto de pie, porque la bomba de la pantorrilla solo funciona si se usa. Cuando hay que tratar el reflujo, hoy se cierra la vena enferma desde dentro con calor.",
             "La guía europea de 2022 sitúa la **ablación térmica endovenosa** (láser o radiofrecuencia) como primera elección en el reflujo de la safena magna, Clase I, Nivel A. La ligadura alta con stripping, la safenectomía clásica, ha quedado en Clase IIa, Nivel A, con una condición literal: solo si no hay ablación térmica disponible. El ensayo CLASS, a 5 años, mostró que láser y cirugía son equivalentes en calidad de vida y que la espuma es inferior a ambas.",
-            "La prueba primaria no es la flebografía, como se enseñaba hace treinta años, sino el **eco-Doppler completo del miembro** (Clase I); la flebografía queda en Clase IIb y solo cuando la imagen seccional es inadecuada o no está disponible. Y como el reflujo superficial eleva la presión ambulatoria por sí mismo, la guía manda tratarlo incluso cuando coexiste con reflujo profundo (Clase I, Nivel A)."
+            "La prueba primaria no es la flebografía, como se enseñaba hace treinta años, sino el **eco-Doppler completo del miembro** (Clase I); la flebografía queda en Clase IIb y solo cuando la imagen seccional es inadecuada o no está disponible. Y como el reflujo superficial eleva la presión ambulatoria por sí mismo, la guía manda tratarlo incluso cuando coexiste con reflujo profundo (Clase I, Nivel A).",
+            "En quien trabaja muchas horas de pie, la prevención es **compresión elástica y cambios frecuentes de postura**, moviendo las pantorrillas para que funcione la bomba muscular. Al descansar, **elevar las piernas** por encima del corazón vacía las venas por gravedad y es la medida más rápida contra el edema."
           ],
           "figura": "g_ven_tratamiento",
           "pie": "El orden del tratamiento de las varices: compresión, deambulación, cierre endovenoso de la vena enferma y, solo si no hay otra opción, safenectomía.",
@@ -223,7 +226,8 @@
           "titulo": "Para qué existe el sistema linfático",
           "texto": [
             "Por las fuerzas de Starling, el capilar sanguíneo filtra en su extremo arterial más líquido del que reabsorbe en el venoso, y además se le escapan proteínas al intersticio. Esas proteínas son demasiado grandes para volver al capilar sanguíneo: **el linfático es su única vía de retorno**. Las cifras dan la medida del trabajo: en 24 horas escapa al intersticio más del 50 % de la albúmina circulante, y en ese mismo tiempo unos 2 kg de linfa vuelven al sistema venoso. Sin linfáticos, el intersticio se encharcaría en horas.",
-            "Los capilares linfáticos están entre la epidermis y la dermis superficial y **no tienen membrana basal**, de ahí que sean muy permeables y puedan captar hematíes, bacterias y proteínas enteras. No hay linfáticos en músculo, tendón, cartílago, cerebro ni córnea."
+            "Los capilares linfáticos están entre la epidermis y la dermis superficial y **no tienen membrana basal**, de ahí que sean muy permeables y puedan captar hematíes, bacterias y proteínas enteras. No hay linfáticos en músculo, tendón, cartílago, cerebro ni córnea.",
+            "La **unidad estructural y funcional** del sistema linfático es el **linfangión**: el segmento de vaso comprendido entre dos válvulas, con músculo liso propio que se contrae espontáneamente varias veces por minuto. La linfa avanza de linfangión en linfangión, como por una cadena de pequeños corazones."
           ],
           "figura": "g_lin_anatomia",
           "pie": "El linfático devuelve las proteínas que escapan del capilar sanguíneo: cada día sale al intersticio el 50 % de la albúmina y vuelven unos 2 kg de linfa, por una vía sin colaterales.",
@@ -233,7 +237,9 @@
           "titulo": "Sin colaterales: el linfedema secundario",
           "texto": [
             "La diferencia decisiva con la vena es que el sistema linfático **no tiene un buen sistema de colaterales**. Si se trombosa una femoral hay veinte caminos alternativos; si se extirpan los ganglios axilares no hay ninguno. Por eso el linfedema secundario a la cirugía oncológica es tan frecuente y tan definitivo.",
-            "En el cáncer de mama, el linfedema aparece en el 16,6 % global, el 19,9 % tras linfadenectomía axilar frente al 5,6 % tras biopsia del ganglio centinela. En el cáncer de vulva, el estudio GROINSS-V encontró linfedema en el 1,9 % de las pacientes con solo ganglio centinela frente al 25,2 % con linfadenectomía inguinal (p < 0,0001). La lección para el cirujano es directa: **cuantos menos linfáticos se seccionan, menos linfedema**, y la biopsia selectiva del ganglio centinela es, también, una técnica de prevención del linfedema."
+            "En el cáncer de mama, el linfedema aparece en el 16,6 % global, el 19,9 % tras linfadenectomía axilar frente al 5,6 % tras biopsia del ganglio centinela. En el cáncer de vulva, el estudio GROINSS-V encontró linfedema en el 1,9 % de las pacientes con solo ganglio centinela frente al 25,2 % con linfadenectomía inguinal (p < 0,0001). La lección para el cirujano es directa: **cuantos menos linfáticos se seccionan, menos linfedema**, y la biopsia selectiva del ganglio centinela es, también, una técnica de prevención del linfedema.",
+            "El linfedema **secundario** tiene una causa conocida: en nuestro medio, la cirugía y la radioterapia oncológicas (axila en la mama, ingle en el melanoma); en el mundo, la primera causa es la **filariasis**, una parasitosis transmitida por mosquitos en zonas tropicales.",
+            "El **primario** nace de linfáticos malformados y se ordena por la edad de inicio: **congénito**, cuyo epónimo es la **enfermedad de Milroy**, hereditaria y autosómica dominante; **precoz**, alrededor de la pubertad, la enfermedad de Meige, que es el primario más frecuente; y **tardío**, después de los 35 años. El síndrome de linfedema-distiquiasis se reconoce por una doble fila de pestañas. Ante un linfedema primario familiar con herencia autosómica dominante, el nombre que se espera en el examen es Milroy."
           ],
           "perla": "Linfadenectomía axilar 19,9 % frente a centinela 5,6 %: el linfedema se previene sobre todo en la indicación quirúrgica."
         }
@@ -269,7 +275,7 @@
           "texto": [
             "La linfa estancada, rica en proteínas, es un medio de cultivo, y el paciente con linfedema sufre linfangitis y celulitis de repetición. La pauta clásica de penicilina G procaína intramuscular, un millón de unidades cada doce horas, está obsoleta. La guía vigente de la IDSA indica **antibiótico oral activo frente a estreptococo** (penicilina V, amoxicilina o cefalexina) y reserva la vía parenteral para el paciente con afectación sistémica.",
             "En quien ha tenido dos o más episodios, la profilaxis con penicilina V 250 mg cada 12 horas durante un año reduce la recurrencia del 37 % al 22 %, con un número necesario a tratar de 5. La pega honesta es que el efecto se pierde al suspenderla.",
-            "La complicación más temida del linfedema crónico es el síndrome de Stewart-Treves, el angiosarcoma que aparece sobre un miembro linfedematoso: latencia media de 14,9 años, mortalidad del 53,9 % y supervivencia a 5 años del 22,4 %. Una lesión violácea nueva en un brazo con linfedema de muchos años se biopsia."
+            "La complicación más temida del linfedema crónico es el síndrome de Stewart-Treves, el angiosarcoma (o linfangiosarcoma) que aparece sobre un miembro linfedematoso: latencia media de 14,9 años, mortalidad del 53,9 % y supervivencia a 5 años del 22,4 %. Una lesión violácea nueva en un brazo con linfedema de muchos años se biopsia."
           ],
           "perla": "Linfangitis sin afectación sistémica: amoxicilina, penicilina V o cefalexina por vía oral; tras dos o más episodios, valorar profilaxis con penicilina V."
         }
@@ -354,6 +360,18 @@
     {
       "t": "Síndrome de Stewart-Treves",
       "d": "Angiosarcoma que aparece sobre un linfedema crónico, con mal pronóstico."
+    },
+    {
+      "t": "Linfangión",
+      "d": "Segmento linfático entre dos válvulas, con músculo liso propio; unidad estructural y funcional del sistema linfático."
+    },
+    {
+      "t": "Enfermedad de Milroy",
+      "d": "Linfedema primario congénito, hereditario y autosómico dominante."
+    },
+    {
+      "t": "Filariasis linfática",
+      "d": "Parasitosis tropical transmitida por mosquitos; primera causa mundial de linfedema secundario."
     }
   ],
   "referencias": [
@@ -601,6 +619,134 @@
         "El drenaje manual no trata la infección, y en el linfedema ni siquiera es el pilar del tratamiento.",
         "Sin afectación sistémica no hace falta la vía parenteral; la profilaxis con penicilina V se valoraría tras dos o más episodios."
       ]
+    },
+    {
+      "q": "¿Cómo se llama el tramo de vaso linfático comprendido entre dos válvulas, con músculo liso propio, que bombea la linfa?",
+      "o": [
+        "Capilar linfático inicial",
+        "Cisterna del quilo",
+        "Linfonodo",
+        "Linfangión"
+      ],
+      "c": 3,
+      "e": [
+        "El capilar inicial absorbe la linfa, pero no tiene válvulas ni músculo para bombearla.",
+        "La cisterna del quilo es el origen abdominal del conducto torácico.",
+        "El ganglio filtra la linfa; no es la unidad de bombeo.",
+        "Correcta: el linfangión es la unidad estructural y funcional del sistema linfático."
+      ]
+    },
+    {
+      "q": "Si se cuentan todos los países del mundo, ¿cuál es la causa más frecuente de linfedema adquirido?",
+      "o": [
+        "La linfadenectomía axilar por cáncer de mama",
+        "La filariasis linfática",
+        "La radioterapia pélvica",
+        "La erisipela de repetición"
+      ],
+      "c": 1,
+      "e": [
+        "Es la primera causa en los países desarrollados, no en el mundo.",
+        "Correcta: la filariasis, transmitida por mosquitos en zonas tropicales, es la primera causa mundial de linfedema secundario.",
+        "Contribuye, pero es mucho menos frecuente que la filariasis a escala mundial.",
+        "Empeora un linfedema existente, pero no es la causa más frecuente."
+      ]
+    },
+    {
+      "q": "Lactante con edema indoloro de ambos pies desde el nacimiento; su padre lo tuvo también desde niño. ¿Qué sospecháis?",
+      "o": [
+        "Linfedema primario congénito: enfermedad de Milroy",
+        "Linfedema secundario a una infección neonatal",
+        "Trombosis venosa profunda bilateral del neonato",
+        "Síndrome de Stewart-Treves de presentación precoz"
+      ],
+      "c": 0,
+      "e": [
+        "Correcta: linfedema primario, congénito y familiar con herencia autosómica dominante.",
+        "No hay ningún antecedente infeccioso y el carácter familiar apunta a una causa genética.",
+        "La trombosis neonatal es rarísima, no es familiar y no da un edema indoloro desde el nacimiento.",
+        "Stewart-Treves es un angiosarcoma sobre un linfedema de muchos años, no un edema congénito."
+      ]
+    },
+    {
+      "q": "Úlcera supramaleolar interna de tres meses, con reflujo de safena y un ITB de 1,0. ¿Qué medida es la base del tratamiento, se opere o no la vena después?",
+      "o": [
+        "Antibiótico oral durante varias semanas",
+        "Injerto cutáneo en la primera semana",
+        "Compresión mantenida con vendaje multicapa",
+        "Reposo absoluto en cama hasta que cierre"
+      ],
+      "c": 2,
+      "e": [
+        "La colonización de una úlcera venosa no es una infección y no se trata con antibiótico.",
+        "Injertar sin corregir la presión venosa condena el injerto.",
+        "Correcta: la compresión baja la presión venosa ambulatoria; con un ITB normal es segura, y sobre ella se añade la ablación.",
+        "La inmovilidad apaga la bomba muscular y aumenta el riesgo de trombosis."
+      ]
+    },
+    {
+      "q": "En el eco-Doppler de un paciente con úlceras perimaleolares y piel pigmentada, ¿qué hallazgo explica que la presión del sistema profundo llegue a la piel del tobillo?",
+      "o": [
+        "Una estenosis de la arteria tibial posterior",
+        "Un trombo agudo en la vena femoral común",
+        "Reflujo en las venas perforantes del tobillo",
+        "Una fístula arteriovenosa congénita"
+      ],
+      "c": 2,
+      "e": [
+        "Una estenosis arterial da úlcera isquémica, no pigmentación por hemosiderina.",
+        "Un trombo agudo da un cuadro agudo, no úlceras crónicas con pigmentación.",
+        "Correcta: con las válvulas de las perforantes incompetentes, cada contracción de la pantorrilla dispara la presión profunda hacia la piel.",
+        "Es una causa excepcional y no explica el cuadro típico."
+      ]
+    },
+    {
+      "q": "Mujer con linfedema del brazo desde hace 15 años, tras una mastectomía; aparecen nódulos violáceos en el antebrazo. ¿Qué sospecha obliga a biopsiar?",
+      "o": [
+        "Hematoma por un traumatismo inadvertido",
+        "Linfangiosarcoma (síndrome de Stewart-Treves)",
+        "Linfangitis estreptocócica de repetición",
+        "Dermatitis de estasis por el edema crónico"
+      ],
+      "c": 1,
+      "e": [
+        "Un hematoma no aparece como nódulos que persisten y crecen sobre un linfedema antiguo.",
+        "Correcta: angiosarcoma sobre linfedema crónico, con latencia media de unos 15 años y mal pronóstico.",
+        "La linfangitis da eritema, calor y fiebre, no nódulos violáceos.",
+        "La dermatitis de estasis es venosa y no forma nódulos violáceos."
+      ]
+    },
+    {
+      "q": "De todos los pacientes con insuficiencia venosa crónica que veréis en una consulta, ¿qué hallazgo será el más habitual?",
+      "o": [
+        "Úlcera abierta",
+        "Lipodermatoesclerosis",
+        "Varices",
+        "Corona flebectásica"
+      ],
+      "c": 2,
+      "e": [
+        "La úlcera es el final del camino y la menos frecuente (prevalencia poblacional del 0,7 %).",
+        "Es un estadio C4b, avanzado y poco frecuente.",
+        "Correcta: las varices son, con mucho, la manifestación más frecuente de la insuficiencia venosa crónica.",
+        "Es un signo C4c, mucho menos frecuente que las varices."
+      ]
+    },
+    {
+      "q": "Una peluquera nota pesadez en las piernas al final de cada jornada, sin varices visibles. ¿Qué consejo es el más útil?",
+      "o": [
+        "Heparina profiláctica los días de más trabajo",
+        "Eco-Doppler anual aunque no tenga síntomas",
+        "Baños de agua caliente al terminar la jornada",
+        "Medias, cambiar de postura y elevar las piernas"
+      ],
+      "c": 3,
+      "e": [
+        "No hay riesgo trombótico que justifique anticoagular.",
+        "Sin signos clínicos, una prueba anual no cambia nada.",
+        "El calor dilata las venas y empeora la pesadez.",
+        "Correcta: compresión, mover las pantorrillas para activar la bomba muscular y elevar las piernas al descansar."
+      ]
     }
   ],
   "cortas": [
@@ -749,6 +895,36 @@
         ]
       ],
       "e": "La compresión sola reduce el volumen un 30-38,6 %; el drenaje linfático manual añade solo un 7,11 %, y únicamente en casos leves o moderados."
+    },
+    {
+      "q": "¿Cómo se llama el segmento linfático entre dos válvulas que bombea la linfa?",
+      "r": "El linfangión, la unidad funcional",
+      "k": [
+        [
+          "linfangion"
+        ]
+      ],
+      "e": "Tiene músculo liso propio que se contrae varias veces por minuto; es la unidad estructural y funcional del sistema linfático."
+    },
+    {
+      "q": "¿Primera causa mundial de linfedema secundario?",
+      "r": "La filariasis linfática",
+      "k": [
+        [
+          "filari"
+        ]
+      ],
+      "e": "En los países desarrollados lo es la cirugía oncológica, pero en el mundo es la filariasis."
+    },
+    {
+      "q": "¿Qué epónimo recibe el linfedema primario congénito familiar?",
+      "r": "La enfermedad de Milroy",
+      "k": [
+        [
+          "milroy"
+        ]
+      ],
+      "e": "Hereditaria, autosómica dominante; el precoz de la pubertad es la enfermedad de Meige."
     }
   ],
   "largas": [

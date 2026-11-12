@@ -85,7 +85,8 @@
           "texto": [
             "La ley de Poiseuille establece que el flujo por un tubo es directamente proporcional al gradiente de presión y a la **cuarta potencia del radio**, e inversamente proporcional a la longitud y a la viscosidad: Q = ΔP · π · r⁴ / (8 · η · L). La consecuencia práctica es brutal. Si el radio queda en el 75 % del normal, el flujo queda en el 32 % (0,75⁴); si el radio se reduce a la mitad, el flujo cae al 6 % (0,5⁴ = 1/16). No a la mitad: a un dieciseisavo.",
             "Poiseuille asume un tubo rígido, un flujo laminar y un fluido newtoniano, y una arteria no cumple ninguna de las tres condiciones: es distensible, el flujo es pulsátil y la viscosidad de la sangre cambia con la velocidad de cizalla. Lejos de invalidar la ley, esto la agrava. En la vida real la caída de presión a través de una estenosis es todavía peor de lo que Poiseuille predice, porque a las pérdidas viscosas se suman las **turbulencias**, cuya pérdida de energía crece con el cuadrado de la velocidad.",
-            "Aquí está la explicación física de la claudicación intermitente. En reposo, con poco flujo, la estenosis apenas genera pérdida de energía. Al andar, el músculo pide más flujo, la velocidad a través de la estenosis sube y la pérdida de presión se dispara justo cuando más perfusión hace falta."
+            "Aquí está la explicación física de la claudicación intermitente. En reposo, con poco flujo, la estenosis apenas genera pérdida de energía. Al andar, el músculo pide más flujo, la velocidad a través de la estenosis sube y la pérdida de presión se dispara justo cuando más perfusión hace falta.",
+            "Poiseuille supone además un **flujo laminar**: la sangre avanza en capas concéntricas, paralelas a la pared, que se deslizan unas sobre otras. La capa en contacto con la pared casi no se mueve y la del eje es la más rápida, de modo que el perfil de velocidades es una parábola con el vértice en el centro del vaso. Tras una estenosis, o a velocidades altas, el flujo se vuelve **turbulento**, en remolinos, y eso es lo que se ausculta como soplo."
           ],
           "figura": "g_art_poiseuille",
           "pie": "Curva de Poiseuille: con el radio al 75 % queda un 32 % del flujo, y con el radio a la mitad, solo un 6 %.",
@@ -96,7 +97,9 @@
           "texto": [
             "La ecuación de continuidad dice que el flujo es igual a la velocidad por el área (Q = v × A). Como el flujo total que atraviesa cada nivel del árbol vascular es constante, la velocidad es inversamente proporcional al **área de sección total** del lecho. Un capilar aislado es minúsculo, pero hay tantos que su área sumada es unas mil veces la de la aorta, de modo que la velocidad cae desde unos 40 cm/s en la aorta hasta unas cinco centésimas de cm/s en el capilar, ochocientas veces menos. Esa lentitud no es una curiosidad: es el diseño que da tiempo de tránsito suficiente para el intercambio de oxígeno y metabolitos.",
             "Hay un error clásico de examen que conviene desmontar: el área total es máxima en los capilares, pero la **resistencia es máxima en las arteriolas**, que por eso se llaman vasos de resistencia. Son dos gráficas distintas que en los apuntes suelen superponerse.",
-            "La tercera ley del bloque es la de Laplace: la tensión de la pared es igual a la presión por el radio dividida por el grosor. Aplicada a un aneurisma explica su historia natural. Al dilatarse, el radio aumenta y la pared se adelgaza al mismo tiempo, de modo que el estrés parietal crece más deprisa que el diámetro y el riesgo de rotura aumenta de forma exponencial."
+            "La tercera ley del bloque es la de Laplace: la tensión de la pared es igual a la presión por el radio dividida por el grosor. Aplicada a un aneurisma explica su historia natural. Al dilatarse, el radio aumenta y la pared se adelgaza al mismo tiempo, de modo que el estrés parietal crece más deprisa que el diámetro y el riesgo de rotura aumenta de forma exponencial.",
+            "Tres datos del circuito que conviene tener a mano. Alrededor del **64 % de la volemia está en venas y vénulas**, los vasos de capacitancia o de depósito; las arterias contienen en torno al 13 % y los capilares un 5 %. La **circulación pulmonar** recibe todo el gasto cardiaco con **baja presión y baja resistencia** (presión media de unos 15 mmHg), al contrario que la sistémica. Y «arteria» significa que el vaso sale del corazón, no que lleve sangre oxigenada: la **arteria pulmonar transporta sangre venosa**.",
+            "El final natural de un aneurisma que obedece a Laplace es la rotura. Su presentación clásica es un **dolor abdominal o lumbar súbito e intenso, hipotensión o shock y una masa pulsátil abdominal**, típicamente en un varón mayor, hipertenso y fumador. Es un aneurisma de aorta abdominal roto hasta que se demuestre lo contrario, y el paciente inestable va directamente al quirófano."
           ],
           "figura": "g_art_velocidad",
           "pie": "La «X» del área total (gris) y la velocidad (azul): la velocidad es mínima donde el área total es máxima, en los capilares."
@@ -122,7 +125,8 @@
           "titulo": "La pared arterial",
           "texto": [
             "En un corte transversal se reconocen tres capas y dos láminas elásticas. De fuera adentro, la **adventicia** contiene los vasa vasorum, que nutren la propia pared, los nervios y el colágeno que le da resistencia. La **media** está formada por músculo liso; es la capa que se contrae y se relaja, y por tanto la que regula el calibre, y es la más gruesa en una arteria muscular. La **íntima** es una sola capa de células endoteliales sobre su membrana basal. Las láminas elásticas interna y externa separan las tres capas.",
-            "La íntima parece un detalle en el dibujo, pero tiene el grosor de una sola célula y, si se extendiera todo el endotelio de un adulto, pesaría alrededor de un kilo. Un kilo de tejido en contacto directo con toda la sangre del organismo no es un revestimiento: se comporta como un órgano."
+            "La íntima parece un detalle en el dibujo, pero tiene el grosor de una sola célula y, si se extendiera todo el endotelio de un adulto, pesaría alrededor de un kilo. Un kilo de tejido en contacto directo con toda la sangre del organismo no es un revestimiento: se comporta como un órgano.",
+            "La capa que se contrae es la **media**, de músculo liso. El endotelio regula el tono, pero no se contrae: lo hace enviando señales, sobre todo óxido nítrico, al músculo liso de la media."
           ],
           "figura": "g_art_pared",
           "pie": "Corte de la pared arterial: adventicia, media e íntima, separadas por las láminas elásticas interna y externa."
@@ -141,7 +145,8 @@
           "titulo": "De la disfunción endotelial a la placa",
           "texto": [
             "La secuencia de la aterosclerosis se puede dibujar en cuatro círculos. Primero se estropea el endotelio y pierde su óxido nítrico; después entra colesterol en la pared; a continuación llegan los macrófagos, atraídos por un endotelio activado que expresa moléculas de adhesión; y finalmente se forma la placa, que va estrechando la luz.",
-            "Esta secuencia explica dos ideas clínicas. La primera es que cuando ves una estenosis en una angiografía estás viendo el final de una historia que empezó veinte años antes. La segunda es que, por la reserva vasodilatadora, la luz puede estrecharse mucho antes de que aparezca el primer síntoma, de modo que la ausencia de clínica no significa ausencia de enfermedad."
+            "Esta secuencia explica dos ideas clínicas. La primera es que cuando ves una estenosis en una angiografía estás viendo el final de una historia que empezó veinte años antes. La segunda es que, por la reserva vasodilatadora, la luz puede estrecharse mucho antes de que aparezca el primer síntoma, de modo que la ausencia de clínica no significa ausencia de enfermedad.",
+            "La capa fibrosa la forma el músculo liso, y la señal que lo moviliza es sobre todo el **PDGF** (factor de crecimiento derivado de las plaquetas), liberado por plaquetas y macrófagos: hace que las células musculares lisas emigren de la media a la íntima y proliferen."
           ],
           "figura": "g_art_ateroma",
           "pie": "Cuatro pasos de la aterosclerosis: daño endotelial, entrada de colesterol, llegada de macrófagos y formación de la placa."
@@ -216,7 +221,8 @@
           "texto": [
             "La clasificación de Fontaine es una escalera en la que lo que sube en cada escalón es la reserva vasodilatadora agotada. **Estadio I**, asintomático: las estenosis no son críticas. **Estadio II**, claudicación intermitente: en reposo la reserva compensa, pero al andar el músculo pide cinco o diez veces más flujo, aparece el dolor, el paciente se para y el dolor cede; es la angina de la pierna. El IIa claudica a más de 200 metros y el IIb a menos. **Estadio III**, dolor de reposo. **Estadio IV**, úlcera o gangrena. No hay que confundirla con la clasificación de Rutherford crónica, que tiene categorías de 0 a 6 y es distinta de la aguda.",
             "El dolor de reposo isquémico es típicamente **nocturno** y cede cuando el paciente saca la pierna de la cama, porque al bajarla la gravedad suma la presión de la columna de sangre a la presión de perfusión. Un paciente que duerme sentado con la pierna colgando tiene una isquemia grave, y muchos no lo cuentan si no se les pregunta porque lo achacan a la edad.",
-            "El término «isquemia crítica» quedó obsoleto en 2019 porque connota un umbral hemodinámico que no existe. Hoy se habla de **isquemia crónica que amenaza la extremidad (CLTI)**, definida por enfermedad arterial demostrada más dolor de reposo o pérdida tisular de al menos dos semanas. Su mortalidad al año es del 25-35 % y la amputación al año llega al 30 %. Para graduar la amenaza se usa WIfI, que puntúa de 0 a 3 la herida, la isquemia y la infección del pie, porque en el diabético la perfusión es solo uno de los tres factores; la amputación al año va del 3,2 % en el estadio 1 al 23,3 % en el 4."
+            "El término «isquemia crítica» quedó obsoleto en 2019 porque connota un umbral hemodinámico que no existe. Hoy se habla de **isquemia crónica que amenaza la extremidad (CLTI)**, definida por enfermedad arterial demostrada más dolor de reposo o pérdida tisular de al menos dos semanas. Su mortalidad al año es del 25-35 % y la amputación al año llega al 30 %. Para graduar la amenaza se usa WIfI, que puntúa de 0 a 3 la herida, la isquemia y la infección del pie, porque en el diabético la perfusión es solo uno de los tres factores; la amputación al año va del 3,2 % en el estadio 1 al 23,3 % en el 4.",
+            "En términos de Fontaine, en el **estadio II (IIa y IIb) la cirugía es una decisión de calidad de vida**: se plantea solo si la claudicación limita de verdad al paciente tras el tratamiento médico y el ejercicio. En los estadios III y IV se revasculariza para salvar la extremidad."
           ],
           "figura": "g_art_fontaine",
           "pie": "Escalera de Fontaine: asintomático, claudicación a más o menos de 200 m, dolor de reposo y úlcera o gangrena.",
@@ -227,7 +233,8 @@
           "texto": [
             "El índice tobillo-brazo es el cociente entre la presión sistólica más alta del tobillo y la más alta de los dos brazos; requiere dos minutos, un manguito y una sonda Doppler. No mide flujo: mide la **caída de presión** que produce la enfermedad oclusiva proximal. Se interpreta así: 1,00-1,40 normal; 0,91-0,99 límite; 0,90 o menos, anormal; por debajo de 0,40, isquemia grave que exige valoración urgente, igual que una presión de tobillo menor de 50 mmHg, una presión digital menor de 30 mmHg o una TcPO₂ menor de 30 mmHg.",
             "Por encima de 1,40 la arteria es **no compresible** y el resultado no es normal, sino ininterpretable. La causa es la calcificación de la media (esclerosis de Mönckeberg), típica del diabético de larga evolución, del paciente en diálisis y del muy anciano: la arteria es tan rígida que el manguito no la colapsa y la presión medida es artefactualmente alta. La trampa es que ocurre precisamente en los pacientes de más riesgo.",
-            "Hay otros dos fallos. La enfermedad tibial y pedia pura, patrón típico del diabético, puede dar un ITB normal porque la oclusión está por debajo del punto de medida; y un ITB normal en reposo no excluye la claudicación, por lo que en ese caso hay que repetirlo tras hacer andar al paciente. Cuando el ITB no es interpretable se recurre al **índice dedo-brazo**, anormal por debajo de 0,70 porque las arterias digitales casi nunca se calcifican, y a la presión transcutánea de oxígeno."
+            "Hay otros dos fallos. La enfermedad tibial y pedia pura, patrón típico del diabético, puede dar un ITB normal porque la oclusión está por debajo del punto de medida; y un ITB normal en reposo no excluye la claudicación, por lo que en ese caso hay que repetirlo tras hacer andar al paciente. Cuando el ITB no es interpretable se recurre al **índice dedo-brazo**, anormal por debajo de 0,70 porque las arterias digitales casi nunca se calcifican, y a la presión transcutánea de oxígeno.",
+            "Tras el ITB, la primera prueba de imagen es el **eco-Doppler arterial**, sin radiación ni contraste, que localiza la lesión y cuantifica su repercusión. Cuando se plantea revascularizar hace falta el mapa completo: **angio-TC o angio-RM con reconstrucción tridimensional**, que muestran todo el árbol arterial y la circulación colateral. La arteriografía con catéter queda para el propio tratamiento endovascular."
           ],
           "figura": "g_art_itb",
           "pie": "Escala del índice tobillo-brazo: por encima de 1,40 no es normal sino no compresible e ininterpretable."
@@ -334,6 +341,18 @@
     {
       "t": "Síndrome de reperfusión",
       "d": "Liberación de potasio, mioglobina y ácido al restablecer el flujo en un músculo isquémico, con riesgo de arritmia, acidosis y fracaso renal."
+    },
+    {
+      "t": "Flujo laminar",
+      "d": "Flujo en capas concéntricas paralelas, con perfil parabólico y velocidad máxima en el centro del vaso."
+    },
+    {
+      "t": "Vasos de capacitancia",
+      "d": "Venas y vénulas, que contienen en torno al 64 % de la volemia."
+    },
+    {
+      "t": "PDGF",
+      "d": "Factor de crecimiento derivado de las plaquetas; hace migrar y proliferar el músculo liso en la placa."
     }
   ],
   "referencias": [
@@ -578,6 +597,134 @@
         "Falsa: aunque no tenga síntomas en la pierna, su riesgo cardiovascular es muy alto y debe tratarse.",
         "Falsa: en la enfermedad asintomática la aspirina no redujo eventos en el AAA trial (HR 1,03) ni en POPADAD (HR 0,98)."
       ]
+    },
+    {
+      "q": "Un bloqueo simpático extenso dilata de golpe todo el lecho venoso y la presión arterial cae. ¿Qué dato de la distribución de la volemia lo explica?",
+      "o": [
+        "La mayor parte de la sangre está en las arterias de conducción",
+        "Cerca de dos tercios de la sangre está en venas y vénulas",
+        "Los capilares almacenan casi la mitad de la volemia",
+        "El circuito pulmonar contiene más de la mitad de la sangre"
+      ],
+      "c": 1,
+      "e": [
+        "Las arterias contienen en torno al 13 % de la volemia; no son el depósito.",
+        "Correcta: alrededor del 64 % está en venas y vénulas, los vasos de capacitancia; si se dilatan, la sangre se queda ahí y no vuelve al corazón.",
+        "Los capilares tienen la mayor área total, pero solo contienen en torno al 5 % de la sangre.",
+        "La circulación pulmonar contiene en torno a un 9 %, no la mitad."
+      ]
+    },
+    {
+      "q": "Si se compara con el circuito sistémico, el pulmonar mueve el mismo gasto cardiaco con:",
+      "o": [
+        "Más presión y más resistencia",
+        "Más presión pero menos resistencia",
+        "Menos presión pero más resistencia",
+        "Menos presión y menos resistencia"
+      ],
+      "c": 3,
+      "e": [
+        "Eso describe el circuito sistémico, no el pulmonar.",
+        "La presión pulmonar es mucho menor que la sistémica.",
+        "Si la resistencia fuera mayor, con el mismo gasto haría falta más presión, no menos.",
+        "Correcta: presión media de unos 15 mmHg y resistencia baja; es un circuito de baja presión y baja resistencia."
+      ]
+    },
+    {
+      "q": "En un tramo arterial recto y sano, con flujo laminar, ¿dónde va más rápida la sangre?",
+      "o": [
+        "Junto a la pared, donde el rozamiento la empuja",
+        "Igual en todo el diámetro, como un émbolo",
+        "En el eje del vaso, con un perfil parabólico",
+        "En remolinos que cambian de sentido con cada latido"
+      ],
+      "c": 2,
+      "e": [
+        "Junto a la pared el rozamiento frena la sangre: es la capa más lenta.",
+        "Un perfil plano no es el laminar; en el laminar cada capa va a distinta velocidad.",
+        "Correcta: capas concéntricas paralelas, la del centro es la más rápida y el perfil es una parábola.",
+        "Los remolinos definen el flujo turbulento, el que produce soplos."
+      ]
+    },
+    {
+      "q": "¿Qué mediador, liberado por plaquetas y macrófagos, hace que el músculo liso emigre a la íntima y forme la capa fibrosa del ateroma?",
+      "o": [
+        "El óxido nítrico",
+        "La prostaciclina",
+        "La bradicinina",
+        "El PDGF"
+      ],
+      "c": 3,
+      "e": [
+        "El óxido nítrico frena la proliferación del músculo liso y relaja la media; su pérdida es la disfunción endotelial.",
+        "La prostaciclina es vasodilatadora y antiagregante, no un estímulo proliferativo.",
+        "La bradicinina es vasodilatadora; no es la señal de migración del músculo liso.",
+        "Correcta: el factor de crecimiento derivado de las plaquetas estimula la migración y la proliferación del músculo liso."
+      ]
+    },
+    {
+      "q": "Un compañero explica que «el endotelio se contrae para cerrar la arteria». ¿Qué corrección es la adecuada?",
+      "o": [
+        "Quien se contrae es la media; el endotelio solo manda señales",
+        "Es correcto: el endotelio es la capa contráctil de la pared",
+        "Quien se contrae es la adventicia, gracias a su colágeno",
+        "La arteria no cambia de calibre: solo lo hacen los capilares"
+      ],
+      "c": 0,
+      "e": [
+        "Correcta: el endotelio regula el tono con mediadores como el óxido nítrico, pero la contracción es del músculo liso de la media.",
+        "El endotelio es una monocapa sin capacidad contráctil.",
+        "La adventicia aporta resistencia, nervios y vasa vasorum; el colágeno no se contrae.",
+        "Las arterias y sobre todo las arteriolas cambian de calibre; los capilares carecen de músculo liso."
+      ]
+    },
+    {
+      "q": "Claudicante con ITB de 0,55 y una lesión en el talón que no cierra; se va a revascularizar. ¿Qué prueba da el mapa completo del árbol arterial y de sus colaterales sin cateterizar?",
+      "o": [
+        "Radiografía simple de ambas piernas",
+        "Angio-RM o angio-TC con reconstrucción 3D",
+        "Repetir el ITB tras una prueba de esfuerzo",
+        "Palpación seriada de los pulsos distales"
+      ],
+      "c": 1,
+      "e": [
+        "La radiografía solo enseña calcio, no la luz arterial.",
+        "Correcta: la angiografía por RM o TC, con reconstrucción tridimensional, muestra todo el árbol arterial y las colaterales; el eco-Doppler es la primera prueba, pero no da ese mapa completo.",
+        "El ITB tras esfuerzo confirma la repercusión hemodinámica, pero no muestra la anatomía.",
+        "La exploración física orienta, pero no planifica una revascularización."
+      ]
+    },
+    {
+      "q": "Claudicante a 150 m (Fontaine IIb) que, tras seis meses sin fumar y con marcha supervisada, hace su vida sin limitaciones. ¿Qué se le propone?",
+      "o": [
+        "Revascularizar ya, porque el estadio IIb siempre se opera",
+        "Angioplastia preventiva para evitar una futura amputación",
+        "Mantener el tratamiento médico y el ejercicio, sin cirugía",
+        "Amputación menor programada de los dedos afectados"
+      ],
+      "c": 2,
+      "e": [
+        "En el estadio II la cirugía no es obligada: depende de cuánto limite la claudicación.",
+        "Revascularizar a un claudicante sin limitación no previene amputaciones y añade riesgo.",
+        "Correcta: en el estadio II (IIa y IIb) solo se opera si la claudicación compromete la calidad de vida.",
+        "No hay lesión trófica ni dolor de reposo; no hay nada que amputar."
+      ]
+    },
+    {
+      "q": "Varón de 78 años, fumador e hipertenso, con dolor lumbar brusco, TA 80/50 mmHg y una masa pulsátil periumbilical. ¿Qué actitud es la correcta?",
+      "o": [
+        "Analgesia y TAC programado para el día siguiente",
+        "Tratarlo como un cólico renal y reevaluar",
+        "Ecografía abdominal ambulatoria preferente",
+        "Quirófano urgente por aneurisma aórtico roto"
+      ],
+      "c": 3,
+      "e": [
+        "Un paciente en shock no puede esperar a una prueba programada.",
+        "Dolor lumbar con shock y masa pulsátil no es un cólico renal hasta que se descarte la rotura aórtica.",
+        "La demora es letal: la mortalidad de la rotura es altísima.",
+        "Correcta: dolor súbito, hipotensión y masa pulsátil son la tríada del aneurisma de aorta abdominal roto; inestable, va al quirófano."
+      ]
     }
   ],
   "cortas": [
@@ -710,6 +857,37 @@
         ]
       ],
       "e": "El músculo necrótico liberaría potasio, mioglobina y ácido: arritmia, acidosis y fracaso renal; la conducta es amputación primaria."
+    },
+    {
+      "q": "¿Qué arteria lleva sangre desoxigenada?",
+      "r": "La arteria pulmonar",
+      "k": [
+        [
+          "pulmonar"
+        ]
+      ],
+      "e": "«Arteria» indica que sale del corazón; la pulmonar lleva sangre venosa al pulmón."
+    },
+    {
+      "q": "¿Qué circuito mueve todo el gasto con baja presión y baja resistencia?",
+      "r": "La circulación pulmonar",
+      "k": [
+        [
+          "pulmon"
+        ]
+      ],
+      "e": "Presión media de unos 15 mmHg; el sistémico es el de alta presión y alta resistencia."
+    },
+    {
+      "q": "¿Qué mediador hace proliferar el músculo liso de la placa?",
+      "r": "El PDGF, derivado de plaquetas",
+      "k": [
+        [
+          "pdgf",
+          "plaquet"
+        ]
+      ],
+      "e": "El factor de crecimiento derivado de las plaquetas, liberado por plaquetas y macrófagos."
     }
   ],
   "largas": [
